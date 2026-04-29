@@ -2,124 +2,252 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Environmental Studies II — Quantum University</title>
     <style>
         :root {
-            --primary: #3b82f6; --success: #22c55e; --error: #ef4444;
-            --bg: #0f172a; --card: #1e293b; --text: #f1f5f9;
+            --primary: #6366f1;
+            --success: #10b981;
+            --error: #f43f5e;
+            --bg: #0f172a;
+            --card: #1e293b;
+            --text: #f1f5f9;
+            --accent: #06b6d4;
         }
-        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
-        .container { width: 90%; max-width: 650px; background: var(--card); padding: 2rem; border-radius: 16px; position: relative; }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 650px;
+            background: var(--card);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        .univ-logo { max-width: 180px; margin-bottom: 1.5rem; }
         
-        /* Logo Styling */
-        .univ-logo { display: block; margin: 0 auto 1rem; max-width: 180px; filter: drop-shadow(0 0 10px rgba(255,255,255,0.1)); }
+        .main-title { font-size: 1.6rem; font-weight: 800; text-transform: uppercase; margin: 0; color: #fff; }
         
-        .header-section { text-align: center; margin-bottom: 2rem; }
-        .main-title { font-size: 1.5rem; font-weight: 800; color: #fff; text-transform: uppercase; }
-        
-        /* Security Alert Overlay */
         #security-overlay {
-            display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.95);
-            z-index: 9999; color: white; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 2rem;
+            display: none; position: fixed; inset: 0; background: rgba(15, 23, 42, 0.98);
+            z-index: 9999; flex-direction: column; align-items: center; justify-content: center; padding: 2rem;
         }
-        
-        input { width: 100%; padding: 12px; margin: 8px 0; background: #334155; border: 1px solid #475569; border-radius: 8px; color: white; }
-        .btn { width: 100%; padding: 14px; background: var(--primary); color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 700; margin-top: 1rem; }
-        .option-btn { width: 100%; padding: 12px; margin-bottom: 8px; background: #334155; border: 1px solid #475569; border-radius: 8px; color: white; text-align: left; cursor: pointer; }
+
+        .input-group { text-align: left; margin-bottom: 1.2rem; }
+        label { display: block; margin-bottom: 0.5rem; font-size: 0.85rem; color: #94a3b8; font-weight: 600; }
+        input {
+            width: 100%; padding: 14px; background: #334155; border: 1px solid #475569;
+            border-radius: 8px; color: #fff; font-size: 1rem; box-sizing: border-box;
+        }
+
+        .btn {
+            width: 100%; padding: 16px; background: var(--primary); color: white; border: none;
+            border-radius: 8px; cursor: pointer; font-weight: 700; text-transform: uppercase; margin-top: 10px;
+        }
+
+        .option-btn {
+            width: 100%; padding: 14px; margin-bottom: 10px; background: #334155; border: 1px solid #475569;
+            border-radius: 8px; color: white; text-align: left; cursor: pointer; font-size: 1rem;
+        }
+
         .correct { background: #064e3b !important; border-color: var(--success); }
         .wrong { background: #7f1d1d !important; border-color: var(--error); }
+
+        .student-info { background: #0f172a; padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; text-align: left; line-height: 1.8; }
     </style>
 </head>
-<body oncontextmenu="return false;"> <div id="security-overlay">
+<body oncontextmenu="return false;">
+
+<div id="security-overlay">
     <h1 style="color:var(--error)">⚠️ SECURITY VIOLATION</h1>
-    <p>You switched tabs or minimized the window. <br>To maintain academic integrity, your quiz has been <strong>automatically submitted</strong>.</p>
-    <button class="btn" onclick="location.reload()">Return to Login</button>
+    <p>Window switching or tab changes are strictly prohibited.</p>
+    <p>Your progress has been submitted to the faculty.</p>
+    <button class="btn" onclick="location.reload()">Back to Login</button>
 </div>
 
 <div class="container">
-    <img src="https://quantumuniversity.edu.in/images/qu-logo-name.svg" alt="Quantum University Logo" class="univ-logo">
+    <img src="https://quantumuniversity.edu.in/wp-content/uploads/2023/10/Quantum-University-Logo.png" alt="Quantum University" class="univ-logo">
     
-    <div class="header-section">
-        <div class="main-title">Environmental Studies II</div>
-        <div style="color: #94a3b8;">Official Examination Portal</div>
+    <div id="login-screen">
+        <h2 class="main-title">Environmental Studies II</h2>
+        <p style="color: #94a3b8; margin-bottom: 2rem;">Official Examination Portal</p>
+        <div class="input-group">
+            <label>STUDENT ID</label>
+            <input type="text" id="login-id" placeholder="Enter Student ID">
+        </div>
+        <div class="input-group">
+            <label>PASSWORD</label>
+            <input type="password" id="login-pass" placeholder="Enter Password">
+        </div>
+        <button class="btn" id="login-btn" onclick="attemptLogin()" disabled>Syncing with Cloud...</button>
     </div>
 
-    <div id="login-screen">
-        <input type="text" id="login-id" placeholder="Student ID">
-        <input type="password" id="login-pass" placeholder="Password">
-        <button class="btn" onclick="attemptLogin()">Verify & Start</button>
+    <div id="dashboard-screen" style="display: none;">
+        <h2 style="margin-bottom: 1rem;">Candidate Verified</h2>
+        <div class="student-info" id="user-details"></div>
+        <button class="btn" onclick="startQuiz()">Begin Assessment</button>
     </div>
 
     <div id="quiz-screen" style="display: none;">
-        <div id="q-text" style="font-size: 1.1rem; margin-bottom: 1.5rem; font-weight: 600;"></div>
+        <div id="q-count" style="color: #94a3b8; font-size: 0.8rem; margin-bottom: 1rem; text-align: left;"></div>
+        <div id="q-text" style="font-size: 1.2rem; font-weight: 600; margin-bottom: 2rem; text-align: left;"></div>
         <div id="opt-container"></div>
     </div>
 
-    <div id="result-screen" style="display: none; text-align: center;">
-        <h2>Assessment Summary</h2>
+    <div id="result-screen" style="display: none;">
+        <h2 style="color: var(--success);">Submission Successful</h2>
+        <div class="student-info" id="final-details"></div>
         <div id="final-score" style="font-size: 3rem; font-weight: 900; color: var(--primary);"></div>
-        <p id="status-msg"></p>
+        <p id="save-status"></p>
+        <button class="btn" onclick="location.reload()">Logout</button>
     </div>
 </div>
 
 <script>
+    // 1. UPDATE THESE URLS
     const GITHUB_DATA_URL = 'https://raw.githubusercontent.com/peacepy/evs-assessment/refs/heads/main/data.json';
     const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzL7jNUPVV6KK6frTg_0ccx4CkuirRpENQaLAu8nwUQHphOm17eXQ0hOMd2_jZA_QYu/exec';
+
 
     let db = { students: {}, questions: [] };
     let quizActive = false;
     let quizState = { id: '', name: '', index: 0, score: 0 };
 
-    // Fetch Database from GitHub
+    // Fetch data on load
     async function init() {
         try {
-            const res = await fetch(GITHUB_DATA_URL);
+            const res = await fetch(GITHUB_JSON_URL);
             db = await res.json();
-            console.log("Database Synced from GitHub");
-        } catch (e) { alert("Failed to load assessment data."); }
+            const btn = document.getElementById('login-btn');
+            btn.disabled = false;
+            btn.innerText = "Enter Examination";
+        } catch (e) {
+            console.error("Fetch Error:", e);
+            document.getElementById('login-btn').innerText = "❌ Sync Failed";
+        }
     }
 
-    // Security: Tab Switching Detection
+    // Security Monitoring
     document.addEventListener('visibilitychange', () => {
         if (document.hidden && quizActive) {
             quizActive = false;
             document.getElementById('security-overlay').style.display = 'flex';
-            autoSubmit();
+            submitResults("Security Violation");
         }
     });
 
-    async function autoSubmit() {
-        // Immediately trigger the Google Sheet upload
-        await saveScore();
-        document.getElementById('quiz-screen').style.display = 'none';
-    }
-
     function attemptLogin() {
-        const id = document.getElementById('login-id').value;
-        const pass = document.getElementById('login-pass').value;
-        if (db.students[id] && db.students[id].pass === pass) {
+        const id = document.getElementById('login-id').value.trim();
+        const pass = document.getElementById('login-pass').value.trim();
+        const user = db.students[id];
+
+        if (user && String(user.pass) === pass) {
             quizState.id = id;
-            quizState.name = db.students[id].name;
-            startQuiz();
-        } else { alert("Invalid Credentials"); }
+            quizState.name = user.name;
+            document.getElementById('login-screen').style.display = 'none';
+            document.getElementById('dashboard-screen').style.display = 'block';
+            document.getElementById('user-details').innerHTML = `
+                <strong>Candidate:</strong> ${user.name}<br>
+                <strong>ID:</strong> ${id}<br>
+                <strong>Subject:</strong> Environmental Studies II
+            `;
+        } else {
+            alert("Invalid Credentials");
+        }
     }
 
     function startQuiz() {
         quizActive = true;
-        document.getElementById('login-screen').style.display = 'none';
+        document.getElementById('dashboard-screen').style.display = 'none';
         document.getElementById('quiz-screen').style.display = 'block';
-        loadQ();
+        loadQuestion();
     }
 
-    // ... (Question Loading and Scoring logic stays the same) ...
+    function loadQuestion() {
+        const qData = db.questions[quizState.index];
+        document.getElementById('q-count').innerText = `ITEM ${quizState.index + 1} OF ${db.questions.length}`;
+        document.getElementById('q-text').innerText = qData.q;
+        
+        const container = document.getElementById('opt-container');
+        container.innerHTML = '';
 
-    async function saveScore() {
-        const payload = { studentId: quizState.id, name: quizState.name, score: quizState.score };
-        await fetch(WEB_APP_URL, { method: 'POST', mode: 'no-cors', body: JSON.stringify(payload) });
+        qData.opts.forEach((opt, idx) => {
+            const btn = document.createElement('button');
+            btn.className = 'option-btn';
+            btn.innerText = opt;
+            btn.onclick = () => selectOption(idx);
+            container.appendChild(btn);
+        });
+    }
+
+    function selectOption(idx) {
+        const qData = db.questions[quizState.index];
+        const buttons = document.querySelectorAll('.option-btn');
+        buttons.forEach(b => b.disabled = true);
+
+        if (idx === qData.ans) {
+            buttons[idx].classList.add('correct');
+            quizState.score++;
+        } else {
+            buttons[idx].classList.add('wrong');
+            buttons[qData.ans].classList.add('correct');
+        }
+
+        setTimeout(() => {
+            if (quizState.index < db.questions.length - 1) {
+                quizState.index++;
+                loadQuestion();
+            } else {
+                finishQuiz();
+            }
+        }, 1000);
+    }
+
+    function finishQuiz() {
+        quizActive = false;
+        document.getElementById('quiz-screen').style.display = 'none';
+        document.getElementById('result-screen').style.display = 'block';
+        document.getElementById('final-score').innerText = `${quizState.score} / ${db.questions.length}`;
+        document.getElementById('final-details').innerHTML = `<strong>Candidate:</strong> ${quizState.name}<br><strong>ID:</strong> ${quizState.id}`;
+        submitResults("Completed");
+    }
+
+    async function submitResults(status) {
+        const statusEl = document.getElementById('save-status');
+        if(statusEl) statusEl.innerText = "⏳ Syncing with Google Sheets...";
+
+        try {
+            await fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                body: JSON.stringify({
+                    studentId: quizState.id,
+                    name: quizState.name,
+                    score: quizState.score,
+                    status: status
+                })
+            });
+            if(statusEl) statusEl.innerText = "✅ Cloud Sync Complete";
+        } catch (e) {
+            if(statusEl) statusEl.innerText = "❌ Sync Error (Manual record required)";
+        }
     }
 
     init();
 </script>
 </body>
 </html>
+   
