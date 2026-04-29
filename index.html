@@ -120,6 +120,14 @@
     let quizActive = false;
     let quizState = { id: '', name: '', index: 0, score: 0 };
 
+    // --- RANDOMIZATION FUNCTION ---
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
     // --- 2. INITIALIZATION ---
     async function init() {
         const btn = document.getElementById('login-btn');
@@ -127,6 +135,10 @@
             const res = await fetch(GITHUB_RAW_URL);
             if (!res.ok) throw new Error("Fetch failed");
             db = await res.json();
+            
+            // Randomize the questions right after loading them
+            shuffleArray(db.questions);
+            
             btn.disabled = false;
             btn.innerText = "Enter Examination";
         } catch (e) {
