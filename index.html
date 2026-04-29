@@ -17,14 +17,12 @@
         }
         .container {
             width: 95%; max-width: 650px; background: var(--card);
-            padding: 2rem; border-radius: 20px; text-align: center;
+            padding: 2.5rem; border-radius: 20px; text-align: center;
             box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
-            position: relative;
         }
-        .univ-logo { max-width: 180px; margin-bottom: 1.5rem; filter: drop-shadow(0 0 8px rgba(255,255,255,0.1)); }
-        .main-title { font-size: 1.6rem; font-weight: 800; text-transform: uppercase; margin: 0; color: #fff; letter-spacing: 1px; }
+        .univ-logo { width: 100%; max-width: 280px; margin-bottom: 1.5rem; filter: drop-shadow(0 0 5px rgba(255,255,255,0.1)); }
+        .main-title { font-size: 1.6rem; font-weight: 800; text-transform: uppercase; margin: 0; color: #fff; }
         
-        /* Security Overlay */
         #security-overlay {
             display: none; position: fixed; inset: 0; background: rgba(15, 23, 42, 0.98);
             z-index: 9999; flex-direction: column; align-items: center; justify-content: center; padding: 2rem;
@@ -40,16 +38,14 @@
         .btn {
             width: 100%; padding: 16px; background: var(--primary); color: white; border: none;
             border-radius: 8px; cursor: pointer; font-weight: 700; text-transform: uppercase; margin-top: 15px;
-            transition: transform 0.2s, background 0.2s;
         }
-        .btn:hover:not(:disabled) { background: #4f46e5; transform: translateY(-2px); }
         .btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
         .student-info { background: #0f172a; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0; text-align: left; line-height: 1.8; border: 1px solid #334155; }
         
         .option-btn {
             width: 100%; padding: 14px; margin-bottom: 10px; background: #334155; border: 1px solid #475569;
-            border-radius: 8px; color: white; text-align: left; cursor: pointer; font-size: 1rem; transition: 0.2s;
+            border-radius: 8px; color: white; text-align: left; cursor: pointer; font-size: 1rem;
         }
         .option-btn:hover:not(:disabled) { border-color: var(--primary); background: #3d4b5f; }
         .correct { background: #064e3b !important; border-color: var(--success) !important; }
@@ -63,8 +59,8 @@
 
 <div id="security-overlay">
     <h1 style="color:var(--error)">⚠️ SECURITY VIOLATION</h1>
-    <p>Window switching or tab changes are strictly prohibited.</p>
-    <p>Your assessment has been automatically submitted.</p>
+    <p>Switching tabs is strictly prohibited during the assessment.</p>
+    <p>Your current progress has been automatically submitted.</p>
     <button class="btn" onclick="location.reload()">Back to Login</button>
 </div>
 
@@ -76,24 +72,18 @@
         <p style="color: #94a3b8; margin-bottom: 2rem;">Official Examination Portal</p>
         <div class="input-group">
             <label>STUDENT ID</label>
-            <input type="text" id="login-id" placeholder="Enter ID (e.g. 25540015)">
+            <input type="text" id="login-id" placeholder="Enter Student ID">
         </div>
         <div class="input-group">
             <label>PASSWORD</label>
-            <input type="password" id="login-pass" placeholder="Enter Exam Password">
+            <input type="password" id="login-pass" placeholder="Enter Password">
         </div>
-        <button class="btn" id="login-btn" onclick="attemptLogin()" disabled>Connecting to Database...</button>
+        <button class="btn" id="login-btn" onclick="attemptLogin()" disabled>Syncing Cloud Database...</button>
     </div>
 
     <div id="dashboard-screen" style="display: none;">
         <h2 class="main-title">Verification Successful</h2>
         <div class="student-info" id="user-details"></div>
-        <div style="background: rgba(99, 102, 241, 0.1); padding: 1rem; border-radius: 8px; font-size: 0.85rem; color: #94a3b8; margin-bottom: 1rem; text-align: left;">
-            <strong>Proctoring Rules:</strong><br>
-            • Do NOT switch tabs or minimize window.<br>
-            • Right-click and copy-paste are disabled.<br>
-            • Violation will result in immediate submission.
-        </div>
         <button class="btn" onclick="startQuiz()">Begin Assessment Now</button>
     </div>
 
@@ -116,31 +106,28 @@
 </div>
 
 <script>
-    // 1. UPDATE THESE URLS
-    const GITHUB_DATA_URL = 'https://raw.githubusercontent.com/peacepy/evs-assessment/refs/heads/main/data.json';
-    const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzL7jNUPVV6KK6frTg_0ccx4CkuirRpENQaLAu8nwUQHphOm17eXQ0hOMd2_jZA_QYu/exec';
+    // Configuration
+    const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/peacepy/evs-assessment/refs/heads/main/data.json';
+    const GOOGLE_APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzL7jNUPVV6KK6frTg_0ccx4CkuirRpENQaLAu8nwUQHphOm17eXQ0hOMd2_jZA_QYu/exec';
 
     let db = { students: {}, questions: [] };
     let quizActive = false;
     let quizState = { id: '', name: '', index: 0, score: 0 };
 
-    // --- 2. INITIALIZATION ---
     async function init() {
         const btn = document.getElementById('login-btn');
         try {
             const res = await fetch(GITHUB_RAW_URL);
-            if (!res.ok) throw new Error("CORS or Path Error");
+            if (!res.ok) throw new Error("Fetch failed");
             db = await res.json();
             btn.disabled = false;
             btn.innerText = "Enter Examination";
         } catch (e) {
-            console.error(e);
             btn.innerText = "❌ Database Offline";
-            alert("Critical: Could not load data. Check GitHub Raw URL and repository visibility.");
+            console.error(e);
         }
     }
 
-    // --- 3. SECURITY MONITORING ---
     document.addEventListener('visibilitychange', () => {
         if (document.hidden && quizActive) {
             quizActive = false;
@@ -149,7 +136,6 @@
         }
     });
 
-    // --- 4. LOGIN LOGIC ---
     function attemptLogin() {
         const id = document.getElementById('login-id').value.trim();
         const pass = document.getElementById('login-pass').value.trim();
@@ -166,13 +152,11 @@
                 <strong>Institution:</strong> Quantum University
             `;
         } else {
-            alert("Invalid Credentials. Please check your ID and Password.");
+            alert("Login Failed: Incorrect Student ID or Password.");
         }
     }
 
-    // --- 5. QUIZ ENGINE ---
     function startQuiz() {
-        if (!db.questions.length) return alert("Question bank is empty.");
         quizActive = true;
         document.getElementById('dashboard-screen').style.display = 'none';
         document.getElementById('quiz-screen').style.display = 'block';
@@ -181,7 +165,7 @@
 
     function loadQuestion() {
         const qData = db.questions[quizState.index];
-        document.getElementById('q-count').innerText = `QUESTION ${quizState.index + 1} OF ${db.questions.length}`;
+        document.getElementById('q-count').innerText = `ITEM ${quizState.index + 1} OF ${db.questions.length}`;
         document.getElementById('q-text').innerText = qData.q;
         document.getElementById('progress-fill').style.width = ((quizState.index + 1) / db.questions.length * 100) + '%';
         
@@ -220,7 +204,6 @@
         }, 1000);
     }
 
-    // --- 6. SUBMISSION ---
     function finishQuiz() {
         quizActive = false;
         document.getElementById('quiz-screen').style.display = 'none';
@@ -230,10 +213,9 @@
         autoSubmit("Completed Normally");
     }
 
-    async function autoSubmit(statusType) {
-        const statusMsg = document.getElementById('cloud-status');
-        if(statusMsg) statusMsg.innerText = "⏳ Saving results to cloud...";
-
+    async function autoSubmit(status) {
+        const cloudMsg = document.getElementById('cloud-status');
+        if(cloudMsg) cloudMsg.innerText = "⏳ Archiving results to cloud...";
         try {
             await fetch(GOOGLE_APP_SCRIPT_URL, {
                 method: 'POST',
@@ -242,12 +224,12 @@
                     studentId: quizState.id,
                     name: quizState.name,
                     score: quizState.score,
-                    status: statusType
+                    status: status
                 })
             });
-            if(statusMsg) statusMsg.innerText = "✅ Result archived in Google Sheets.";
+            if(cloudMsg) cloudMsg.innerText = "✅ Result successfully saved to faculty record.";
         } catch (e) {
-            if(statusMsg) statusMsg.innerText = "❌ Sync Error. Notify faculty immediately.";
+            if(cloudMsg) cloudMsg.innerText = "❌ Sync error. Please screenshot this page.";
         }
     }
 
