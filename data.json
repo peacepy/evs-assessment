@@ -1,0 +1,10 @@
+{
+  "students": {
+    "25540015": {"name": "ANSHIKA D/O PRADEEP", "roll": 2, "pass": "EVSQUIZ"},
+    "25680019": {"name": "AARADHNA RAJPUT D/O DHEER SINGH", "roll": 1, "pass": "EVSQUIZ"}
+  },
+  "questions": [
+    {"q": "What is the primary goal of environmental studies?", "opts": ["Economic development", "Human-environment interaction", "Political governance", "Social welfare"], "ans": 1},
+    {"q": "Energy flow in an ecosystem is:", "opts": ["Cyclic", "Unidirectional", "Bidirectional", "Random"], "ans": 1}
+  ]
+}
