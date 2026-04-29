@@ -60,8 +60,8 @@
 <div id="security-overlay">
     <h1 style="color:var(--error)">⚠️ SECURITY VIOLATION</h1>
     <p>Switching tabs is strictly prohibited during the assessment.</p>
-    <p>Your current progress has been automatically submitted.</p>
-    <button class="btn" onclick="location.reload()">Back to Login</button>
+    <p>Your current progress has been permanently locked and submitted.</p>
+    <button class="btn" onclick="location.reload()">Return to Login</button>
 </div>
 
 <div class="container">
@@ -72,19 +72,25 @@
         <p style="color: #94a3b8; margin-bottom: 2rem;">Official Examination Portal</p>
         <div class="input-group">
             <label>STUDENT ID</label>
-            <input type="text" id="login-id" placeholder="Enter Student ID">
+            <input type="text" id="login-id" placeholder="Enter Student ID" autocomplete="off">
         </div>
         <div class="input-group">
             <label>PASSWORD</label>
-            <input type="password" id="login-pass" placeholder="Enter Password">
+            <input type="password" id="login-pass" placeholder="Enter Password" autocomplete="off">
         </div>
-        <button class="btn" id="login-btn" onclick="attemptLogin()" disabled>Syncing Cloud Database...</button>
+        <button class="btn" id="login-btn" onclick="attemptLogin()" disabled>Connecting to Database...</button>
     </div>
 
     <div id="dashboard-screen" style="display: none;">
-        <h2 class="main-title">Verification Successful</h2>
+        <h2 class="main-title">Candidate Verified</h2>
         <div class="student-info" id="user-details"></div>
-        <button class="btn" onclick="startQuiz()">Begin Assessment Now</button>
+        <div style="background: rgba(244, 63, 94, 0.1); padding: 1rem; border-radius: 8px; font-size: 0.85rem; color: #fca5a5; margin-bottom: 1rem; text-align: left; border: 1px solid rgba(244, 63, 94, 0.2);">
+            <strong>Proctoring Rules:</strong><br>
+            • Do NOT switch tabs or minimize the window.<br>
+            • Right-click and copy-paste are disabled.<br>
+            • A tab switch will result in immediate termination of the quiz.
+        </div>
+        <button class="btn" onclick="startQuiz()">Acknowledge & Begin</button>
     </div>
 
     <div id="quiz-screen" style="display: none;">
@@ -97,16 +103,16 @@
     </div>
 
     <div id="result-screen" style="display: none;">
-        <h2 style="color: var(--success);">Submission Successful</h2>
+        <h2 style="color: var(--success);" id="result-title">Submission Logged</h2>
         <div class="student-info" id="final-details"></div>
         <div id="final-score" style="font-size: 3.5rem; font-weight: 900; color: var(--primary); margin: 1rem 0;"></div>
         <p id="cloud-status" style="font-size: 0.9rem; color: #94a3b8;"></p>
-        <button class="btn" onclick="location.reload()">Logout</button>
+        <button class="btn" onclick="location.reload()">Log Out</button>
     </div>
 </div>
 
 <script>
-    // Configuration
+    // --- 1. CONFIGURATION ---
     const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/peacepy/evs-assessment/refs/heads/main/data.json';
     const GOOGLE_APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzL7jNUPVV6KK6frTg_0ccx4CkuirRpENQaLAu8nwUQHphOm17eXQ0hOMd2_jZA_QYu/exec';
 
@@ -114,6 +120,7 @@
     let quizActive = false;
     let quizState = { id: '', name: '', index: 0, score: 0 };
 
+    // --- 2. INITIALIZATION ---
     async function init() {
         const btn = document.getElementById('login-btn');
         try {
@@ -124,38 +131,75 @@
             btn.innerText = "Enter Examination";
         } catch (e) {
             btn.innerText = "❌ Database Offline";
-            console.error(e);
+            alert("Error: Access denied to data.json. Ensure the GitHub repository is Public.");
         }
     }
 
+    // --- 3. ANTI-CHEAT PROTOCOL ---
     document.addEventListener('visibilitychange', () => {
         if (document.hidden && quizActive) {
             quizActive = false;
             document.getElementById('security-overlay').style.display = 'flex';
-            autoSubmit("Violation: Tab Switched");
+            autoSubmit("Violation: Tab Switched / Left Window");
         }
     });
+    
+    // Prevent keyboard shortcuts for inspection
+    document.onkeydown = function(e) {
+        if(e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'J'.charCodeAt(0))) || (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))) {
+            return false;
+        }
+    }
 
-    function attemptLogin() {
+    // --- 4. AUTHENTICATION & SINGLE-ATTEMPT LOCK ---
+    async function attemptLogin() {
         const id = document.getElementById('login-id').value.trim();
         const pass = document.getElementById('login-pass').value.trim();
         const user = db.students[id];
 
         if (user && String(user.pass) === pass) {
-            quizState.id = id;
-            quizState.name = user.name;
-            document.getElementById('login-screen').style.display = 'none';
-            document.getElementById('dashboard-screen').style.display = 'block';
-            document.getElementById('user-details').innerHTML = `
-                <strong>Candidate:</strong> ${user.name}<br>
-                <strong>Student ID:</strong> ${id}<br>
-                <strong>Institution:</strong> Quantum University
-            `;
+            const btn = document.getElementById('login-btn');
+            btn.disabled = true;
+            btn.innerText = "Verifying Attempt Record...";
+
+            try {
+                // Check Google Sheet to see if they already took the test
+                const checkUrl = `${GOOGLE_APP_SCRIPT_URL}?action=checkStatus&studentId=${id}`;
+                const res = await fetch(checkUrl);
+                const statusData = await res.json();
+
+                quizState.id = id;
+                quizState.name = user.name;
+                document.getElementById('login-screen').style.display = 'none';
+
+                if (statusData.submitted) {
+                    // Lockout: Show previous score
+                    document.getElementById('result-screen').style.display = 'block';
+                    document.getElementById('result-title').innerText = "Already Attempted";
+                    document.getElementById('result-title').style.color = "var(--error)";
+                    document.getElementById('final-score').innerText = statusData.score;
+                    document.getElementById('final-details').innerHTML = `<strong>Candidate:</strong> ${user.name}<br><strong>ID:</strong> ${id}<br><strong>Status:</strong> ${statusData.status}`;
+                    document.getElementById('cloud-status').innerHTML = "⚠️ Multiple attempts are strictly prohibited.";
+                } else {
+                    // Allow Entry
+                    document.getElementById('dashboard-screen').style.display = 'block';
+                    document.getElementById('user-details').innerHTML = `
+                        <strong>Candidate:</strong> ${user.name}<br>
+                        <strong>Student ID:</strong> ${id}<br>
+                        <strong>Institution:</strong> Quantum University
+                    `;
+                }
+            } catch (e) {
+                alert("Could not verify status with the cloud. Please try again.");
+                btn.disabled = false;
+                btn.innerText = "Enter Examination";
+            }
         } else {
             alert("Login Failed: Incorrect Student ID or Password.");
         }
     }
 
+    // --- 5. QUIZ ENGINE ---
     function startQuiz() {
         quizActive = true;
         document.getElementById('dashboard-screen').style.display = 'none';
@@ -204,6 +248,7 @@
         }, 1000);
     }
 
+    // --- 6. DATA ARCHIVING ---
     function finishQuiz() {
         quizActive = false;
         document.getElementById('quiz-screen').style.display = 'none';
@@ -215,7 +260,7 @@
 
     async function autoSubmit(status) {
         const cloudMsg = document.getElementById('cloud-status');
-        if(cloudMsg) cloudMsg.innerText = "⏳ Archiving results to cloud...";
+        if(cloudMsg) cloudMsg.innerText = "⏳ Archiving secure record to faculty database...";
         try {
             await fetch(GOOGLE_APP_SCRIPT_URL, {
                 method: 'POST',
@@ -223,13 +268,13 @@
                 body: JSON.stringify({
                     studentId: quizState.id,
                     name: quizState.name,
-                    score: quizState.score,
+                    score: `${quizState.score} / ${db.questions.length}`,
                     status: status
                 })
             });
-            if(cloudMsg) cloudMsg.innerText = "✅ Result successfully saved to faculty record.";
+            if(cloudMsg) cloudMsg.innerText = "✅ Result successfully secured.";
         } catch (e) {
-            if(cloudMsg) cloudMsg.innerText = "❌ Sync error. Please screenshot this page.";
+            if(cloudMsg) cloudMsg.innerText = "❌ Sync error. Please inform Aman Sir immediately.";
         }
     }
 
