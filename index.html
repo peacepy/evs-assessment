@@ -9,18 +9,31 @@
             --primary: #6366f1; --success: #10b981; --error: #f43f5e;
             --bg: #0f172a; --card: #1e293b; --text: #f1f5f9;
         }
+        
         body {
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
             background: var(--bg); color: var(--text);
             margin: 0; display: flex; align-items: center; justify-content: center; min-height: 100vh;
             overflow-x: hidden;
+            -webkit-user-select: none; 
+            -ms-user-select: none; 
+            user-select: none; 
+            -webkit-touch-callout: none; 
         }
+        
+        @media print {
+            html, body { display: none !important; background: black; }
+        }
+
+        .blur-overlay { filter: blur(15px); pointer-events: none; transition: filter 0.2s; }
+
         .container {
             width: 95%; max-width: 650px; background: var(--card);
             padding: 2.5rem; border-radius: 20px; text-align: center;
             box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+            transition: filter 0.2s;
         }
-        .univ-logo { width: 100%; max-width: 280px; margin-bottom: 1.5rem; filter: drop-shadow(0 0 5px rgba(255,255,255,0.1)); }
+        .univ-logo { width: 100%; max-width: 280px; margin-bottom: 1.5rem; filter: drop-shadow(0 0 5px rgba(255,255,255,0.1)); pointer-events: none; }
         .main-title { font-size: 1.6rem; font-weight: 800; text-transform: uppercase; margin: 0; color: #fff; }
         
         #security-overlay {
@@ -59,24 +72,24 @@
 
 <div id="security-overlay">
     <h1 style="color:var(--error)">⚠️ SECURITY VIOLATION</h1>
-    <p>Switching tabs is strictly prohibited during the assessment.</p>
+    <p>Switching tabs or minimizing the window is strictly prohibited.</p>
     <p>Your current progress has been permanently locked and submitted.</p>
     <button class="btn" onclick="location.reload()">Return to Login</button>
 </div>
 
-<div class="container">
-    <img src="https://quantumuniversity.edu.in/images/qu-logo-name.svg" alt="Quantum University" class="univ-logo">
+<div class="container" id="main-container">
+    <img src="https://quantumuniversity.edu.in/images/qu-logo-name.svg" alt="Quantum University" class="univ-logo" draggable="false">
     
     <div id="login-screen">
         <h2 class="main-title">Environmental Studies II</h2>
         <p style="color: #94a3b8; margin-bottom: 2rem;">Official Examination Portal</p>
         <div class="input-group">
             <label>STUDENT ID</label>
-            <input type="text" id="login-id" placeholder="Enter Student ID" autocomplete="off">
+            <input type="text" id="login-id" placeholder="Enter Student ID" autocomplete="off" oncopy="return false" onpaste="return false">
         </div>
         <div class="input-group">
             <label>PASSWORD</label>
-            <input type="password" id="login-pass" placeholder="Enter Password" autocomplete="off">
+            <input type="password" id="login-pass" placeholder="Enter Password" autocomplete="off" oncopy="return false" onpaste="return false">
         </div>
         <button class="btn" id="login-btn" onclick="attemptLogin()" disabled>Connecting to Database...</button>
     </div>
@@ -85,9 +98,9 @@
         <h2 class="main-title">Candidate Verified</h2>
         <div class="student-info" id="user-details"></div>
         <div style="background: rgba(244, 63, 94, 0.1); padding: 1rem; border-radius: 8px; font-size: 0.85rem; color: #fca5a5; margin-bottom: 1rem; text-align: left; border: 1px solid rgba(244, 63, 94, 0.2);">
-            <strong>Proctoring Rules:</strong><br>
-            • Do NOT switch tabs or minimize the window.<br>
-            • Right-click and copy-paste are disabled.<br>
+            <strong>Strict Proctoring Rules:</strong><br>
+            • Do NOT switch tabs, minimize the window, or click away.<br>
+            • Screenshots, screen recording, and printing are blocked/monitored.<br>
             • A tab switch will result in immediate termination of the quiz.
         </div>
         <button class="btn" onclick="startQuiz()">Acknowledge & Begin</button>
@@ -114,13 +127,17 @@
 <script>
     // --- 1. CONFIGURATION ---
     const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/peacepy/evs-assessment/refs/heads/main/data.json';
-    const GOOGLE_APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzL7jNUPVV6KK6frTg_0ccx4CkuirRpENQaLAu8nwUQHphOm17eXQ0hOMd2_jZA_QYu/exec';
+    const GOOGLE_APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzL7jNUPVV6KK6frTg_0ccx4CkuirRpENQaLAu8nwUQHphOm17eXQ0hOMd2_jZA_QYu/exec'; 
 
     let db = { students: {}, questions: [] };
     let quizActive = false;
-    let quizState = { id: '', name: '', index: 0, score: 0 };
+    
+    // UPDATED: Added new academic fields to the application state
+    let quizState = { 
+        id: '', name: '', course: '', branch: '', section: '', year: '', 
+        index: 0, score: 0 
+    };
 
-    // --- RANDOMIZATION FUNCTION ---
     function shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -128,7 +145,6 @@
         }
     }
 
-    // --- 2. INITIALIZATION ---
     async function init() {
         const btn = document.getElementById('login-btn');
         try {
@@ -136,9 +152,7 @@
             if (!res.ok) throw new Error("Fetch failed");
             db = await res.json();
             
-            // Randomize the questions right after loading them
             shuffleArray(db.questions);
-            
             btn.disabled = false;
             btn.innerText = "Enter Examination";
         } catch (e) {
@@ -147,7 +161,7 @@
         }
     }
 
-    // --- 3. ANTI-CHEAT PROTOCOL ---
+    // --- 3. AGGRESSIVE ANTI-CHEAT PROTOCOL ---
     document.addEventListener('visibilitychange', () => {
         if (document.hidden && quizActive) {
             quizActive = false;
@@ -155,10 +169,25 @@
             autoSubmit("Violation: Tab Switched / Left Window");
         }
     });
+
+    window.addEventListener('blur', () => {
+        if (quizActive) document.getElementById('main-container').classList.add('blur-overlay');
+    });
     
-    // Prevent keyboard shortcuts for inspection
+    window.addEventListener('focus', () => {
+        document.getElementById('main-container').classList.remove('blur-overlay');
+    });
+    
+    document.onkeyup = function(e) {
+        if (e.key === 'PrintScreen') {
+            navigator.clipboard.writeText(''); 
+            alert("Security Alert: Screenshots are disabled. Your action has been flagged.");
+        }
+    };
+
     document.onkeydown = function(e) {
-        if(e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'J'.charCodeAt(0))) || (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))) {
+        if(e.keyCode === 123 || (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) || (e.ctrlKey && (e.keyCode === 85 || e.keyCode === 83 || e.keyCode === 80)) || (e.metaKey && (e.keyCode === 83 || e.keyCode === 80))) {
+            e.preventDefault();
             return false;
         }
     }
@@ -175,29 +204,37 @@
             btn.innerText = "Verifying Attempt Record...";
 
             try {
-                // Check Google Sheet to see if they already took the test
                 const checkUrl = `${GOOGLE_APP_SCRIPT_URL}?action=checkStatus&studentId=${id}`;
                 const res = await fetch(checkUrl);
                 const statusData = await res.json();
 
+                // Store all the new fields
                 quizState.id = id;
-                quizState.name = user.name;
+                quizState.name = user.name || "N/A";
+                quizState.course = user.course || "N/A";
+                quizState.branch = user.branch || "N/A";
+                quizState.section = user.section || "N/A";
+                quizState.year = user.year || "N/A";
+
                 document.getElementById('login-screen').style.display = 'none';
 
                 if (statusData.submitted) {
-                    // Lockout: Show previous score
                     document.getElementById('result-screen').style.display = 'block';
                     document.getElementById('result-title').innerText = "Already Attempted";
                     document.getElementById('result-title').style.color = "var(--error)";
                     document.getElementById('final-score').innerText = statusData.score;
-                    document.getElementById('final-details').innerHTML = `<strong>Candidate:</strong> ${user.name}<br><strong>ID:</strong> ${id}<br><strong>Status:</strong> ${statusData.status}`;
+                    document.getElementById('final-details').innerHTML = `
+                        <strong>Candidate:</strong> ${quizState.name}<br>
+                        <strong>ID:</strong> ${quizState.id}<br>
+                        <strong>Status:</strong> ${statusData.status}
+                    `;
                     document.getElementById('cloud-status').innerHTML = "⚠️ Multiple attempts are strictly prohibited.";
                 } else {
-                    // Allow Entry
                     document.getElementById('dashboard-screen').style.display = 'block';
                     document.getElementById('user-details').innerHTML = `
-                        <strong>Candidate:</strong> ${user.name}<br>
-                        <strong>Student ID:</strong> ${id}<br>
+                        <strong>Candidate:</strong> ${quizState.name}<br>
+                        <strong>ID:</strong> ${quizState.id}<br>
+                        <strong>Academic Profile:</strong> ${quizState.course} - ${quizState.branch} (Sec: ${quizState.section}, Yr: ${quizState.year})<br>
                         <strong>Institution:</strong> Quantum University
                     `;
                 }
@@ -216,6 +253,11 @@
         quizActive = true;
         document.getElementById('dashboard-screen').style.display = 'none';
         document.getElementById('quiz-screen').style.display = 'block';
+        
+        if (document.documentElement.requestFullscreen) {
+            document.documentElement.requestFullscreen().catch((err) => console.log(err));
+        }
+
         loadQuestion();
     }
 
@@ -263,31 +305,57 @@
     // --- 6. DATA ARCHIVING ---
     function finishQuiz() {
         quizActive = false;
+        if (document.exitFullscreen) document.exitFullscreen().catch((err) => console.log(err));
+
         document.getElementById('quiz-screen').style.display = 'none';
         document.getElementById('result-screen').style.display = 'block';
         document.getElementById('final-score').innerText = `${quizState.score} / ${db.questions.length}`;
         document.getElementById('final-details').innerHTML = `<strong>Candidate:</strong> ${quizState.name}<br><strong>ID:</strong> ${quizState.id}`;
+        
         autoSubmit("Completed Normally");
     }
 
-    async function autoSubmit(status) {
+    async function autoSubmit(statusType) {
         const cloudMsg = document.getElementById('cloud-status');
-        if(cloudMsg) cloudMsg.innerText = "⏳ Archiving secure record to faculty database...";
-        try {
-            await fetch(GOOGLE_APP_SCRIPT_URL, {
-                method: 'POST',
-                mode: 'no-cors',
-                body: JSON.stringify({
-                    studentId: quizState.id,
-                    name: quizState.name,
-                    score: `${quizState.score} / ${db.questions.length}`,
-                    status: status
-                })
+
+        const waitForConnection = () => {
+            return new Promise((resolve) => {
+                if (navigator.onLine) {
+                    resolve(); 
+                } else {
+                    if(cloudMsg) cloudMsg.innerHTML = "<span style='color: #f59e0b;'>📡 Connection lost. Waiting for internet to save results... DO NOT CLOSE THIS PAGE.</span>";
+                    window.addEventListener('online', resolve, { once: true }); 
+                }
             });
-            if(cloudMsg) cloudMsg.innerText = "✅ Result successfully secured.";
-        } catch (e) {
-            if(cloudMsg) cloudMsg.innerText = "❌ Sync error. Please inform Aman Sir immediately.";
-        }
+        };
+
+        const attemptPush = async () => {
+            await waitForConnection(); 
+            if(cloudMsg) cloudMsg.innerText = "⏳ Archiving secure record to faculty database...";
+            
+            try {
+                await fetch(GOOGLE_APP_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    body: JSON.stringify({
+                        studentId: quizState.id,
+                        name: quizState.name,
+                        course: quizState.course,    // NEW FIELD
+                        branch: quizState.branch,    // NEW FIELD
+                        section: quizState.section,  // NEW FIELD
+                        year: quizState.year,        // NEW FIELD
+                        score: `${quizState.score} / ${db.questions.length}`,
+                        status: statusType
+                    })
+                });
+                if(cloudMsg) cloudMsg.innerText = "✅ Result successfully secured. You may now close this window.";
+            } catch (e) {
+                if(cloudMsg) cloudMsg.innerText = "⚠️ Network interrupted during save. Retrying automatically...";
+                setTimeout(attemptPush, 3000); 
+            }
+        };
+
+        await attemptPush();
     }
 
     window.onload = init;
