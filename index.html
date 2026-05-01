@@ -4,85 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Environmental Studies II — Quantum University</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #6366f1; --success: #10b981; --error: #f43f5e;
-            --bg: #0f172a; --card: #1e293b; --text: #f1f5f9;
+            --primary: #6366f1; --primary-hover: #4f46e5;
+            --success: #10b981; --error: #f43f5e;
+            --warning: #f59e0b; --locked: #0f766e;
+            --bg: #0f172a; --card: #1e293b; --card-border: #334155;
+            --text: #f1f5f9; --text-muted: #94a3b8;
         }
         
         body {
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background: var(--bg); color: var(--text);
-            margin: 0; display: flex; align-items: center; justify-content: center; min-height: 100vh;
-            overflow-x: hidden;
-            -webkit-user-select: none; 
-            -ms-user-select: none; 
-            user-select: none; 
-            -webkit-touch-callout: none; 
+            background: radial-gradient(circle at top right, #1e293b 0%, #0f172a 100%); color: var(--text);
+            margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+            -webkit-user-select: none; -ms-user-select: none; user-select: none; -webkit-touch-callout: none; 
         }
         
-        @media print {
-            html, body { display: none !important; background: black; }
+        @media print { html, body { display: none !important; background: black; } }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulseRed {
+            0% { box-shadow: 0 0 0 0 rgba(244, 63, 94, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(244, 63, 94, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(244, 63, 94, 0); }
         }
 
-        .blur-overlay { filter: blur(15px); pointer-events: none; transition: filter 0.2s; }
+        .blur-overlay { filter: blur(15px); pointer-events: none; transition: filter 0.3s ease-in-out; }
 
         .container {
-            width: 95%; max-width: 650px; background: var(--card);
-            padding: 2.5rem; border-radius: 20px; text-align: center;
-            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
-            transition: filter 0.2s;
+            width: 95%; max-width: 600px; background: var(--card);
+            padding: 3rem 2.5rem; border-radius: 24px; text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5), 0 0 0 1px var(--card-border);
+            transition: all 0.3s ease;
         }
-        .univ-logo { width: 100%; max-width: 280px; margin-bottom: 1.5rem; filter: drop-shadow(0 0 5px rgba(255,255,255,0.1)); pointer-events: none; }
-        .main-title { font-size: 1.6rem; font-weight: 800; text-transform: uppercase; margin: 0; color: #fff; }
+
+        /* Expands for the exam interface */
+        .container.exam-mode {
+            max-width: 1100px;
+            padding: 2rem;
+            text-align: left;
+        }
+
+        #login-screen, #dashboard-screen, #quiz-screen, #result-screen { animation: fadeInUp 0.5s ease-out forwards; }
+
+        .univ-logo { width: 100%; max-width: 260px; margin-bottom: 2rem; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3)); pointer-events: none; }
+        .main-title { font-size: 1.7rem; font-weight: 800; text-transform: uppercase; margin: 0; color: #fff; letter-spacing: -0.025em; }
+        .subtitle { color: var(--text-muted); margin-bottom: 2.5rem; font-weight: 400; font-size: 0.95rem; }
         
         #security-overlay {
             display: none; position: fixed; inset: 0; background: rgba(15, 23, 42, 0.98);
             z-index: 9999; flex-direction: column; align-items: center; justify-content: center; padding: 2rem;
+            text-align: center;
         }
 
-        .input-group { text-align: left; margin-bottom: 1.2rem; }
-        label { display: block; margin-bottom: 0.5rem; font-size: 0.85rem; color: #94a3b8; font-weight: 600; }
+        .input-group { text-align: left; margin-bottom: 1.5rem; }
+        label { display: block; margin-bottom: 0.5rem; font-size: 0.8rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; }
         input {
-            width: 100%; padding: 14px; background: #334155; border: 1px solid #475569;
-            border-radius: 8px; color: #fff; font-size: 1rem; box-sizing: border-box;
+            width: 100%; padding: 16px; background: #0f172a; border: 2px solid var(--card-border);
+            border-radius: 12px; color: #fff; font-size: 1.05rem; box-sizing: border-box; outline: none; font-family: inherit;
         }
+        input:focus { border-color: var(--primary); }
 
         .btn {
-            width: 100%; padding: 16px; background: var(--primary); color: white; border: none;
-            border-radius: 8px; cursor: pointer; font-weight: 700; text-transform: uppercase; margin-top: 15px;
+            width: 100%; padding: 18px; background: var(--primary); color: white; border: none;
+            border-radius: 12px; cursor: pointer; font-weight: 700; text-transform: uppercase; 
+            font-size: 1rem; transition: all 0.2s ease;
         }
-        .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .btn:hover:not(:disabled) { background: var(--primary-hover); transform: translateY(-2px); }
+        .btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
 
-        .student-info { background: #0f172a; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0; text-align: left; line-height: 1.8; border: 1px solid #334155; }
+        /* --- EXAM LAYOUT --- */
+        .exam-layout { display: grid; grid-template-columns: 1fr 320px; gap: 2rem; }
         
-        .option-btn {
-            width: 100%; padding: 14px; margin-bottom: 10px; background: #334155; border: 1px solid #475569;
-            border-radius: 8px; color: white; text-align: left; cursor: pointer; font-size: 1rem;
-        }
-        .option-btn:hover:not(:disabled) { border-color: var(--primary); background: #3d4b5f; }
-        .correct { background: #064e3b !important; border-color: var(--success) !important; }
-        .wrong { background: #7f1d1d !important; border-color: var(--error) !important; }
+        .exam-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--card-border); }
+        .timer-box { background: rgba(244, 63, 94, 0.1); border: 1px solid rgba(244, 63, 94, 0.3); color: #fca5a5; padding: 0.5rem 1rem; border-radius: 8px; font-weight: 700; font-size: 1.2rem; display: flex; align-items: center; gap: 8px; }
+        .timer-box.urgent { background: var(--error); color: white; animation: pulseRed 1s infinite; }
 
-        .progress-bar { height: 6px; background: #0f172a; border-radius: 3px; overflow: hidden; margin-top: 10px; }
-        #progress-fill { height: 100%; background: var(--primary); width: 0%; transition: width 0.4s ease-out; }
+        .option-btn {
+            width: 100%; padding: 16px; margin-bottom: 12px; background: #0f172a; border: 2px solid var(--card-border);
+            border-radius: 12px; color: #e2e8f0; text-align: left; cursor: pointer; font-size: 1.05rem; font-family: inherit; transition: all 0.2s ease;
+        }
+        .option-btn:hover:not(:disabled) { border-color: var(--primary); background: #1e293b; }
+        .option-btn.selected { border-color: var(--primary); background: rgba(99, 102, 241, 0.15); box-shadow: 0 0 0 2px var(--primary); }
+        .option-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+        .nav-buttons { display: flex; gap: 10px; margin-top: 2rem; flex-wrap: wrap; }
+        .btn-nav { flex: 1; padding: 14px; border-radius: 8px; font-weight: 600; cursor: pointer; border: none; transition: 0.2s; color: white; min-width: 120px; }
+        .btn-prev { background: #475569; } .btn-prev:hover:not(:disabled) { background: #64748b; }
+        .btn-next { background: var(--primary); } .btn-next:hover:not(:disabled) { background: var(--primary-hover); }
+        .btn-review { background: var(--warning); color: #000; } .btn-review:hover:not(:disabled) { background: #d97706; }
+        .btn-lock { background: var(--locked); } .btn-lock:hover:not(:disabled) { background: #0d9488; }
+        .btn-nav:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        /* --- PALETTE --- */
+        .palette-panel { background: #0f172a; padding: 1.5rem; border-radius: 16px; border: 1px solid var(--card-border); display: flex; flex-direction: column; }
+        .palette-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-bottom: 1.5rem; max-height: 350px; overflow-y: auto; padding-right: 5px; }
+        .pal-btn { 
+            aspect-ratio: 1; border-radius: 6px; border: 1px solid #475569; background: #1e293b; color: white; 
+            font-weight: 600; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: 0.2s;
+        }
+        .pal-btn:hover { border-color: var(--text-muted); }
+        .pal-btn.current { border: 2px solid white; transform: scale(1.1); box-shadow: 0 0 10px rgba(255,255,255,0.2); }
+        
+        /* Status Colors */
+        .pal-ans { background: var(--success); border-color: var(--success); }
+        .pal-rev { background: var(--warning); border-color: var(--warning); color: #000; }
+        .pal-lock { background: var(--locked); border-color: var(--locked); }
+
+        .palette-legend { font-size: 0.8rem; color: var(--text-muted); display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 1.5rem; }
+        .leg-item { display: flex; align-items: center; gap: 6px; }
+        .leg-box { width: 14px; height: 14px; border-radius: 3px; }
+
+        .btn-submit { background: var(--error); margin-top: auto; }
+        .btn-submit:hover { background: #e11d48; }
+
+        @media (max-width: 850px) {
+            .exam-layout { grid-template-columns: 1fr; }
+            .palette-grid { grid-template-columns: repeat(8, 1fr); max-height: 200px; }
+            .exam-header { flex-direction: column; gap: 10px; align-items: flex-start; }
+            .nav-buttons { grid-template-columns: 1fr 1fr; display: grid; }
+        }
     </style>
 </head>
 <body oncontextmenu="return false;">
 
 <div id="security-overlay">
-    <h1 style="color:var(--error)">⚠️ SECURITY VIOLATION</h1>
+    <h1 style="color:var(--error); font-size: 2.5rem;">⚠️ SECURITY VIOLATION</h1>
     <p>Switching tabs or minimizing the window is strictly prohibited.</p>
     <p>Your current progress has been permanently locked and submitted.</p>
-    <button class="btn" onclick="location.reload()">Return to Login</button>
+    <button class="btn" style="max-width: 300px; margin-top: 2rem;" onclick="location.reload()">Return to Login</button>
 </div>
 
 <div class="container" id="main-container">
-    <img src="https://quantumuniversity.edu.in/images/qu-logo-name.svg" alt="Quantum University" class="univ-logo" draggable="false">
     
+    <!-- LOGIN SCREEN -->
     <div id="login-screen">
+        <img src="https://quantumuniversity.edu.in/images/qu-logo-name.svg" alt="Quantum University" class="univ-logo" draggable="false">
         <h2 class="main-title">Environmental Studies II</h2>
-        <p style="color: #94a3b8; margin-bottom: 2rem;">Official Examination Portal</p>
+        <p class="subtitle">Official Examination Portal</p>
         <div class="input-group">
             <label>STUDENT ID</label>
             <input type="text" id="login-id" placeholder="Enter Student ID" autocomplete="off" oncopy="return false" onpaste="return false">
@@ -94,49 +157,94 @@
         <button class="btn" id="login-btn" onclick="attemptLogin()" disabled>Connecting to Database...</button>
     </div>
 
+    <!-- DASHBOARD SCREEN -->
     <div id="dashboard-screen" style="display: none;">
+        <img src="https://quantumuniversity.edu.in/images/qu-logo-name.svg" alt="Quantum University" class="univ-logo" draggable="false">
         <h2 class="main-title">Candidate Verified</h2>
-        <div class="student-info" id="user-details"></div>
-        <div style="background: rgba(244, 63, 94, 0.1); padding: 1rem; border-radius: 8px; font-size: 0.85rem; color: #fca5a5; margin-bottom: 1rem; text-align: left; border: 1px solid rgba(244, 63, 94, 0.2);">
-            <strong>Strict Proctoring Rules:</strong><br>
+        <div style="background: #0f172a; padding: 1.5rem; border-radius: 16px; margin: 1.5rem 0; text-align: left; line-height: 1.8; border: 1px solid var(--card-border); font-size: 0.95rem; color: #cbd5e1;" id="user-details"></div>
+        <div style="background: rgba(244, 63, 94, 0.1); padding: 1.2rem; border-radius: 12px; font-size: 0.85rem; color: #fca5a5; margin-bottom: 1.5rem; text-align: left; border: 1px solid rgba(244, 63, 94, 0.2); line-height: 1.6;">
+            <strong style="color:var(--error); font-size:0.95rem;">Strict Proctoring Rules:</strong><br><br>
+            • <strong>Time Limit:</strong> 60 Minutes. Auto-submits at zero.<br>
             • Do NOT switch tabs, minimize the window, or click away.<br>
-            • Screenshots, screen recording, and printing are blocked/monitored.<br>
-            • A tab switch will result in immediate termination of the quiz.
+            • <strong>Locked Answers:</strong> Once a question is locked, it cannot be changed.<br>
         </div>
-        <button class="btn" onclick="startQuiz()">Acknowledge & Begin</button>
+        <button class="btn" onclick="startQuiz()">Begin 60-Minute Assessment</button>
     </div>
 
-    <div id="quiz-screen" style="display: none;">
-        <div style="margin-bottom: 2rem; text-align: left;">
-            <div id="q-count" style="color: #94a3b8; font-size: 0.85rem; font-weight: 600;"></div>
-            <div class="progress-bar"><div id="progress-fill"></div></div>
+    <!-- QUIZ SCREEN (SPLIT LAYOUT) -->
+    <div id="quiz-screen" style="display: none; height: 100%;">
+        <div class="exam-layout">
+            
+            <!-- Left: Question Area -->
+            <div class="question-panel">
+                <div class="exam-header">
+                    <div>
+                        <h2 class="main-title" style="font-size: 1.3rem;">Environmental Studies II</h2>
+                        <div id="q-count" style="color: var(--text-muted); font-size: 0.85rem; font-weight: 700; margin-top: 5px;"></div>
+                    </div>
+                    <div class="timer-box" id="timer-box">
+                        ⏱️ <span id="time-display">60:00</span>
+                    </div>
+                </div>
+
+                <div id="q-text" style="font-size: 1.25rem; font-weight: 600; margin-bottom: 2rem; text-align: left; line-height: 1.6; color: #fff; min-height: 80px;"></div>
+                <div id="opt-container"></div>
+
+                <div class="nav-buttons">
+                    <button class="btn-nav btn-prev" onclick="navigate(-1)" id="btn-prev">⬅️ Previous</button>
+                    <button class="btn-nav btn-review" onclick="markState('review')" id="btn-review">⭐ Mark Review</button>
+                    <button class="btn-nav btn-lock" onclick="markState('locked')" id="btn-lock">🔒 Lock Answer</button>
+                    <button class="btn-nav btn-next" onclick="navigate(1)" id="btn-next">Next ➡️</button>
+                </div>
+            </div>
+
+            <!-- Right: Palette Area -->
+            <div class="palette-panel">
+                <h3 style="margin-top: 0; font-size: 1rem; border-bottom: 1px solid var(--card-border); padding-bottom: 10px;">Question Palette</h3>
+                
+                <div class="palette-legend">
+                    <div class="leg-item"><div class="leg-box" style="background:#1e293b; border:1px solid #475569;"></div> Unanswered</div>
+                    <div class="leg-item"><div class="leg-box pal-ans"></div> Answered</div>
+                    <div class="leg-item"><div class="leg-box pal-rev"></div> Review</div>
+                    <div class="leg-item"><div class="leg-box pal-lock"></div> Locked</div>
+                </div>
+
+                <div class="palette-grid" id="palette-grid"></div>
+
+                <button class="btn btn-submit" onclick="confirmSubmit()">Submit Exam</button>
+            </div>
+
         </div>
-        <div id="q-text" style="font-size: 1.2rem; font-weight: 600; margin-bottom: 2rem; text-align: left; line-height: 1.6;"></div>
-        <div id="opt-container"></div>
     </div>
 
+    <!-- RESULT SCREEN -->
     <div id="result-screen" style="display: none;">
-        <h2 style="color: var(--success);" id="result-title">Submission Logged</h2>
-        <div class="student-info" id="final-details"></div>
-        <div id="final-score" style="font-size: 3.5rem; font-weight: 900; color: var(--primary); margin: 1rem 0;"></div>
-        <p id="cloud-status" style="font-size: 0.9rem; color: #94a3b8;"></p>
-        <button class="btn" onclick="location.reload()">Log Out</button>
+        <img src="https://quantumuniversity.edu.in/images/qu-logo-name.svg" alt="Quantum University" class="univ-logo" draggable="false">
+        <h2 style="color: var(--success); font-size: 2rem; margin-bottom: 0.5rem;" id="result-title">Submission Logged</h2>
+        <div style="background: #0f172a; padding: 1.5rem; border-radius: 16px; margin: 1.5rem 0; text-align: left; line-height: 1.8; border: 1px solid var(--card-border); font-size: 0.95rem; color: #cbd5e1;" id="final-details"></div>
+        <div id="final-score" style="font-size: 4rem; font-weight: 800; color: #fff; margin: 1.5rem 0; text-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);"></div>
+        <p id="cloud-status" style="font-size: 0.95rem; color: var(--text-muted); font-weight: 600; margin-bottom: 2rem;"></p>
+        <button class="btn" onclick="location.reload()">Log Out Session</button>
     </div>
 </div>
 
 <script>
     // --- 1. CONFIGURATION ---
     const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/peacepy/evs-assessment/refs/heads/main/data.json';
-    const GOOGLE_APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby738u6vxhty7oSCPl0tjSJKAirBBrhtX3RNlWxEFpaxKSthWnDrd499AqS9Ilz9J9s/exec'; 
+    const GOOGLE_APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzFVESN9Kc-Q_cElCws7B4vRJTq6n7emoT0w32SmTxZy5AXbXQxuKUV8mIGMpfMIO_Z/exec'; 
 
     let db = { students: {}, questions: [] };
     let quizActive = false;
     
-    // UPDATED: Added new academic fields to the application state
-    let quizState = { 
-        id: '', name: '', course: '', branch: '', section: '', year: '', 
-        index: 0, score: 0 
-    };
+    // Arrays to track student progress
+    let userAnswers = [];   // null or index of selected option
+    let qStatus = [];       // 'unanswered', 'answered', 'review', 'locked'
+
+    let quizState = { id: '', name: '', course: '', branch: '', section: '', year: '', index: 0, score: 0 };
+
+    // --- TIMER CONFIG ---
+    let timeRemaining = 3600; // 60 minutes in seconds
+    let timerInterval;
 
     function shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
@@ -157,42 +265,32 @@
             btn.innerText = "Enter Examination";
         } catch (e) {
             btn.innerText = "❌ Database Offline";
-            alert("Error: Access denied to data.json. Ensure the GitHub repository is Public.");
         }
     }
 
-    // --- 3. AGGRESSIVE ANTI-CHEAT PROTOCOL ---
+    // --- ANTI-CHEAT ---
     document.addEventListener('visibilitychange', () => {
         if (document.hidden && quizActive) {
             quizActive = false;
+            clearInterval(timerInterval);
             document.getElementById('security-overlay').style.display = 'flex';
-            autoSubmit("Violation: Tab Switched / Left Window");
+            calculateScoreAndSubmit("Violation: Tab Switched / Left Window");
         }
     });
 
-    window.addEventListener('blur', () => {
-        if (quizActive) document.getElementById('main-container').classList.add('blur-overlay');
-    });
-    
-    window.addEventListener('focus', () => {
-        document.getElementById('main-container').classList.remove('blur-overlay');
-    });
+    window.addEventListener('blur', () => { if (quizActive) document.getElementById('main-container').classList.add('blur-overlay'); });
+    window.addEventListener('focus', () => { document.getElementById('main-container').classList.remove('blur-overlay'); });
     
     document.onkeyup = function(e) {
-        if (e.key === 'PrintScreen') {
-            navigator.clipboard.writeText(''); 
-            alert("Security Alert: Screenshots are disabled. Your action has been flagged.");
-        }
+        if (e.key === 'PrintScreen') { navigator.clipboard.writeText(''); alert("Security Alert: Screenshots disabled."); }
     };
-
     document.onkeydown = function(e) {
         if(e.keyCode === 123 || (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) || (e.ctrlKey && (e.keyCode === 85 || e.keyCode === 83 || e.keyCode === 80)) || (e.metaKey && (e.keyCode === 83 || e.keyCode === 80))) {
-            e.preventDefault();
-            return false;
+            e.preventDefault(); return false;
         }
     }
 
-    // --- 4. AUTHENTICATION & SINGLE-ATTEMPT LOCK ---
+    // --- LOGIN ---
     async function attemptLogin() {
         const id = document.getElementById('login-id').value.trim();
         const pass = document.getElementById('login-pass').value.trim();
@@ -200,21 +298,16 @@
 
         if (user && String(user.pass) === pass) {
             const btn = document.getElementById('login-btn');
-            btn.disabled = true;
-            btn.innerText = "Verifying Attempt Record...";
+            btn.disabled = true; btn.innerText = "Verifying Attempt Record...";
 
             try {
                 const checkUrl = `${GOOGLE_APP_SCRIPT_URL}?action=checkStatus&studentId=${id}`;
                 const res = await fetch(checkUrl);
                 const statusData = await res.json();
 
-                // Store all the new fields
-                quizState.id = id;
-                quizState.name = user.name || "N/A";
-                quizState.course = user.course || "N/A";
-                quizState.branch = user.branch || "N/A";
-                quizState.section = user.section || "N/A";
-                quizState.year = user.year || "N/A";
+                quizState.id = id; quizState.name = user.name || "N/A";
+                quizState.course = user.course || "N/A"; quizState.branch = user.branch || "N/A";
+                quizState.section = user.section || "N/A"; quizState.year = user.year || "N/A";
 
                 document.getElementById('login-screen').style.display = 'none';
 
@@ -223,96 +316,160 @@
                     document.getElementById('result-title').innerText = "Already Attempted";
                     document.getElementById('result-title').style.color = "var(--error)";
                     document.getElementById('final-score').innerText = statusData.score;
-                    document.getElementById('final-details').innerHTML = `
-                        <strong>Candidate:</strong> ${quizState.name}<br>
-                        <strong>ID:</strong> ${quizState.id}<br>
-                        <strong>Status:</strong> ${statusData.status}
-                    `;
+                    document.getElementById('final-details').innerHTML = `<strong>Candidate:</strong> ${quizState.name}<br><strong>ID:</strong> ${quizState.id}<br><strong>Status:</strong> <span style="color:var(--error);">${statusData.status}</span>`;
                     document.getElementById('cloud-status').innerHTML = "⚠️ Multiple attempts are strictly prohibited.";
                 } else {
                     document.getElementById('dashboard-screen').style.display = 'block';
-                    document.getElementById('user-details').innerHTML = `
-                        <strong>Candidate:</strong> ${quizState.name}<br>
-                        <strong>ID:</strong> ${quizState.id}<br>
-                        <strong>Academic Profile:</strong> ${quizState.course} - ${quizState.branch} (Sec: ${quizState.section}, Yr: ${quizState.year})<br>
-                        <strong>Institution:</strong> Quantum University
-                    `;
+                    document.getElementById('user-details').innerHTML = `<strong>Candidate:</strong> ${quizState.name}<br><strong>ID:</strong> ${quizState.id}<br><strong>Profile:</strong> ${quizState.course} - ${quizState.branch} (Sec: ${quizState.section}, Yr: ${quizState.year})`;
                 }
-            } catch (e) {
-                alert("Could not verify status with the cloud. Please try again.");
-                btn.disabled = false;
-                btn.innerText = "Enter Examination";
-            }
-        } else {
-            alert("Login Failed: Incorrect Student ID or Password.");
-        }
+            } catch (e) { alert("Network Error. Try again."); btn.disabled = false; btn.innerText = "Enter Examination"; }
+        } else { alert("Login Failed: Incorrect Student ID or Password."); }
     }
 
-    // --- 5. QUIZ ENGINE ---
+    // --- EXAM ENGINE ---
     function startQuiz() {
         quizActive = true;
         document.getElementById('dashboard-screen').style.display = 'none';
+        
+        const container = document.getElementById('main-container');
+        container.classList.add('exam-mode');
         document.getElementById('quiz-screen').style.display = 'block';
         
-        if (document.documentElement.requestFullscreen) {
-            document.documentElement.requestFullscreen().catch((err) => console.log(err));
-        }
+        if (document.documentElement.requestFullscreen) document.documentElement.requestFullscreen().catch(err => console.log(err));
 
-        loadQuestion();
+        // Initialize state arrays
+        userAnswers = new Array(db.questions.length).fill(null);
+        qStatus = new Array(db.questions.length).fill('unanswered');
+
+        startTimer();
+        renderPalette();
+        loadQuestion(0);
     }
 
-    function loadQuestion() {
-        const qData = db.questions[quizState.index];
-        document.getElementById('q-count').innerText = `ITEM ${quizState.index + 1} OF ${db.questions.length}`;
+    function startTimer() {
+        const display = document.getElementById('time-display');
+        const box = document.getElementById('timer-box');
+        
+        timerInterval = setInterval(() => {
+            timeRemaining--;
+            let m = Math.floor(timeRemaining / 60).toString().padStart(2, '0');
+            let s = (timeRemaining % 60).toString().padStart(2, '0');
+            display.innerText = `${m}:${s}`;
+            
+            if (timeRemaining <= 300) box.classList.add('urgent'); // Last 5 mins
+            
+            if (timeRemaining <= 0) {
+                clearInterval(timerInterval);
+                calculateScoreAndSubmit("Time Exhausted (Auto-Submit)");
+            }
+        }, 1000);
+    }
+
+    function renderPalette() {
+        const grid = document.getElementById('palette-grid');
+        grid.innerHTML = '';
+        for (let i = 0; i < db.questions.length; i++) {
+            const btn = document.createElement('button');
+            btn.className = `pal-btn ${getPaletteClass(qStatus[i])} ${i === quizState.index ? 'current' : ''}`;
+            btn.innerText = i + 1;
+            btn.onclick = () => loadQuestion(i);
+            grid.appendChild(btn);
+        }
+    }
+
+    function getPaletteClass(status) {
+        if (status === 'answered') return 'pal-ans';
+        if (status === 'review') return 'pal-rev';
+        if (status === 'locked') return 'pal-lock';
+        return '';
+    }
+
+    function loadQuestion(index) {
+        quizState.index = index;
+        const qData = db.questions[index];
+        const status = qStatus[index];
+        const isLocked = status === 'locked';
+
+        document.getElementById('q-count').innerText = `QUESTION ${index + 1} OF ${db.questions.length}`;
         document.getElementById('q-text').innerText = qData.q;
-        document.getElementById('progress-fill').style.width = ((quizState.index + 1) / db.questions.length * 100) + '%';
         
         const container = document.getElementById('opt-container');
         container.innerHTML = '';
 
         qData.opts.forEach((opt, idx) => {
             const btn = document.createElement('button');
-            btn.className = 'option-btn';
+            btn.className = `option-btn ${userAnswers[index] === idx ? 'selected' : ''}`;
             btn.innerText = opt;
-            btn.onclick = () => selectOption(idx);
+            btn.disabled = isLocked;
+            btn.onclick = () => {
+                if (!isLocked) {
+                    userAnswers[index] = idx;
+                    qStatus[index] = 'answered';
+                    loadQuestion(index); // Re-render to show selection
+                }
+            };
             container.appendChild(btn);
         });
+
+        // Update button states
+        document.getElementById('btn-prev').disabled = index === 0;
+        document.getElementById('btn-next').disabled = index === db.questions.length - 1;
+        document.getElementById('btn-lock').disabled = isLocked || userAnswers[index] === null;
+        document.getElementById('btn-review').innerText = status === 'review' ? "Unmark Review" : "⭐ Mark Review";
+        document.getElementById('btn-review').disabled = isLocked;
+
+        renderPalette(); // Update highlights
     }
 
-    function selectOption(idx) {
-        const qData = db.questions[quizState.index];
-        const buttons = document.querySelectorAll('.option-btn');
-        buttons.forEach(b => b.disabled = true);
+    function navigate(dir) {
+        const newIndex = quizState.index + dir;
+        if (newIndex >= 0 && newIndex < db.questions.length) loadQuestion(newIndex);
+    }
 
-        if (idx === qData.ans) {
-            buttons[idx].classList.add('correct');
-            quizState.score++;
+    function markState(newState) {
+        if (newState === 'review' && qStatus[quizState.index] === 'review') {
+            // Toggle off review
+            qStatus[quizState.index] = userAnswers[quizState.index] !== null ? 'answered' : 'unanswered';
         } else {
-            buttons[idx].classList.add('wrong');
-            buttons[qData.ans].classList.add('correct');
+            qStatus[quizState.index] = newState;
+        }
+        
+        // Auto move to next after locking
+        if (newState === 'locked') navigate(1); 
+        else loadQuestion(quizState.index); 
+    }
+
+    function confirmSubmit() {
+        const unanswered = qStatus.filter(s => s === 'unanswered').length;
+        const confirmMsg = unanswered > 0 
+            ? `You have ${unanswered} unanswered questions. Are you sure you want to submit?` 
+            : "Are you sure you want to submit your exam?";
+        
+        if (confirm(confirmMsg)) calculateScoreAndSubmit("Completed Normally");
+    }
+
+    function calculateScoreAndSubmit(statusMsg) {
+        quizActive = false;
+        clearInterval(timerInterval);
+        
+        // Grade the test: Grade anything answered or locked. Ignore review un-answered.
+        quizState.score = 0;
+        for (let i = 0; i < db.questions.length; i++) {
+            if (userAnswers[i] === db.questions[i].ans) {
+                quizState.score++;
+            }
         }
 
-        setTimeout(() => {
-            if (quizState.index < db.questions.length - 1) {
-                quizState.index++;
-                loadQuestion();
-            } else {
-                finishQuiz();
-            }
-        }, 1000);
-    }
-
-    // --- 6. DATA ARCHIVING ---
-    function finishQuiz() {
-        quizActive = false;
-        if (document.exitFullscreen) document.exitFullscreen().catch((err) => console.log(err));
+        if (document.exitFullscreen) document.exitFullscreen().catch(err => console.log(err));
 
         document.getElementById('quiz-screen').style.display = 'none';
+        document.getElementById('main-container').classList.remove('exam-mode');
+        
         document.getElementById('result-screen').style.display = 'block';
         document.getElementById('final-score').innerText = `${quizState.score} / ${db.questions.length}`;
         document.getElementById('final-details').innerHTML = `<strong>Candidate:</strong> ${quizState.name}<br><strong>ID:</strong> ${quizState.id}`;
         
-        autoSubmit("Completed Normally");
+        autoSubmit(statusMsg);
     }
 
     async function autoSubmit(statusType) {
@@ -320,10 +477,9 @@
 
         const waitForConnection = () => {
             return new Promise((resolve) => {
-                if (navigator.onLine) {
-                    resolve(); 
-                } else {
-                    if(cloudMsg) cloudMsg.innerHTML = "<span style='color: #f59e0b;'>📡 Connection lost. Waiting for internet to save results... DO NOT CLOSE THIS PAGE.</span>";
+                if (navigator.onLine) resolve(); 
+                else {
+                    if(cloudMsg) cloudMsg.innerHTML = "<span style='color: #f59e0b; animation: pulseRed 2s infinite;'>📡 Connection lost. Waiting for internet to save results... DO NOT CLOSE THIS PAGE.</span>";
                     window.addEventListener('online', resolve, { once: true }); 
                 }
             });
@@ -335,26 +491,19 @@
             
             try {
                 await fetch(GOOGLE_APP_SCRIPT_URL, {
-                    method: 'POST',
-                    mode: 'no-cors',
+                    method: 'POST', mode: 'no-cors',
                     body: JSON.stringify({
-                        studentId: quizState.id,
-                        name: quizState.name,
-                        course: quizState.course,    // NEW FIELD
-                        branch: quizState.branch,    // NEW FIELD
-                        section: quizState.section,  // NEW FIELD
-                        year: quizState.year,        // NEW FIELD
-                        score: `${quizState.score} / ${db.questions.length}`,
-                        status: statusType
+                        studentId: quizState.id, name: quizState.name, course: quizState.course,    
+                        branch: quizState.branch, section: quizState.section, year: quizState.year,        
+                        score: `${quizState.score} / ${db.questions.length}`, status: statusType
                     })
                 });
-                if(cloudMsg) cloudMsg.innerText = "✅ Result successfully secured. You may now close this window.";
+                if(cloudMsg) cloudMsg.innerHTML = "<span style='color: var(--success);'>✅ Result successfully secured. You may now close this window.</span>";
             } catch (e) {
                 if(cloudMsg) cloudMsg.innerText = "⚠️ Network interrupted during save. Retrying automatically...";
                 setTimeout(attemptPush, 3000); 
             }
         };
-
         await attemptPush();
     }
 
