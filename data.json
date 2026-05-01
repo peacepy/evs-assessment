@@ -18,10 +18,55 @@
     }
   },
   "questions": [
-    {"q": "What is the primary goal of environmental studies?", "opts": ["Economic development", "Understanding human-environment interaction", "Political governance", "Social welfare"], "ans": 1},
-    {"q": "Which describes the multidisciplinary nature of environmental studies?", "opts": ["Focuses only on biology", "Draws from natural and social sciences", "Limited to chemistry", "Only studies ecosystems"], "ans": 1},
-    {"q": "Public awareness in environmental studies is needed to:", "opts": ["Increase industrial output", "Promote responsible behavior", "Reduce control", "Encourage tourism"], "ans": 1},
-    {"q": "An ecosystem consists of:", "opts": ["Only living organisms", "Only abiotic factors", "Living organisms and abiotic environment", "Only plants and animals"], "ans": 2},
-    {"q": "Which component performs photosynthesis?", "opts": ["Consumers", "Decomposers", "Producers", "Carnivores"], "ans": 2},
+    {
+      "q": "What is the primary goal of environmental studies?",
+      "opts": [
+        "Economic development",
+        "Understanding human-environment interaction",
+        "Political governance",
+        "Social welfare"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "Which describes the multidisciplinary nature of environmental studies?",
+      "opts": [
+        "Focuses only on biology",
+        "Draws from natural and social sciences",
+        "Limited to chemistry",
+        "Only studies ecosystems"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "Public awareness in environmental studies is needed to:",
+      "opts": [
+        "Increase industrial output",
+        "Promote responsible behavior",
+        "Reduce control",
+        "Encourage tourism"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "An ecosystem consists of:",
+      "opts": [
+        "Only living organisms",
+        "Only abiotic factors",
+        "Living organisms and abiotic environment",
+        "Only plants and animals"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "Which component performs photosynthesis?",
+      "opts": [
+        "Consumers",
+        "Decomposers",
+        "Producers",
+        "Carnivores"
+      ],
+      "ans": 2
+    }
   ]
 }
