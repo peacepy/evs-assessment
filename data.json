@@ -1,5 +1,645 @@
 {
   "students": {
+    "25170054": {
+      "name": "AARUSHA D/O AABAD",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170014": {
+      "name": "ABHAY SINGH PARMAR S/O SUBODH KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170096": {
+      "name": "ABHISHEK KUMAR S/O DILIP KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170057": {
+      "name": "ABU TALHA S/O NAIM AHMAD",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170059": {
+      "name": "ADITYA SHARMA S/O RAJEEV KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170048": {
+      "name": "AMAN ANAND S/O MUNNA PRASAD GUPTA",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170094": {
+      "name": "AMANDEEP SINGH S/O RANJEET SINGH",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170076": {
+      "name": "AMULYA MISHRA D/O ASHISH MISHRA",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170087": {
+      "name": "ANSHIKA D/O SATYAPAL SINGH",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170078": {
+      "name": "ANSHIKA RANA D/O VINAY KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170003": {
+      "name": "ARMAAN KHAN S/O MOHSIN KHAN",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170082": {
+      "name": "AYUSH YADAV S/O SUKHPAL SINGH",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170002": {
+      "name": "BHAVYA BHARDWAJ D/O MOHIT BHARDWAJ",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170009": {
+      "name": "BHOOMI VARSHNEY D/O CHETAN PRAKASH VARS",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170008": {
+      "name": "BINIT ORAON S/O BIMAL ORAON",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170045": {
+      "name": "CHAHAL S/O ANIL KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170062": {
+      "name": "DANISH S/O IRFAN",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170044": {
+      "name": "DEVKUMAR KANNOJIA S/O SARVESH KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170079": {
+      "name": "DISHA KAPKOTI D/O RAMESH SINGH KAPKOTI",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170086": {
+      "name": "HARMANPREET KAUR D/O PARMJEET CHAWLA",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170053": {
+      "name": "HARSHIT DHIMAN S/O MUKESH DHIMAN",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170034": {
+      "name": "HARSHIT KUMAR S/O NIRAJ KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170090": {
+      "name": "HUMAIRA MALIK D/O ASIF MALIK",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170095": {
+      "name": "HUSAIN S/O KAMYAB",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170064": {
+      "name": "ISHAAN CHATTERJEE S/O SUBHRAJYOTI CHATTER",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170065": {
+      "name": "ISHIKA PAL D/O DEEPAK KUMAR PAL",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170011": {
+      "name": "JATIN MANSAR S/O SURENDRA LAL",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170046": {
+      "name": "KARAMJEET KAUR D/O HEERA SINGH",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170056": {
+      "name": "KASHISH SEN D/O NEERAJ KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170051": {
+      "name": "KHUSHBU KUMARI D/O NANDU PRASAD",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170068": {
+      "name": "KISNA CHAWLA S/O ASHOK",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170091": {
+      "name": "KRISHNA ANAND S/O MILIND KUMAR SAHA",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170077": {
+      "name": "KUNAL BISHT S/O NARAYAN SINGH BISHT",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170025": {
+      "name": "MAANVI TYAGI D/O ADESH KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170055": {
+      "name": "MAHAK GAUR D/O TASVVUAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170007": {
+      "name": "MAHI VASHISHTH D/O ARUN SHARMA",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170028": {
+      "name": "MANAV TYAGI S/O JITENDRA TYAGI",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170001": {
+      "name": "MANYA SHARMA D/O VIPENDAR SHARMA",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170038": {
+      "name": "MOHD FARHAN S/O MOHD WASEEM",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170088": {
+      "name": "MOHD UMAR S/O ANIS AHMAD",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170012": {
+      "name": "NAMAN BANSAL S/O AJAY BANSAL",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170015": {
+      "name": "NAMAN RAJ SINGH S/O SUDESH KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170006": {
+      "name": "NANDINI ATHWAL D/O RAJ KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170040": {
+      "name": "NIDHAN KUMAR SINGH S/O UPENDRA KUMAR SI",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170060": {
+      "name": "NISHI SINGH D/O DILIP KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25640012": {
+      "name": "PAYAL SEHGAL D/O RAMESH CHAND",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170089": {
+      "name": "PRASHANT KUMAR S/O VINOD KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170005": {
+      "name": "PRERNA SAKSENA D/O MOHIT CHOUDHARY",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170067": {
+      "name": "PRINCE CHAUDHARY S/O AMIT KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170093": {
+      "name": "PRIYA D/O ARVIND KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170043": {
+      "name": "PRIYANKA KANNOJIA D/O SARVESH KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170029": {
+      "name": "PRIYANKA SAINI D/O AMIT SAINI",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170047": {
+      "name": "PRIYANSHI D/O ARVIND KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170004": {
+      "name": "PRIYANSHI SAKSENA D/O MOHIT CHOUDHARY",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170035": {
+      "name": "PUSHPENDRA KUMAR S/O PREM CHANDRA BHA",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170073": {
+      "name": "RACHIT SHARMA S/O AMIT SHARMA",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170027": {
+      "name": "RAM TIWARI S/O PANKAJ TIWARI",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170074": {
+      "name": "RAO ALI S/O SALIM",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170071": {
+      "name": "RASHMI PUNDIR D/O SHAKTI SINGH",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170019": {
+      "name": "RISHIKA PUNDIR D/O ASHOK KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170016": {
+      "name": "RITIKA GUPTA D/O SANAT KUMAR GUPTA",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170063": {
+      "name": "RIYA D/O RAVI KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170066": {
+      "name": "SAMIKSHA D/O RAJVEER SINGH",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170097": {
+      "name": "SANDESH SAINI S/O SURENDRA SAINI",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170041": {
+      "name": "SHRISTI CHAUHAN D/O SUBHASH CHANDRA",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170018": {
+      "name": "SIDDHARTHA DUBEY S/O SANJAY DUBEY",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170017": {
+      "name": "SRISHTI SHARMA D/O DEEPAK KUMAR SHARMA",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170050": {
+      "name": "SURAJ TIWARI S/O SURENDRA TIWARI",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170085": {
+      "name": "SYED MOHAMMAD HUSSAIN S/O SYED MOHAMM",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170080": {
+      "name": "TEJ PRATAP S/O DHARMENDRA KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25390025": {
+      "name": "TULSI CHOUDHARY D/O SUDHIR KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170072": {
+      "name": "UJJWAL YADAV S/O RAJ KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170010": {
+      "name": "VANSH SAINI S/O VISHESH PAL",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170052": {
+      "name": "VISHAL SIROHI S/O NARENDER SINGH",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170024": {
+      "name": "VRANDA CHOUDHARY D/O ADARSH CHOUDHARY",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170075": {
+      "name": "YASH PANDEY S/O YOGENDRA KUMAR PANDEY",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170070": {
+      "name": "YASH PUNDIR S/O DURGESH KUMAR",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170092": {
+      "name": "YASHIKA GUPTA D/O SATISH GUPTA",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170084": {
+      "name": "ZIKRIYA KHAN S/O SAJID KHAN",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
+    "25170081": {
+      "name": "ZUHAIB RAO S/O MOHD HANEEF",
+      "course": "B.Com",
+      "branch": "N/A",
+      "section": "N/A",
+      "year": "1st Year",
+      "pass": "EVSQUIZ"
+    },
     "25030371": {
       "name": "AHAN MUKHERJEE",
       "course": "B.Tech",
