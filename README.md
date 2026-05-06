@@ -2,7 +2,7 @@
 
 A modern, secure, and fully dynamic online examination system built with **HTML, CSS, JavaScript** and powered by **Google Apps Script** as the backend.
 
-![Exam Portal Preview](https://peacepy.github.io/evs-assessment/)
+[Exam Portal Preview](https://peacepy.github.io/evs-assessment)
 
 ## ✨ Features
 
