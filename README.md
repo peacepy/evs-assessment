@@ -1,4 +1,4 @@
-# Quantum University — Secure Examination Portal
+# Secure Examination Portal
 
 A modern, secure, and fully dynamic online examination system built with **HTML, CSS, JavaScript** and powered by **Google Apps Script** as the backend.
 
