@@ -1,5 +1,14 @@
 {
   "students": {
+    "QU2024002": {
+      "pass": "password456",
+      "name": "Rahul Kumar",
+      "course": "B.Tech",
+      "branch": "Civil",
+      "section": "A",
+      "year": "4th",
+      "mustChangePass": false
+    },
     "25170054": {
       "name": "AARUSHA D/O AABAD",
       "course": "B.Com",
