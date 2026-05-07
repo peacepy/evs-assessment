@@ -45,7 +45,6 @@
             overflow-x: hidden;
         }
 
-        /* Background grid */
         body::before {
             content: '';
             position: fixed;
@@ -124,18 +123,22 @@
 
         .container.exam-mode {
             max-width: 1200px;
+            width: 100%;
             padding: 0;
             border-radius: 0;
             border: none;
             background: transparent;
             box-shadow: none;
+            align-self: flex-start;
+            min-height: 100vh;
         }
 
         .container.exam-mode .exam-wrapper {
             display: grid;
             grid-template-columns: 1fr 340px;
-            gap: 1.5rem;
-            padding: 1.5rem;
+            grid-template-rows: auto 1fr;
+            gap: 1rem;
+            padding: 1rem;
             min-height: 100vh;
             align-items: start;
         }
@@ -190,7 +193,6 @@
             font-weight: 400;
         }
 
-        /* DIVIDER */
         .divider {
             display: flex;
             align-items: center;
@@ -227,9 +229,7 @@
             letter-spacing: 0.08em;
         }
 
-        .input-wrap {
-            position: relative;
-        }
+        .input-wrap { position: relative; }
 
         .input-icon {
             position: absolute;
@@ -349,7 +349,6 @@
         .btn.btn-success { background: var(--success); }
         .btn.btn-success:hover:not(:disabled) { background: #059669; box-shadow: 0 8px 20px rgba(16,185,129,0.3); }
 
-        /* SPINNER */
         .spinner {
             width: 16px;
             height: 16px;
@@ -380,12 +379,14 @@
         /* TOAST */
         #toast-container {
             position: fixed;
-            bottom: 24px;
-            right: 24px;
+            bottom: 16px;
+            right: 16px;
+            left: 16px;
             z-index: 9998;
             display: flex;
             flex-direction: column;
             gap: 10px;
+            pointer-events: none;
         }
 
         .toast {
@@ -400,17 +401,15 @@
             gap: 10px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.4);
             animation: slideDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-            max-width: 320px;
+            pointer-events: all;
         }
 
         .toast.success { border-color: rgba(16,185,129,0.3); }
         .toast.error { border-color: rgba(244,63,94,0.3); }
         .toast.info { border-color: rgba(99,102,241,0.3); }
 
-        /* ─── CHANGE PASSWORD SCREEN ─── */
-        #change-password-screen {
-            display: none;
-        }
+        /* CHANGE PASSWORD */
+        #change-password-screen { display: none; }
 
         .cp-header {
             display: flex;
@@ -478,7 +477,7 @@
         }
         .req-list li.met .req-dot { background: var(--success); }
 
-        /* ─── PROFILE BANNER ─── */
+        /* PROFILE BANNER */
         .profile-banner {
             background: var(--card2);
             border: 1px solid var(--card-border);
@@ -514,9 +513,10 @@
             font-size: 0.75rem;
             color: var(--text-muted);
             text-align: right;
+            white-space: nowrap;
         }
 
-        /* ─── DASHBOARD ─── */
+        /* DASHBOARD */
         #subject-dashboard { display: none; text-align: left; }
 
         .dash-section-title {
@@ -577,7 +577,7 @@
 
         .quiz-meta {
             display: flex;
-            gap: 14px;
+            gap: 8px;
             font-size: 0.8rem;
             color: var(--text-muted);
             margin-bottom: 1rem;
@@ -617,7 +617,7 @@
         .btn-sm-outline:hover:not(:disabled) { border-color: var(--card-border-light); color: var(--text); background: var(--card2); }
         .btn-sm:disabled { opacity: 0.4; cursor: not-allowed; }
 
-        /* ─── INSTRUCTION SCREEN ─── */
+        /* INSTRUCTION SCREEN */
         #dashboard-screen { display: none; text-align: left; }
 
         .inst-header { text-align: center; margin-bottom: 2rem; }
@@ -667,30 +667,34 @@
         .info-tile-value { font-size: 1.5rem; font-weight: 800; color: #fff; margin-bottom: 4px; }
         .info-tile-label { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
 
-        /* ─── EXAM SCREEN ─── */
-        #quiz-screen { display: none; }
+        /* ═══════════════════════════════════════════════
+           EXAM SCREEN — MOBILE-FIRST LAYOUT
+        ═══════════════════════════════════════════════ */
+        #quiz-screen { display: none; width: 100%; }
 
         /* TOP BAR */
         .exam-topbar {
             background: var(--card);
             border: 1px solid var(--card-border);
-            border-radius: 16px;
-            padding: 1rem 1.5rem;
+            border-radius: 14px;
+            padding: 0.75rem 1rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 1.5rem;
+            margin-bottom: 0.75rem;
             grid-column: 1 / -1;
+            gap: 0.75rem;
+            flex-wrap: wrap;
         }
 
-        .exam-topbar-left { display: flex; align-items: center; gap: 1rem; }
-        .exam-subject-title { font-weight: 700; font-size: 1rem; color: #fff; }
-        .exam-progress-text { font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono); }
+        .exam-topbar-left { display: flex; align-items: center; gap: 0.75rem; flex: 1; min-width: 0; }
+        .exam-subject-title { font-weight: 700; font-size: 0.9rem; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .exam-progress-text { font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono); }
 
-        .progress-wrap { display: flex; align-items: center; gap: 12px; }
+        .progress-wrap { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
         .progress-bar-outer {
-            width: 160px;
-            height: 6px;
+            width: 100px;
+            height: 5px;
             background: var(--card-border);
             border-radius: 100px;
             overflow: hidden;
@@ -705,15 +709,16 @@
         .timer-box {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
             background: rgba(244,63,94,0.08);
             border: 1px solid rgba(244,63,94,0.2);
             border-radius: 10px;
-            padding: 8px 14px;
+            padding: 7px 12px;
             font-family: var(--font-mono);
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: #fca5a5;
+            flex-shrink: 0;
             transition: all 0.3s;
         }
 
@@ -728,19 +733,19 @@
         .question-panel {
             background: var(--card);
             border: 1px solid var(--card-border);
-            border-radius: 16px;
-            padding: 2rem;
+            border-radius: 14px;
+            padding: 1.25rem;
             display: flex;
             flex-direction: column;
         }
 
         .q-label {
-            font-size: 0.72rem;
+            font-size: 0.7rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.1em;
             color: var(--primary);
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -749,37 +754,46 @@
         .q-label::after { content: ''; flex: 1; height: 1px; background: var(--card-border); }
 
         .q-text {
-            font-size: 1.15rem;
+            font-size: 1rem;
             font-weight: 600;
             color: #fff;
-            line-height: 1.7;
-            margin-bottom: 2rem;
-            min-height: 80px;
+            line-height: 1.65;
+            margin-bottom: 1.25rem;
+            min-height: unset;
         }
 
         .option-btn {
             width: 100%;
-            padding: 14px 18px;
-            margin-bottom: 10px;
+            padding: 12px 14px;
+            margin-bottom: 8px;
             background: var(--card2);
             border: 1.5px solid var(--card-border);
-            border-radius: 12px;
+            border-radius: 11px;
             color: var(--text-dim);
             text-align: left;
             cursor: pointer;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             font-family: var(--font-body);
             transition: all 0.2s;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
+            -webkit-tap-highlight-color: transparent;
         }
 
-        .option-btn:hover:not(:disabled):not(.selected):not(.correct):not(.wrong) {
+        .option-btn:active:not(:disabled):not(.selected):not(.correct):not(.wrong) {
             border-color: rgba(99,102,241,0.4);
             background: rgba(99,102,241,0.05);
             color: var(--text);
-            transform: translateX(4px);
+        }
+
+        @media (hover: hover) {
+            .option-btn:hover:not(:disabled):not(.selected):not(.correct):not(.wrong) {
+                border-color: rgba(99,102,241,0.4);
+                background: rgba(99,102,241,0.05);
+                color: var(--text);
+                transform: translateX(3px);
+            }
         }
 
         .option-btn.selected {
@@ -792,15 +806,15 @@
         .option-btn.locked-opt { opacity: 0.7; }
 
         .opt-letter {
-            width: 28px;
-            height: 28px;
-            border-radius: 8px;
+            width: 26px;
+            height: 26px;
+            border-radius: 7px;
             background: rgba(255,255,255,0.05);
             border: 1px solid var(--card-border);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             font-weight: 700;
             font-family: var(--font-mono);
             flex-shrink: 0;
@@ -815,18 +829,17 @@
         /* NAV BUTTONS */
         .nav-buttons {
             display: flex;
-            gap: 8px;
-            margin-top: auto;
-            padding-top: 1.5rem;
+            gap: 6px;
+            margin-top: 1rem;
             flex-wrap: wrap;
         }
 
         .btn-nav {
             flex: 1;
-            padding: 12px 16px;
+            padding: 11px 10px;
             border-radius: 10px;
             font-weight: 600;
-            font-size: 0.83rem;
+            font-size: 0.78rem;
             cursor: pointer;
             border: 1.5px solid transparent;
             font-family: var(--font-body);
@@ -834,8 +847,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 5px;
-            min-width: 100px;
+            gap: 4px;
+            min-width: 60px;
+            white-space: nowrap;
+            -webkit-tap-highlight-color: transparent;
         }
 
         .btn-prev { background: var(--card2); border-color: var(--card-border); color: var(--text-dim); }
@@ -852,17 +867,15 @@
         .palette-panel {
             background: var(--card);
             border: 1px solid var(--card-border);
-            border-radius: 16px;
-            padding: 1.5rem;
+            border-radius: 14px;
+            padding: 1.25rem;
             display: flex;
             flex-direction: column;
-            gap: 1.2rem;
-            position: sticky;
-            top: 1.5rem;
+            gap: 1rem;
         }
 
         .palette-title {
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.1em;
@@ -873,34 +886,28 @@
         .palette-grid {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            gap: 7px;
-            max-height: 280px;
-            overflow-y: auto;
-            padding-right: 2px;
+            gap: 6px;
         }
-
-        .palette-grid::-webkit-scrollbar { width: 4px; }
-        .palette-grid::-webkit-scrollbar-track { background: var(--card-border); border-radius: 100px; }
-        .palette-grid::-webkit-scrollbar-thumb { background: var(--card-border-light); border-radius: 100px; }
 
         .pal-btn {
             aspect-ratio: 1;
-            border-radius: 8px;
+            border-radius: 7px;
             border: 1.5px solid var(--card-border);
             background: var(--card2);
             color: var(--text-muted);
             font-weight: 600;
-            font-size: 0.78rem;
+            font-size: 0.75rem;
             font-family: var(--font-mono);
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
             transition: all 0.2s;
+            -webkit-tap-highlight-color: transparent;
         }
 
         .pal-btn:hover { border-color: var(--text-muted); color: var(--text); }
-        .pal-btn.current { border: 2px solid white !important; color: white; transform: scale(1.12); box-shadow: 0 0 0 3px rgba(255,255,255,0.1); }
+        .pal-btn.current { border: 2px solid white !important; color: white; transform: scale(1.1); box-shadow: 0 0 0 3px rgba(255,255,255,0.1); }
         .pal-ans { background: rgba(16,185,129,0.15); border-color: rgba(16,185,129,0.4); color: var(--success); }
         .pal-rev { background: rgba(245,158,11,0.15); border-color: rgba(245,158,11,0.4); color: var(--warning); }
         .pal-lock { background: rgba(15,118,110,0.15); border-color: rgba(15,118,110,0.4); color: #34d399; }
@@ -908,39 +915,40 @@
         .palette-legend {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 6px;
+            gap: 5px;
         }
 
         .leg-item {
             display: flex;
             align-items: center;
             gap: 6px;
-            font-size: 0.72rem;
+            font-size: 0.7rem;
             color: var(--text-muted);
         }
 
         .leg-dot {
-            width: 10px;
-            height: 10px;
+            width: 9px;
+            height: 9px;
             border-radius: 3px;
+            flex-shrink: 0;
         }
 
         .palette-stats {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 8px;
+            gap: 7px;
         }
 
         .stat-pill {
             background: var(--card2);
             border: 1px solid var(--card-border);
             border-radius: 10px;
-            padding: 10px 12px;
+            padding: 8px 10px;
             text-align: center;
         }
 
-        .stat-pill-value { font-size: 1.3rem; font-weight: 800; color: #fff; }
-        .stat-pill-label { font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
+        .stat-pill-value { font-size: 1.2rem; font-weight: 800; color: #fff; }
+        .stat-pill-label { font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
 
         .btn-submit-exam {
             background: linear-gradient(135deg, rgba(244,63,94,0.8), rgba(244,63,94,1));
@@ -958,6 +966,7 @@
             align-items: center;
             justify-content: center;
             gap: 7px;
+            -webkit-tap-highlight-color: transparent;
         }
 
         .btn-submit-exam:hover { background: var(--error); box-shadow: 0 6px 16px rgba(244,63,94,0.35); transform: translateY(-1px); }
@@ -1046,7 +1055,7 @@
         }
 
         .cand-row + .cand-row { border-top: 1px solid var(--card-border); }
-        .cand-key { color: var(--text-muted); }
+        .cand-key { color: var(--text-muted); flex-shrink: 0; margin-right: 1rem; }
         .cand-val { font-weight: 600; color: var(--text); text-align: right; }
 
         .cloud-status {
@@ -1089,22 +1098,166 @@
         .modal-text { font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem; }
         .modal-actions { display: flex; gap: 10px; }
 
-        /* RESPONSIVE */
-        @media (max-width: 900px) {
-            .container.exam-mode .exam-wrapper { grid-template-columns: 1fr; }
-            .exam-topbar { grid-column: 1; }
-            .palette-panel { position: static; }
-            .palette-grid { grid-template-columns: repeat(8, 1fr); max-height: 180px; }
-            .quiz-info-grid { grid-template-columns: repeat(3, 1fr); }
-            .detail-grid { grid-template-columns: repeat(2, 1fr); }
-            .req-list { grid-template-columns: 1fr; }
-            .nav-buttons { gap: 6px; }
+        /* ═══════════════════════════════════════════════
+           DESKTOP: side-by-side layout (≥ 768px)
+        ═══════════════════════════════════════════════ */
+        @media (min-width: 768px) {
+            .container.exam-mode .exam-wrapper {
+                grid-template-columns: 1fr 300px;
+                padding: 1.25rem;
+                gap: 1.25rem;
+            }
+
+            .exam-topbar { grid-column: 1 / -1; }
+
+            .progress-bar-outer { width: 140px; }
+
+            .question-panel { padding: 1.75rem; }
+
+            .q-text { font-size: 1.1rem; }
+
+            .palette-grid {
+                grid-template-columns: repeat(5, 1fr);
+                max-height: 240px;
+                overflow-y: auto;
+                padding-right: 2px;
+            }
+
+            .palette-grid::-webkit-scrollbar { width: 4px; }
+            .palette-grid::-webkit-scrollbar-track { background: var(--card-border); border-radius: 100px; }
+            .palette-grid::-webkit-scrollbar-thumb { background: var(--card-border-light); border-radius: 100px; }
+
+            .palette-panel { position: sticky; top: 1.25rem; }
         }
 
-        @media (max-width: 500px) {
-            .container { padding: 2rem 1.5rem; }
+        @media (min-width: 1024px) {
+            .container.exam-mode .exam-wrapper {
+                grid-template-columns: 1fr 340px;
+                padding: 1.5rem;
+                gap: 1.5rem;
+            }
+
+            .progress-bar-outer { width: 160px; }
+
+            .question-panel { padding: 2rem; }
+
+            .exam-subject-title { font-size: 1rem; }
+        }
+
+        /* ═══════════════════════════════════════════════
+           MOBILE: single-column, compact (< 768px)
+        ═══════════════════════════════════════════════ */
+        @media (max-width: 767px) {
+            body {
+                align-items: flex-start;
+            }
+
+            .container {
+                width: 100%;
+                border-radius: 20px;
+                padding: 2rem 1.25rem;
+            }
+
+            .container.exam-mode {
+                border-radius: 0;
+            }
+
+            .container.exam-mode .exam-wrapper {
+                display: flex;
+                flex-direction: column;
+                padding: 0.75rem;
+                gap: 0.75rem;
+                min-height: 100svh;
+            }
+
+            /* Top bar: more compact on mobile */
+            .exam-topbar {
+                border-radius: 12px;
+                padding: 0.65rem 0.9rem;
+                margin-bottom: 0;
+                flex-wrap: nowrap;
+                gap: 0.5rem;
+            }
+
+            .exam-subject-title { font-size: 0.82rem; }
+            .exam-progress-text { font-size: 0.7rem; }
+
+            .progress-wrap { display: none; } /* hide progress bar on small screens — palette shows it */
+
+            .timer-box { font-size: 0.9rem; padding: 6px 10px; }
+
+            /* Question panel */
+            .question-panel {
+                border-radius: 12px;
+                padding: 1rem;
+            }
+
+            .q-text { font-size: 0.95rem; margin-bottom: 1rem; }
+
+            .option-btn { padding: 11px 12px; font-size: 0.88rem; margin-bottom: 7px; }
+
+            .nav-buttons { gap: 5px; }
+
+            .btn-nav {
+                padding: 10px 6px;
+                font-size: 0.72rem;
+                min-width: 0;
+            }
+
+            /* Palette panel on mobile: compact horizontal strip */
+            .palette-panel {
+                border-radius: 12px;
+                padding: 1rem;
+                gap: 0.75rem;
+            }
+
+            .palette-grid {
+                grid-template-columns: repeat(8, 1fr);
+                gap: 5px;
+            }
+
+            .pal-btn { font-size: 0.68rem; border-radius: 6px; }
+
+            .palette-stats {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 6px;
+            }
+
+            .stat-pill { padding: 6px 8px; }
+            .stat-pill-value { font-size: 1rem; }
+            .stat-pill-label { font-size: 0.6rem; }
+
+            .palette-legend {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 4px;
+            }
+
+            .leg-item { font-size: 0.62rem; gap: 4px; }
+
+            /* Dashboard & other screens */
             .main-title { font-size: 1.6rem; }
-            .quiz-info-grid { grid-template-columns: 1fr 1fr; }
+
+            .quiz-info-grid { grid-template-columns: repeat(3, 1fr); }
+
+            .detail-grid { grid-template-columns: repeat(3, 1fr); }
+
+            .req-list { grid-template-columns: 1fr; }
+
+            .profile-banner { flex-wrap: wrap; }
+            .session-time { width: 100%; text-align: left; }
+
+            .modal { padding: 1.5rem; }
+        }
+
+        @media (max-width: 400px) {
+            .palette-grid { grid-template-columns: repeat(7, 1fr); }
+
+            .palette-stats { grid-template-columns: repeat(2, 1fr); }
+            .palette-legend { grid-template-columns: repeat(2, 1fr); }
+
+            .nav-buttons { flex-wrap: wrap; }
+            .btn-nav { flex-basis: calc(50% - 3px); }
+            .btn-next, .btn-prev { order: -1; }
         }
     </style>
 </head>
@@ -1153,9 +1306,7 @@
         </div>
 
         <div class="input-group">
-            <div class="input-label">
-                <span>Password</span>
-            </div>
+            <div class="input-label"><span>Password</span></div>
             <div class="input-wrap">
                 <span class="input-icon">🔑</span>
                 <input type="password" id="login-pass" placeholder="Enter password" autocomplete="off" oncopy="return false" onpaste="return false" onkeydown="if(event.key==='Enter') attemptLogin()">
@@ -1290,7 +1441,7 @@
             <!-- TOP BAR -->
             <div class="exam-topbar">
                 <div class="exam-topbar-left">
-                    <div>
+                    <div style="min-width:0;">
                         <div class="exam-subject-title" id="exam-header-title"></div>
                         <div class="exam-progress-text" id="q-count"></div>
                     </div>
@@ -1366,19 +1517,16 @@
 </div>
 
 <script>
-    // ─── CONFIGURATION ───────────────────────────────────────────────
     const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/peacepy/evs-assessment/refs/heads/main/data.json';
     const GOOGLE_APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzFVESN9Kc-Q_cElCws7B4vRJTq6n7emoT0w32SmTxZy5AXbXQxuKUV8mIGMpfMIO_Z/exec';
-    const PASSWORD_CHANGE_URL = GOOGLE_APP_SCRIPT_URL; // Same endpoint, different action
+    const PASSWORD_CHANGE_URL = GOOGLE_APP_SCRIPT_URL;
 
     let db = { students: {}, quizzes: [] };
     let quizActive = false;
     let userAnswers = [];
     let qStatus = [];
     let sessionStart = null;
-
-    // Runtime password store (NOT secure for production — use backend auth)
-    let runtimePasswords = {}; // { studentId: newPassword }
+    let runtimePasswords = {};
 
     let state = {
         id: '', name: '', course: '', branch: '', section: '', year: '',
@@ -1399,7 +1547,6 @@
         }
     }
 
-    // ─── INIT ─────────────────────────────────────────────────────────
     async function init() {
         const btn = document.getElementById('login-btn');
         const txt = document.getElementById('login-btn-text');
@@ -1427,7 +1574,6 @@
         }
     }
 
-    // ─── ANTI-CHEAT ───────────────────────────────────────────────────
     document.addEventListener('visibilitychange', () => {
         if (document.hidden && quizActive) {
             quizActive = false;
@@ -1451,7 +1597,6 @@
         }
     };
 
-    // ─── TOAST ────────────────────────────────────────────────────────
     function showToast(type, icon, msg, duration = 4000) {
         const tc = document.getElementById('toast-container');
         const toast = document.createElement('div');
@@ -1461,21 +1606,10 @@
         setTimeout(() => { toast.style.opacity = '0'; toast.style.transition = 'opacity 0.3s'; setTimeout(() => toast.remove(), 300); }, duration);
     }
 
-    // ─── PASSWORD HELPERS ─────────────────────────────────────────────
     function togglePwd(inputId, btn) {
         const inp = document.getElementById(inputId);
         if (inp.type === 'password') { inp.type = 'text'; btn.innerText = '🙈'; }
         else { inp.type = 'password'; btn.innerText = '👁'; }
-    }
-
-    function checkPassStrength(pass) {
-        let score = 0;
-        if (pass.length >= 8) score++;
-        if (/[A-Z]/.test(pass)) score++;
-        if (/[a-z]/.test(pass)) score++;
-        if (/\d/.test(pass)) score++;
-        if (/[^A-Za-z0-9]/.test(pass)) score++;
-        return score;
     }
 
     function validateNewPass() {
@@ -1500,22 +1634,19 @@
             else el.classList.remove('met');
         }
 
-        // Strength bar
         const colors = ['#f43f5e', '#f43f5e', '#f59e0b', '#f59e0b', '#10b981', '#10b981'];
         const fill = document.getElementById('strength-fill');
         fill.style.width = `${(met / 6) * 100}%`;
         fill.style.background = colors[met - 1] || '#f43f5e';
 
-        // Match
         const matchErr = document.getElementById('cp-match-err');
-        if (confirm && confirm !== newPass) { matchErr.style.display = 'block'; }
-        else { matchErr.style.display = 'none'; }
+        if (confirm && confirm !== newPass) matchErr.style.display = 'block';
+        else matchErr.style.display = 'none';
 
         const allMet = Object.values(reqs).every(Boolean);
         cpBtn.disabled = !(allMet && confirm === newPass && confirm.length > 0 && current.length > 0);
     }
 
-    // ─── LOGIN ────────────────────────────────────────────────────────
     async function attemptLogin() {
         const id = document.getElementById('login-id').value.trim();
         const pass = document.getElementById('login-pass').value.trim();
@@ -1524,7 +1655,6 @@
         const spinner = document.getElementById('login-spinner');
 
         const user = db.students[id];
-        // Check runtime overridden password first, then db
         const effectivePass = runtimePasswords[id] || String(user?.pass || '');
 
         if (!user) { showToast('error', '🚫', 'Student ID not found.'); return; }
@@ -1554,7 +1684,6 @@
         btn.disabled = false;
     }
 
-    // ─── CHANGE PASSWORD ──────────────────────────────────────────────
     function showChangePassword() {
         document.getElementById('login-screen').style.display = 'none';
         document.getElementById('change-password-screen').style.display = 'block';
@@ -1568,7 +1697,6 @@
         const txt = document.getElementById('cp-btn-text');
         const spinner = document.getElementById('cp-spinner');
 
-        // Verify current
         const user = db.students[state.id];
         const effectiveCurrent = runtimePasswords[state.id] || String(user?.pass || '');
         if (current !== effectiveCurrent) {
@@ -1580,18 +1708,14 @@
         txt.innerText = 'Updating…';
 
         try {
-            // Send to backend (best effort)
             await fetch(GOOGLE_APP_SCRIPT_URL, {
-                method: 'POST',
-                mode: 'no-cors',
+                method: 'POST', mode: 'no-cors',
                 body: JSON.stringify({ action: 'changePassword', studentId: state.id, newPass })
             });
-        } catch (e) { /* non-critical */ }
+        } catch (e) {}
 
-        // Store in runtime memory for this session
         runtimePasswords[state.id] = newPass;
         state.mustChangePass = false;
-
         await new Promise(r => setTimeout(r, 800));
 
         btn.disabled = false;
@@ -1605,7 +1729,6 @@
         renderDashboard();
     }
 
-    // ─── DASHBOARD ────────────────────────────────────────────────────
     function renderDashboard() {
         const dash = document.getElementById('subject-dashboard');
         dash.style.display = 'block';
@@ -1660,7 +1783,6 @@
     async function checkProgress(quizTitle, index) {
         const btn = document.getElementById(`btn-prog-${index}`);
         btn.innerText = '…'; btn.disabled = true;
-
         try {
             const url = `${GOOGLE_APP_SCRIPT_URL}?action=checkStatus&studentId=${state.id}&quizTitle=${encodeURIComponent(quizTitle)}`;
             const res = await fetch(url);
@@ -1736,7 +1858,6 @@
         document.getElementById('subject-dashboard').style.display = 'block';
     }
 
-    // ─── EXAM ENGINE ──────────────────────────────────────────────────
     function startQuiz() {
         quizActive = true;
         document.getElementById('dashboard-screen').style.display = 'none';
@@ -1795,7 +1916,6 @@
             grid.appendChild(btn);
         }
 
-        // Stats
         const ans = qStatus.filter(s => s === 'answered').length;
         const rev = qStatus.filter(s => s === 'review').length;
         const lck = qStatus.filter(s => s === 'locked').length;
@@ -1808,7 +1928,6 @@
             <div class="stat-pill"><div class="stat-pill-value" style="color:#34d399;">${lck}</div><div class="stat-pill-label">Locked</div></div>
         `;
 
-        // Progress bar
         const total = state.activeQuestions.length;
         const done = ans + lck;
         document.getElementById('progress-bar').style.width = `${(done / total) * 100}%`;
@@ -1870,7 +1989,6 @@
         else loadQuestion(state.qIndex);
     }
 
-    // ─── SUBMIT MODAL ─────────────────────────────────────────────────
     function confirmSubmit() {
         const unanswered = qStatus.filter(s => s === 'unanswered').length;
         const review = qStatus.filter(s => s === 'review').length;
@@ -1885,7 +2003,6 @@
     function closeModal() { document.getElementById('submit-modal').classList.remove('active'); }
     function doSubmit() { closeModal(); calculateScoreAndSubmit("Completed Normally"); }
 
-    // ─── SCORING & RESULT ─────────────────────────────────────────────
     function calculateScoreAndSubmit(statusMsg) {
         quizActive = false;
         clearInterval(timerInterval);
@@ -1907,7 +2024,6 @@
         const total = state.activeQuestions.length;
         const pct = Math.round((state.score / total) * 100);
 
-        // Score ring
         document.getElementById('score-ring').style.setProperty('--pct', `${pct}%`);
         document.getElementById('score-value').innerText = state.score;
         document.getElementById('score-denom').innerText = `/ ${total}`;
@@ -1960,14 +2076,12 @@
             cloudEl.innerText = '⏳ Archiving result to faculty database…';
             try {
                 await fetch(GOOGLE_APP_SCRIPT_URL, {
-                    method: 'POST',
-                    mode: 'no-cors',
+                    method: 'POST', mode: 'no-cors',
                     body: JSON.stringify({
                         studentId: state.id, name: state.name, course: state.course,
                         branch: state.branch, section: state.section, year: state.year,
                         score: `${state.score} / ${state.activeQuestions.length}`,
-                        status: statusType,
-                        quizTitle
+                        status: statusType, quizTitle
                     })
                 });
                 cloudEl.innerHTML = `<span style="color:var(--success);">✅ Result secured. You may return to the dashboard.</span>`;
