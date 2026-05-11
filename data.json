@@ -3149,7 +3149,7 @@
       "pass": "EVSQUIZ"
     }
   },
-  "dpm_questions":[
+  "dpm_questions" : [
   {
     "q": "Which of the following best describes 'exposure' in the disaster risk framework?",
     "opts": [
@@ -6150,7 +6150,7 @@
     ],
     "ans": 1
   }
-]
+],
   "evs_questions": [
   {
     "q": "What is the primary goal of environmental studies?",
