@@ -3149,7 +3149,3009 @@
       "pass": "EVSQUIZ"
     }
   },
-  "questions": [
+  "dpm_questions": [
+  {
+    "q": "Which of the following best describes 'exposure' in the disaster risk framework?",
+    "opts": [
+      "A community's capacity to resist and recover from disaster impacts",
+      "The presence of people, assets, and systems situated in hazard-prone locations",
+      "A business entity's financial exposure to volatile market conditions",
+      "A region's level of media attention following a major disaster"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "A 'disaster risk profile' of a country typically documents:",
+    "opts": [
+      "Tourism statistics and cultural heritage",
+      "Hazards, exposure, vulnerability, and coping capacity relevant to that country",
+      "Economic growth projections for the next decade",
+      "Short-term weather forecasts only"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The Sendai Framework for Disaster Risk Reduction (2015–2030) was adopted in which country?",
+    "opts": [
+      "Japan",
+      "India",
+      "USA",
+      "Switzerland"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Disaster risk reduction' (DRR) aims to:",
+    "opts": [
+      "Eliminate all natural hazards",
+      "Reduce disaster losses and vulnerabilities",
+      "Replace government authority",
+      "Focus only on post-disaster relief"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Systemic risk' in the disaster context refers to:",
+    "opts": [
+      "Risk confined to individual households",
+      "Interconnected risks that can cascade across sectors, boundaries, and countries",
+      "Risks faced only by public sector institutions",
+      "Risks recorded in national computer databases"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is an example of a natural hazard?",
+    "opts": [
+      "Industrial explosion",
+      "Oil spill",
+      "Earthquake",
+      "Cyber attack"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Social resilience' is enhanced by:",
+    "opts": [
+      "Reducing community interactions and social gatherings",
+      "Strong social networks, trust, and collective action within communities",
+      "Individual wealth accumulation alone",
+      "Government restriction of community assemblies"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which factor does NOT directly influence vulnerability?",
+    "opts": [
+      "Poverty",
+      "Social exclusion",
+      "Political instability",
+      "High GDP alone reducing all risk"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Underlying risk drivers' that create vulnerability include:",
+    "opts": [
+      "Only geographic location and topography",
+      "Poverty, inequality, poor governance, environmental degradation, and rapid urbanization",
+      "Strong community social networks and collective action",
+      "Effective disaster management systems and institutions"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Transboundary hazards' are hazards that:",
+    "opts": [
+      "Affect only a single country",
+      "Cross national boundaries and require international cooperation for management",
+      "Are limited to border towns only",
+      "Originate exclusively from the sea"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which demographic characteristic most significantly amplifies vulnerability to disasters?",
+    "opts": [
+      "High literacy and education levels",
+      "Advanced or very young age combined with poverty and social marginalization",
+      "Residing in large metropolitan areas",
+      "Ownership of personal communication devices"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Gender mainstreaming in DRR involves:",
+    "opts": [
+      "Excluding men from all disaster planning processes",
+      "Integrating gender perspectives across all phases of disaster risk assessment and management",
+      "Creating entirely separate disaster plans for each gender",
+      "Focusing exclusively on women's physical safety"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Vulnerability reduction' in DRR involves:",
+    "opts": [
+      "Increasing the frequency of hazards",
+      "Addressing root causes of vulnerability such as poverty, inequality, and poor governance",
+      "Only providing emergency shelters after events",
+      "Reducing the number of government officials"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The concept of 'risk transfer' in DRR includes:",
+    "opts": [
+      "Moving vulnerable populations to safe areas",
+      "Shifting financial risk to third parties through insurance, bonds, or contingency funds",
+      "Transferring government responsibilities entirely to NGOs",
+      "Moving infrastructure to lower-risk zones"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Disaster diplomacy' explores whether:",
+    "opts": [
+      "Military forces can resolve diplomatic conflicts after disasters",
+      "Disaster-related activities can initiate or improve peaceful relations between otherwise hostile nations",
+      "Diplomatic missions can prevent natural disasters from occurring",
+      "International courts can adjudicate disaster liability claims"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Social capital' in the context of DRR refers to:",
+    "opts": [
+      "Financial assets owned by society",
+      "Networks, trust, and norms of reciprocity that strengthen community resilience",
+      "Government social welfare budgets",
+      "Number of active social media users in a community"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Livelihood diversification' reduces disaster risk by:",
+    "opts": [
+      "Limiting the occupational options available in a community",
+      "Reducing dependence on a single income source so households can better absorb disaster shocks",
+      "Encouraging large-scale rural-to-urban migration",
+      "Increasing agricultural output exclusively in flood-prone areas"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Physical resilience' in communities refers to:",
+    "opts": [
+      "Resilience of individual physical fitness levels",
+      "Durability and resistance of built infrastructure and environment to withstand hazard impacts",
+      "Resistance of government physical assets only",
+      "Psychological strength of community members"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The concept of 'building back better' refers to:",
+    "opts": [
+      "Restoring to exactly pre-disaster conditions",
+      "Reconstructing with improved resilience and reduced risk",
+      "Rebuilding in the same hazardous location",
+      "Prioritizing speed over quality in reconstruction"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Technological or man-made hazards include:",
+    "opts": [
+      "Earthquakes and tsunamis",
+      "Industrial accidents and nuclear disasters",
+      "Droughts and cyclones",
+      "Epidemics and floods"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following best describes 'structural vulnerability'?",
+    "opts": [
+      "Vulnerability arising from poor building design and unsafe construction practices",
+      "Vulnerability caused solely by social hierarchies",
+      "Vulnerability of political systems",
+      "Risk posed by natural geological formations"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Economic vulnerability to disasters is best illustrated by:",
+    "opts": [
+      "High levels of household savings and financial reserves",
+      "Dependence on a single crop or industry with no social safety nets",
+      "Access to diversified sources of income",
+      "Proximity to established commodity markets"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "A 'hazard' in disaster terminology refers to:",
+    "opts": [
+      "A community's inability to respond",
+      "A threatening event with potential to cause harm",
+      "Past damage from floods",
+      "The recovery phase after a disaster"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Resilience is best described as:",
+    "opts": [
+      "Inability to cope with disasters",
+      "Capacity to absorb, adapt, and recover from hazards",
+      "Absence of all risk factors",
+      "Government-led disaster response"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is NOT a dimension of resilience?",
+    "opts": [
+      "Absorptive capacity",
+      "Transformative capacity",
+      "Destructive capacity",
+      "Adaptive capacity"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following increases physical vulnerability?",
+    "opts": [
+      "Strong building codes",
+      "Location in floodplains",
+      "High community awareness",
+      "Effective early warning systems"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Disaster risk education' aims to:",
+    "opts": [
+      "Train only government officials and emergency managers",
+      "Build awareness, knowledge, and skills in communities to reduce disaster risk",
+      "Document historical disaster events for research",
+      "Provide financial compensation to disaster victims"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Disaster risk financing' involves:",
+    "opts": [
+      "Only providing post-disaster relief funds",
+      "Pre-arranged financial mechanisms to fund disaster risk management before and after events",
+      "Taxing affected communities after disasters",
+      "International debt relief programs only"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Ecological resilience' in the context of DRR refers to:",
+    "opts": [
+      "Resilience of government ecological departments",
+      "The capacity of ecosystems to absorb disturbances and maintain their functions",
+      "Economic resilience of farming communities",
+      "Resilience of ecological research institutions"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Disaster risk governance refers to:",
+    "opts": [
+      "Military control during disasters",
+      "Systems, institutions, and policies for managing risk",
+      "Only NGO-led interventions",
+      "Relief distribution planning"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Social vulnerability is influenced by:",
+    "opts": [
+      "Only geographic location",
+      "Poverty, inequality, and marginalization",
+      "Strong governance alone",
+      "High literacy rates"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Coping capacity' refers to:",
+    "opts": [
+      "The ability of a community to manage adverse conditions",
+      "Rate of economic growth",
+      "Degree of urbanization",
+      "Amount of rainfall"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Disaster loss accounting' helps in:",
+    "opts": [
+      "Punishing those responsible for causing disasters",
+      "Systematically recording disaster losses to improve risk assessments and policy planning",
+      "Calculating national tourism revenue",
+      "Preparing military defense budgets"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Urbanization increases disaster risk primarily by:",
+    "opts": [
+      "Reducing population exposure to hazards",
+      "Concentrating people and assets in areas often lacking adequate planning and infrastructure",
+      "Automatically improving building standards in cities",
+      "Reducing surface runoff through increased vegetation"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following best defines a 'disaster'?",
+    "opts": [
+      "A natural phenomenon that causes inconvenience",
+      "A serious disruption of society causing widespread losses beyond coping capacity",
+      "Any rainfall above seasonal average",
+      "A political event affecting government functioning"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The term 'multi-hazard approach' means:",
+    "opts": [
+      "Focusing on one major hazard",
+      "Addressing multiple hazards simultaneously in risk reduction",
+      "Ignoring low-frequency hazards",
+      "Prioritizing industrial hazards only"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which organisation defines disaster as 'a serious disruption of the functioning of a community'?",
+    "opts": [
+      "WHO",
+      "World Bank",
+      "UNDRR",
+      "UNESCO"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Psychosocial vulnerability after a disaster refers to:",
+    "opts": [
+      "Physical injuries only",
+      "Mental health impacts and social disruption",
+      "Economic losses",
+      "Loss of infrastructure"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Livelihood diversification' reduces disaster risk by:",
+    "opts": [
+      "Limiting the range of occupations available in a community",
+      "Reducing dependence on a single income source so households can better absorb disaster shocks",
+      "Encouraging large-scale migration to urban centres",
+      "Increasing agricultural output exclusively in flood-prone areas"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Disaster diplomacy' is a concept that describes:",
+    "opts": [
+      "Diplomatic negotiations between nations in active conflict",
+      "The use of disaster-related cooperation to foster or improve relations between countries",
+      "Government press briefings held immediately after major disasters",
+      "Coordination among NGOs during humanitarian relief operations"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following correctly describes 'exposure' as a component of disaster risk?",
+    "opts": [
+      "A community's capacity to resist and recover from hazard impacts",
+      "The presence of people, assets, and systems in hazard-prone locations",
+      "A business entity's financial exposure to volatile market conditions",
+      "A region's level of media coverage following a major disaster"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Information asymmetry' in disaster risk refers to:",
+    "opts": [
+      "Too much information equally available to all communities",
+      "Unequal access to risk information between governments, technical experts, and vulnerable communities",
+      "Asymmetric distribution of emergency relief supplies",
+      "Differences in media coverage of various disaster events"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Compound events' in disaster terminology refer to:",
+    "opts": [
+      "Events affecting only compound structures or facilities",
+      "Multiple hazardous events occurring simultaneously or sequentially that amplify overall impacts",
+      "Chemical compound hazards in industrial contexts only",
+      "Disasters documented in compound government administrative reports"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Exposure' in disaster risk refers to:",
+    "opts": [
+      "People/assets in hazard-prone zones",
+      "Level of government preparedness",
+      "Funding for relief operations",
+      "Availability of early warning systems"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Primary hazards can trigger secondary hazards. Which is an example?",
+    "opts": [
+      "Drought causing flood",
+      "Earthquake triggering tsunami",
+      "Heat wave causing snow",
+      "Cyclone causing earthquake"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is an example of a 'secondary hazard'?",
+    "opts": [
+      "An earthquake occurring in isolation",
+      "A tsunami triggered by an undersea earthquake",
+      "Heavy rainfall occurring independently",
+      "Industrial pollution unrelated to any primary event"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Disaster loss data is important because:",
+    "opts": [
+      "It helps plan vacations",
+      "It informs risk assessments and DRR planning",
+      "It replaces the need for hazard maps",
+      "It is used only by insurance companies"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Disaster risk information' systems are designed to:",
+    "opts": [
+      "Classify disaster victims by severity of injuries",
+      "Collect, analyze, and share data on hazards, exposure, and vulnerability to support decision-making",
+      "Only document historical disaster events",
+      "Manage government financial records"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Disaster risk is dynamic because:",
+    "opts": [
+      "Hazards are always the same",
+      "Vulnerability and capacity constantly change",
+      "Governments never change policies",
+      "Geography never changes"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Adaptive capacity' differs from 'coping capacity' in that:",
+    "opts": [
+      "They are identical concepts with different names",
+      "Adaptive capacity involves long-term transformation and learning while coping capacity addresses immediate stress",
+      "Coping capacity is more comprehensive than adaptive capacity",
+      "Only governments possess adaptive capacity"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which component reduces disaster risk by improving community capacity?",
+    "opts": [
+      "Increasing vulnerability",
+      "Building resilience",
+      "Enhancing exposure",
+      "Ignoring hazards"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following best represents a 'slow-onset' disaster?",
+    "opts": [
+      "Earthquake",
+      "Tsunami",
+      "Drought",
+      "Flash flood"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The UNDRR stands for:",
+    "opts": [
+      "United Nations Disaster Relief Region",
+      "United Nations Office for Disaster Risk Reduction",
+      "Universal Disaster Relief Response",
+      "United Nations Development and Risk Registry"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is a biological hazard?",
+    "opts": [
+      "Landslide",
+      "Pandemic",
+      "Earthquake",
+      "Cyclone"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Disaster preparedness means:",
+    "opts": [
+      "Actions taken after a disaster strikes",
+      "Actions taken before a disaster to improve response",
+      "Reconstruction of damaged infrastructure",
+      "Economic compensation for losses"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Sendai Framework' monitoring is conducted through:",
+    "opts": [
+      "Annual military reviews of disaster impacts",
+      "The Sendai Framework Monitor — an online tool tracking progress against global targets",
+      "National police reports on disaster-related crime",
+      "World Bank quarterly financial assessments"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Vulnerability mapping' involves:",
+    "opts": [
+      "Drawing maps of government office locations",
+      "Identifying and mapping at-risk populations, assets, and conditions that increase susceptibility to harm",
+      "Mapping of national tourism sites",
+      "Charting economic growth zones"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The 'risk governance' framework includes:",
+    "opts": [
+      "Only military coordination mechanisms",
+      "Policies, institutions, legislation, and decision-making processes for managing risk",
+      "Only post-disaster compensation mechanisms",
+      "International trade agreements"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "A 'risk atlas' is:",
+    "opts": [
+      "A map showing safe zones only",
+      "A spatial tool depicting hazard and risk information",
+      "A government policy document",
+      "A first-aid manual"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Indigenous knowledge in disaster management is recognized because:",
+    "opts": [
+      "It entirely replaces modern scientific methods",
+      "Local communities often possess traditional knowledge of hazard patterns and adaptive strategies",
+      "It is always more precise than satellite data",
+      "It applies only in remote rural settings"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Risk-sensitive land use planning' involves:",
+    "opts": [
+      "Developing all available land regardless of existing hazard risk",
+      "Incorporating hazard and risk information into decisions about where and how development occurs",
+      "Planning land use only for agricultural productivity purposes",
+      "Restricting all land use decisions to national government authority"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following represents a community's 'adaptive capacity'?",
+    "opts": [
+      "Inability to learn from past disasters",
+      "Ability to adjust to changes and recover from shocks",
+      "Total physical assets only",
+      "Number of government officials"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "A 'complex emergency' is characterized by:",
+    "opts": [
+      "Single-cause rapid onset event",
+      "Combination of conflict, displacement, and humanitarian crisis",
+      "Minor weather anomaly",
+      "Isolated infrastructure failure"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Fragile states' are more vulnerable to disaster impacts because:",
+    "opts": [
+      "They are exclusively located in tropical regions",
+      "Weak governance, limited institutional capacity, and conflict undermine preparedness and response",
+      "They have larger populations than stable countries",
+      "They receive significantly less international development aid"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is a characteristic of a 'rapid-onset' disaster?",
+    "opts": [
+      "Gradual development over months",
+      "Occurs suddenly with little warning",
+      "Always human-induced",
+      "Predictable with 100% accuracy"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The 'Yokohama Strategy' of 1994 is significant because it:",
+    "opts": [
+      "Established the first international peacekeeping force for disasters",
+      "Laid the foundation for people-centred prevention and preparedness that influenced subsequent DRR frameworks",
+      "Created the first international disaster insurance scheme",
+      "Established the UNDRR as a permanent UN body"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The Hyogo Framework for Action (HFA) was operative during:",
+    "opts": [
+      "1994–2004",
+      "2005–2015",
+      "2015–2030",
+      "2000–2010"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Residual risk' in DRR refers to:",
+    "opts": [
+      "Risk from residual chemical contamination",
+      "Risk that remains even after mitigation measures are applied",
+      "Risk that is deliberately retained for insurance purposes",
+      "Risk identified only after a disaster occurs"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Disaster risk reduction' and 'sustainable development' are related because:",
+    "opts": [
+      "They are fundamentally opposing goals",
+      "Reducing disaster risk is essential for achieving sustainable development outcomes",
+      "Sustainable development investments automatically increase disaster risk",
+      "They operate in completely separate policy domains"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Disaster risk literacy' means:",
+    "opts": [
+      "The ability to read official disaster management reports",
+      "The capacity of individuals and communities to understand, assess, and act on risk information",
+      "Literacy programs conducted after disaster events",
+      "Government documentation training in disaster record-keeping"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which term describes the potential loss (lives, property, livelihoods) caused by disaster?",
+    "opts": [
+      "Resilience",
+      "Risk",
+      "Hazard",
+      "Mitigation"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Vulnerability in disaster context means:",
+    "opts": [
+      "The capacity to withstand shocks",
+      "Physical strength of infrastructure",
+      "Conditions that increase susceptibility to harm",
+      "Number of people in a region"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The concept of 'safe cities' in DRR focuses on:",
+    "opts": [
+      "Cities that are geographically free from any natural hazards",
+      "Urban areas that integrate DRR into planning, governance, and infrastructure to reduce risk",
+      "Gated residential communities with enhanced private security systems",
+      "Cities ranked by their lowest recorded annual crime statistics"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The 'pressure and release' (PAR) model in disaster risk explains:",
+    "opts": [
+      "How water pressure causes dam failures",
+      "The relationship between root causes, dynamic pressures, and unsafe conditions that create vulnerability",
+      "Air pressure changes during cyclones",
+      "Pressure exerted by relief organizations on governments"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Disaster Risk is expressed as a function of:",
+    "opts": [
+      "Hazard + Vulnerability only",
+      "Hazard × Vulnerability / Capacity",
+      "Population × GDP",
+      "Rainfall × Temperature"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The 'International Decade for Natural Disaster Reduction (IDNDR)' was observed during:",
+    "opts": [
+      "1980–1990",
+      "1990–1999",
+      "2000–2009",
+      "2005–2015"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Prospective risk management' in DRR refers to:",
+    "opts": [
+      "Retrospective analysis of past disaster impacts only",
+      "Actions that address future risks that might be created by new development decisions",
+      "Application of prospect theory to disaster insurance pricing",
+      "Prospecting for natural resources in post-disaster zones"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The term 'hazard mapping' involves:",
+    "opts": [
+      "Drawing administrative boundaries",
+      "Identifying and mapping areas prone to hazards",
+      "Counting number of buildings",
+      "Assessing economic productivity"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Risk perception' is important in DRR because:",
+    "opts": [
+      "It has no influence on preparedness behaviour",
+      "Communities' understanding of risk shapes whether they take protective actions",
+      "Only government officials' risk perception matters",
+      "Risk perception is uniform across all populations"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "A 'hazard event' becomes a 'disaster' when:",
+    "opts": [
+      "It is reported in major international media",
+      "It overwhelms the coping capacity of the affected community causing significant losses",
+      "The government officially declares a state of emergency",
+      "It is recorded in international scientific databases"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is a component of 'institutional vulnerability'?",
+    "opts": [
+      "Strong governance and accountability mechanisms",
+      "Weak institutions, poor coordination, and inadequate legal frameworks",
+      "Abundance of trained disaster management personnel",
+      "High national budget allocation for DRR activities"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which is NOT a component of the disaster risk equation?",
+    "opts": [
+      "Hazard",
+      "Vulnerability",
+      "Exposure",
+      "Rainfall alone"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Systemic vulnerability' refers to:",
+    "opts": [
+      "Vulnerability confined to individual households",
+      "Interconnected vulnerabilities across social, economic, and governance systems that amplify disaster risk",
+      "Vulnerability recorded in national computer systems",
+      "Vulnerability of public water and sewage systems only"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is an indicator of high community resilience?",
+    "opts": [
+      "High dependence on a single external aid source",
+      "Diverse livelihoods, strong social networks, and effective local governance",
+      "Absence of any historical disaster experience",
+      "Centralized decision-making in all emergencies"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Mainstreaming DRR' means:",
+    "opts": [
+      "Addressing disasters only through specialized emergency agencies",
+      "Integrating disaster risk reduction into all sectors of development planning and policy",
+      "Focusing DRR exclusively on disaster-prone geographic regions",
+      "Creating a standalone DRR ministry separate from all other government functions"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Hazard frequency' in risk assessment refers to:",
+    "opts": [
+      "How often a hazard event is reported in the media",
+      "The likelihood of a hazard event occurring within a given time period",
+      "Number of government hazard alerts issued annually",
+      "Frequency of disaster relief operations in a region"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is NOT a characteristic of vulnerability?",
+    "opts": [
+      "It varies across different social groups",
+      "It is static and never changes over time",
+      "It is influenced by poverty and inequality",
+      "It can be reduced through capacity building"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which body in the UN system coordinates international disaster relief?",
+    "opts": [
+      "UNESCO",
+      "OCHA (Office for the Coordination of Humanitarian Affairs)",
+      "World Bank",
+      "International Monetary Fund"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Hazard zonation' is used to:",
+    "opts": [
+      "Demarcate areas exclusively for tourism development",
+      "Divide areas based on hazard risk level to guide land use and development decisions",
+      "Zone areas exclusively for industrial development",
+      "Mark boundaries of national parks"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Anticipatory action' in disaster risk reduction means:",
+    "opts": [
+      "Reviewing disaster history without taking action",
+      "Taking protective measures before a disaster strikes based on early warning forecasts",
+      "Responding to disasters only after they occur",
+      "Military pre-emptive operations in conflict zones"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The Yokohama Strategy (1994) emphasized:",
+    "opts": [
+      "Military response to disasters",
+      "Prevention, preparedness, and people-centred approaches",
+      "Post-disaster reconstruction only",
+      "International military aid"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Livelihood vulnerability' refers to:",
+    "opts": [
+      "Risk to roads and bridges",
+      "Dependence on climate-sensitive income sources",
+      "Loss of recreational facilities",
+      "Government job security"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Environmental degradation can:",
+    "opts": [
+      "Reduce disaster risk",
+      "Increase disaster risk by heightening vulnerability",
+      "Have no effect on hazard exposure",
+      "Always be reversed quickly"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "A 'risk assessment' involves:",
+    "opts": [
+      "Only counting past disasters",
+      "Identifying hazards, analyzing vulnerability, and estimating risk",
+      "Distributing relief supplies",
+      "Training rescue workers"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The 'cascade effect' in disasters refers to:",
+    "opts": [
+      "Rainfall patterns on steep mountain slopes",
+      "A sequence in which one disaster event triggers additional secondary disasters",
+      "Managed water flow in river systems",
+      "Staged distribution of relief materials across districts"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is a key distinction between a 'hazard' and a 'disaster'?",
+    "opts": [
+      "Hazards and disasters are identical in meaning",
+      "A hazard becomes a disaster only when it intersects with vulnerable communities and causes significant losses",
+      "Disasters are always natural while hazards are always man-made",
+      "A hazard refers only to past events while disaster refers to future risks"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Risk communication' is best defined as:",
+    "opts": [
+      "Communication between government ministries during emergencies",
+      "Interactive exchange of information about risk between experts, decision-makers, and the public",
+      "Media broadcasts documenting past disaster events",
+      "Scientific publications on hazard research only"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which international framework focuses specifically on disaster risk reduction?",
+    "opts": [
+      "Paris Agreement",
+      "Kyoto Protocol",
+      "Sendai Framework",
+      "Montreal Protocol"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Disaster risk communication' aims to:",
+    "opts": [
+      "Withhold hazard information to prevent public panic",
+      "Inform and empower at-risk communities to understand and act on hazard information",
+      "Share only post-disaster loss data with international donors",
+      "Distribute classified government assessments to the public"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Safe cities' initiatives in DRR focus on:",
+    "opts": [
+      "Creating cities that are geographically free from all natural hazards",
+      "Integrating disaster risk reduction into urban planning, governance, and infrastructure",
+      "Establishing gated residential communities with enhanced private security",
+      "Ranking cities by their lowest recorded annual crime rates"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which factor makes informal urban settlements particularly vulnerable to disasters?",
+    "opts": [
+      "Strong community social organization and networks",
+      "Poor construction quality, lack of basic services, and location in hazard-prone areas",
+      "High average household income levels",
+      "Widespread access to formal insurance products"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Income inequality increases disaster risk by:",
+    "opts": [
+      "Reducing overall population exposure to hazards",
+      "Concentrating poverty in areas with inadequate housing, services, and safety nets",
+      "Improving resource distribution during emergencies",
+      "Reducing the demand for humanitarian aid"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The Chernobyl nuclear disaster of 1986 is an example of:",
+    "opts": [
+      "A natural geophysical hazard",
+      "A technological/industrial disaster with long-term radioactive contamination",
+      "A biological disaster",
+      "A hydro-meteorological event"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Disasters are broadly classified into:",
+    "opts": [
+      "Only natural and technological",
+      "Natural, man-made/technological, and complex emergencies",
+      "Only biological and chemical",
+      "Rapid-onset only"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Disaster displacement' at the international level is addressed by:",
+    "opts": [
+      "The Geneva Convention on armed conflict exclusively",
+      "The Nansen Initiative and Guiding Principles on Internal Displacement",
+      "The Paris Agreement on climate change alone",
+      "The Sendai Framework for Disaster Risk Reduction alone"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Indirect economic losses from disasters include:",
+    "opts": [
+      "Destruction of buildings",
+      "Disruption of supply chains and loss of business",
+      "Number of injuries",
+      "Damage to rivers"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The 'DesInventar' database is a global tool for:",
+    "opts": [
+      "Managing international humanitarian aid distribution",
+      "Recording disaster loss and damage data at national and sub-national levels",
+      "Tracking tropical cyclone movements in real time",
+      "Managing earthquake early warning system operations"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Flash floods differ from riverine floods primarily in that:",
+    "opts": [
+      "Flash floods occur only in coastal areas",
+      "Flash floods develop rapidly with little warning while riverine floods build more slowly",
+      "Riverine floods are always more destructive",
+      "Flash floods are man-made events"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Child vulnerability during disasters is due to:",
+    "opts": [
+      "Their physical and psychological dependence on adults",
+      "High mobility and independence",
+      "Strong immune systems",
+      "Access to relief before adults"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following represents a secondary disaster impact following a major flood?",
+    "opts": [
+      "The initial floodwater inundation",
+      "Waterborne disease outbreaks and displacement of communities",
+      "The rainfall event that caused the flood",
+      "The government's fiscal response package"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Drought indices' such as the Standardized Precipitation Index (SPI) are used to:",
+    "opts": [
+      "Forecast earthquake probability",
+      "Monitor and classify the severity and spatial extent of drought conditions",
+      "Measure industrial water consumption levels",
+      "Track urban municipal water supply systems"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Water-borne diseases after floods are an example of which type of disaster impact?",
+    "opts": [
+      "Economic impact",
+      "Environmental impact",
+      "Health impact",
+      "Political impact"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Mortality risk' from natural hazards is generally highest in:",
+    "opts": [
+      "High-income countries with strong governance and institutions",
+      "Low-income countries with high hazard exposure and low adaptive capacity",
+      "Countries with the largest military forces",
+      "Countries with the highest total populations"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Internally Displaced Persons (IDPs) differ from refugees in that they:",
+    "opts": [
+      "Have crossed an international border seeking protection",
+      "Have remained within their own country despite being forced to flee their homes",
+      "Are exclusively displaced by man-made disasters",
+      "Are resettled permanently in new countries"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which best illustrates class-based vulnerability to disasters?",
+    "opts": [
+      "Wealthy communities living in well-built homes on high ground",
+      "Lower-income communities in poorly constructed housing on hazard-prone land with limited service access",
+      "Middle-class communities with comprehensive private insurance policies",
+      "Upper-class communities located near industrial zones"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Nuclear disasters are categorized as:",
+    "opts": [
+      "Natural hazards",
+      "Technological/man-made hazards",
+      "Biological hazards",
+      "Hydro-meteorological hazards"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Disability-inclusive DRR' requires:",
+    "opts": [
+      "Separate disaster management plans designed only for disabled persons",
+      "Active participation of persons with disabilities in DRR planning and implementation ensuring accessible services",
+      "Assigning persons with disabilities to specialized care facilities only",
+      "Excluding persons with disabilities from hazard-prone areas altogether"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Compound vulnerability' describes:",
+    "opts": [
+      "Vulnerability arising from a single isolated factor",
+      "Multiple overlapping vulnerabilities such as poverty, disability, and gender inequality that multiply disaster risk",
+      "Vulnerability of concrete compound structures",
+      "Risk from industrial chemical compounds"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The Richter scale measures:",
+    "opts": [
+      "Flood water level heights",
+      "Magnitude of earthquake energy release",
+      "Wind speed during tropical cyclones",
+      "Temperature of volcanic lava flows"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Differential impact' in disaster management refers to:",
+    "opts": [
+      "Uniform effect on all populations",
+      "Varying impact based on social, economic, and demographic factors",
+      "Impact felt only in rural areas",
+      "Government-decided priority areas"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Differential access to early warning systems is most closely linked to:",
+    "opts": [
+      "The number of weather satellites in orbit",
+      "Literacy levels, language barriers, poverty, and social exclusion",
+      "Total national investment in meteorological infrastructure",
+      "Distance from national weather forecasting centres"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which global trend is increasing urban disaster risk?",
+    "opts": [
+      "Rural to urban migration and informal settlements",
+      "Improved building codes in cities",
+      "Decline in population",
+      "Reforestation programs"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which sector faces the highest economic losses from agricultural disasters?",
+    "opts": [
+      "IT sector",
+      "Industrial manufacturing",
+      "Farming and rural livelihoods",
+      "Financial services"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Seismic retrofitting' of existing buildings refers to:",
+    "opts": [
+      "Installing new electrical systems in older buildings",
+      "Strengthening existing structures to improve resistance to earthquake-induced forces",
+      "Adding new floors to existing multi-storey buildings",
+      "Demolishing all old buildings that show damage from earthquakes"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Location-based vulnerability refers to:",
+    "opts": [
+      "Urban populations being always safer",
+      "Communities in flood plains, earthquake zones, or coastal areas facing higher risk",
+      "Distance from the national capital",
+      "Proximity to hospitals"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Food insecurity after a disaster is classified as which type of impact?",
+    "opts": [
+      "Economic only",
+      "Health and social impact",
+      "Political impact",
+      "Technological impact"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following best describes 'loss and damage' beyond adaptation in climate contexts?",
+    "opts": [
+      "Physical destruction of government buildings",
+      "Impacts from climate-related hazards that cannot be adapted to or avoided even with preparedness measures",
+      "Damage covered by standard insurance policies",
+      "Agricultural losses from seasonal droughts"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which global framework monitors disaster losses?",
+    "opts": [
+      "Kyoto Protocol",
+      "Sendai Framework Monitor",
+      "Paris Agreement",
+      "WHO Framework"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Glacial Lake Outburst Floods (GLOFs) are caused by:",
+    "opts": [
+      "Excessive urban rainfall overwhelming drainage systems",
+      "Sudden release of water from lakes dammed by glacial ice or moraines, often due to climate warming",
+      "Tidal surges along island coastlines",
+      "Industrial dam failures due to structural defects"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Environmental justice' in the context of disasters refers to:",
+    "opts": [
+      "Legal prosecution of environmental polluters only",
+      "The fair distribution of environmental risks and disaster impacts across all social groups regardless of income or race",
+      "Judicial processes for prosecuting environmental crime",
+      "International environmental law and treaty obligations"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Refugee crises following disasters are primarily driven by:",
+    "opts": [
+      "Voluntary decisions to seek better economic opportunities",
+      "Forced displacement due to disaster destruction or inability to return home safely",
+      "Government incentive programs for population relocation",
+      "Seasonal agricultural cycles"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Flood memory' in communities refers to:",
+    "opts": [
+      "Computer database systems storing historical flood data",
+      "Community recollection of past flood events that shapes current risk awareness and preparedness behaviour",
+      "Government archives of official flood damage documentation",
+      "Media archives of historical flood news coverage"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Sendai Framework Priority 1' focuses on:",
+    "opts": [
+      "Investing in DRR for resilience",
+      "Understanding disaster risk",
+      "Enhancing disaster preparedness for effective response",
+      "Strengthening disaster risk governance"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Social impact of disaster includes:",
+    "opts": [
+      "Only physical destruction of property",
+      "Disruption of social networks, displacement, and community breakdown",
+      "Increase in economic productivity",
+      "Reduction in crime rates"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Loss of cultural heritage sites during disasters is categorized as which type of impact?",
+    "opts": [
+      "Purely economic impact",
+      "Social and cultural impact",
+      "Political impact only",
+      "Technological impact"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following best describes a 'rapid-onset geophysical disaster'?",
+    "opts": [
+      "Drought developing over several months",
+      "Earthquake causing sudden and intense ground shaking with little warning",
+      "Desertification gradually expanding over decades",
+      "Sea level rise affecting coastlines over centuries"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The 'cone of uncertainty' is a concept primarily used in:",
+    "opts": [
+      "Earthquake magnitude prediction",
+      "Tropical cyclone track forecasting",
+      "Flood discharge modelling",
+      "Volcanic eruption monitoring"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Chronic disasters' differ from acute disasters in that:",
+    "opts": [
+      "They cause more immediate and concentrated fatalities",
+      "They develop gradually over time and persistently undermine community livelihoods and well-being",
+      "They are caused exclusively by deliberate human actions",
+      "They consistently affect only urban population centres"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'El Niño Southern Oscillation (ENSO)' is associated with:",
+    "opts": [
+      "Increased earthquake frequency in affected regions",
+      "Disruption of normal weather patterns causing droughts, floods, and cyclones globally",
+      "Industrial pollution of ocean systems",
+      "Nuclear contamination of Pacific Ocean waters"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which population group faces gender-based violence risks after disasters?",
+    "opts": [
+      "Men in formal employment",
+      "Women and girls in displacement camps",
+      "Government workers",
+      "Military personnel"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The 'humanitarian-development-peace nexus' in disaster contexts means:",
+    "opts": [
+      "Separating humanitarian, development, and peace operations completely",
+      "Integrating humanitarian, development, and peacebuilding approaches for more effective crisis response",
+      "Focusing exclusively on peacekeeping in disaster-affected fragile states",
+      "Merging military and civilian disaster operations"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Urban disasters' are characterized by:",
+    "opts": [
+      "Sparse population and low impact",
+      "High density, infrastructure complexity, and cascading failures",
+      "Limited media coverage",
+      "Low economic losses"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Persons with disabilities face increased disaster risk because:",
+    "opts": [
+      "They have more access to resources",
+      "They may face barriers in evacuation and accessing relief",
+      "Disabilities protect them from hazards",
+      "They are always prioritized in relief distribution"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "A 'disaster risk hotspot' is an area characterized by:",
+    "opts": [
+      "Low hazard frequency and high coping capacity",
+      "High hazard exposure combined with high social or economic vulnerability",
+      "Government-designated emergency response centres",
+      "Areas with the highest recorded rainfall intensity"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Climate risk insurance' schemes such as the African Risk Capacity aim to:",
+    "opts": [
+      "Eliminate all climate-related hazards in member countries",
+      "Provide rapid payouts to governments and communities following climate-triggered disasters to fund early response",
+      "Replace national disaster management systems",
+      "Fund international climate negotiations"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which sector is most severely impacted by droughts in India?",
+    "opts": [
+      "IT sector",
+      "Aviation",
+      "Agriculture and rural livelihoods",
+      "Real estate"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'NATECH' disasters refer to:",
+    "opts": [
+      "Natural disasters occurring in technically advanced countries",
+      "Natural hazard events that trigger technological disasters such as earthquakes causing industrial explosions",
+      "Nuclear technology accidents classified as natural events",
+      "Technology failures that initiate natural hazard processes"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Post-traumatic growth' following a disaster refers to:",
+    "opts": [
+      "Economic growth observed in the post-disaster reconstruction phase",
+      "Positive psychological changes and personal growth that can emerge following extreme adversity",
+      "Urban population growth in post-disaster reconstruction zones",
+      "Agricultural productivity growth after drought recovery"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Climate change is altering disaster patterns by:",
+    "opts": [
+      "Reducing the frequency of all hazard types equally",
+      "Increasing the intensity of extreme weather events and shifting hazard distributions geographically",
+      "Making all global regions equally safe from natural hazards",
+      "Only affecting polar and Arctic regions"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Climate change impacts disaster risk by:",
+    "opts": [
+      "Reducing frequency of extreme events",
+      "Increasing intensity and frequency of climate-related hazards",
+      "Having no correlation with disasters",
+      "Only affecting developed countries"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The concept of 'differential recovery' after disasters refers to:",
+    "opts": [
+      "Different types of construction materials used in rebuilding",
+      "Unequal rates and quality of recovery across social groups based on pre-existing inequalities",
+      "Staged government phased recovery planning processes",
+      "Different insurance claim settlement procedures for various asset types"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which group is most vulnerable during a disaster evacuation?",
+    "opts": [
+      "Young employed men",
+      "Elderly, children, and persons with disabilities",
+      "Government officials",
+      "NGO workers"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is classified as a hydro-meteorological disaster?",
+    "opts": [
+      "Earthquake",
+      "Volcano",
+      "Cyclone",
+      "Landslide from mining"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The 2004 Indian Ocean Tsunami was primarily triggered by:",
+    "opts": [
+      "A volcanic eruption in Indonesia",
+      "An undersea megathrust earthquake off the coast of Sumatra",
+      "A meteorological storm surge",
+      "Industrial activity in coastal areas"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which disaster type has shown the most significant increase in frequency due to climate change?",
+    "opts": [
+      "Volcanic eruptions",
+      "Earthquakes",
+      "Extreme weather events such as heat waves and heavy rainfall",
+      "Technological disasters"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Cascading disasters' are particularly dangerous in urban areas because:",
+    "opts": [
+      "Cities have more advanced early warning systems",
+      "High population density and infrastructure interdependence amplify the chain of impacts",
+      "Urban populations are better trained for emergencies",
+      "Cities always recover faster than rural areas"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The global disaster mortality trend since 1990 broadly shows:",
+    "opts": [
+      "A steady increase in deaths from all hazard types",
+      "An overall decline in deaths but a significant increase in economic losses from disasters",
+      "No discernible change in global mortality patterns",
+      "Highest mortality rates concentrated in high-income countries"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Differential access to early warning information is mainly related to:",
+    "opts": [
+      "Availability of mobile towers only",
+      "Literacy, language barriers, and social exclusion",
+      "Weather conditions",
+      "Number of meteorologists"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is an indirect social impact of a major disaster?",
+    "opts": [
+      "Collapse of buildings from structural damage",
+      "Breakdown of family structures and increased domestic violence",
+      "Physical injuries from falling debris on survivors",
+      "Crop failure in the immediately affected agricultural zone"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which type of flood is primarily caused by inadequate urban drainage systems during heavy rainfall?",
+    "opts": [
+      "Flash flood",
+      "Riverine flood",
+      "Urban/pluvial flood",
+      "Coastal storm surge flood"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Coastal communities face heightened vulnerability to:",
+    "opts": [
+      "Inland agricultural droughts only",
+      "Storm surges, cyclones, sea-level rise, and tsunami inundation",
+      "Desert dust storms",
+      "Permafrost degradation"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Climate-induced displacement refers to:",
+    "opts": [
+      "Voluntary migration for work",
+      "Forced movement of people due to climate-related hazards",
+      "Government relocation programs",
+      "Seasonal agricultural migration"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Heat waves primarily affect:",
+    "opts": [
+      "Coastal fishing communities",
+      "Elderly, outdoor workers, and urban poor",
+      "Mountain dwellers only",
+      "Only agricultural crops"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is classified as a geophysical hazard?",
+    "opts": [
+      "Cyclone",
+      "Drought",
+      "Volcano",
+      "Industrial chemical spill"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is a direct health impact of drought?",
+    "opts": [
+      "Respiratory infections from cold and damp conditions",
+      "Malnutrition, food insecurity, and waterborne diseases from degraded water quality",
+      "Injuries from structural collapses",
+      "Hearing loss from explosion events"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Age-based vulnerability during disasters primarily affects:",
+    "opts": [
+      "Working-age adults with stable incomes",
+      "Elderly persons and young children who have greater physical and support needs",
+      "Military-aged men",
+      "Government employees"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Humanitarian principles' guiding international disaster relief include:",
+    "opts": [
+      "Political alignment, economic efficiency, military coordination",
+      "Humanity, neutrality, impartiality, and independence",
+      "Speed, scale, security, and sustainability",
+      "Profitability, accountability, visibility, and impact"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Gender-based violence after disasters is primarily driven by:",
+    "opts": [
+      "Improved community safety and social cohesion in disaster contexts",
+      "Breakdown of social protection, displacement, and power imbalances in emergency settings",
+      "Increased law enforcement presence in affected areas",
+      "Better distribution of resources specifically to women"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The 'Global Assessment Report' (GAR) on Disaster Risk Reduction is published by:",
+    "opts": [
+      "World Bank",
+      "World Health Organization",
+      "UNDRR",
+      "International Red Cross"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Early recovery' after a disaster focuses on:",
+    "opts": [
+      "Immediate search and rescue of trapped survivors",
+      "Restoring basic services and livelihoods to bridge the gap between emergency relief and long-term development",
+      "Long-term urban infrastructure reconstruction planning",
+      "Financial auditing of all disaster response expenditures"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Health impacts of disasters include:",
+    "opts": [
+      "Only physical injuries",
+      "Injuries, disease outbreaks, malnutrition, and mental health issues",
+      "Improved community hygiene",
+      "Reduction in mortality always"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Soil erosion' as a consequence of deforestation primarily increases the risk of:",
+    "opts": [
+      "Earthquakes and tectonic activity",
+      "Landslides and downstream flooding affecting communities",
+      "Industrial accidents in affected regions",
+      "Drought conditions in normally humid areas"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Environmental impact of floods includes:",
+    "opts": [
+      "Improvement of soil quality only",
+      "Erosion, contamination of water sources, and biodiversity loss",
+      "Increased forest cover",
+      "Reduction in greenhouse gases"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Urban heat islands increase risk of:",
+    "opts": [
+      "Flash floods",
+      "Heat waves and heat-related illness",
+      "Landslides",
+      "Tsunamis"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Gender differential impacts of disasters mean:",
+    "opts": [
+      "Men and women are equally affected in all situations",
+      "Women often face higher vulnerability due to social inequalities",
+      "Disaster affects only women",
+      "Men are more vulnerable than women always"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Storm surge' associated with tropical cyclones is caused by:",
+    "opts": [
+      "Increased river discharge resulting from heavy rainfall",
+      "Wind-driven rise in sea level that inundates low-lying coastal areas",
+      "Tectonic uplift along active coastlines",
+      "Submarine volcanic activity on the ocean floor"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is a direct cause of urban flooding?",
+    "opts": [
+      "Decrease in impervious surfaces allowing infiltration",
+      "Increase in impervious surfaces reducing infiltration of rainwater",
+      "Expansion of urban green spaces and parks",
+      "Reduction in urban population density"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The phenomenon of 'liquefaction' during an earthquake causes:",
+    "opts": [
+      "Rivers to flood their banks",
+      "Saturated soil to behave like a liquid, destabilizing structures",
+      "Increased wind speeds",
+      "Disruption of electrical grids"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Volcanic eruptions are classified under which hazard category?",
+    "opts": [
+      "Hydro-meteorological",
+      "Biological",
+      "Geophysical",
+      "Technological"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "A pandemic is classified as which type of disaster?",
+    "opts": [
+      "Geophysical",
+      "Biological",
+      "Technological",
+      "Meteorological"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is a man-made disaster?",
+    "opts": [
+      "Earthquake",
+      "Flood from excessive rain",
+      "Bhopal Gas Tragedy",
+      "Tsunami"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Sphere Standards' in humanitarian response set minimum standards for:",
+    "opts": [
+      "Building construction in disaster zones",
+      "Water, food, shelter, health, and sanitation for disaster-affected populations",
+      "International financial aid disbursement",
+      "Military involvement in disaster relief"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following represents a 'biological hazard'?",
+    "opts": [
+      "Earthquake and ground shaking",
+      "Locust infestation devastating agricultural crops",
+      "Flash flooding of river valleys",
+      "Chemical plant explosion releasing toxins"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following best describes 'cascading disasters'?",
+    "opts": [
+      "A series of unrelated events",
+      "One disaster triggering a chain of further disasters",
+      "Government response to a single event",
+      "International aid operations"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following represents a 'complex emergency'?",
+    "opts": [
+      "A sudden flood",
+      "Syrian conflict causing displacement and humanitarian crisis",
+      "A mild earthquake",
+      "An industrial fire"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is a key characteristic of a 'megadisaster'?",
+    "opts": [
+      "Affects only a small localized community",
+      "Causes losses that overwhelm national coping capacity requiring massive international assistance",
+      "Is limited exclusively to urban areas",
+      "Can always be managed by a single government ministry"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Tsunami causes are primarily associated with:",
+    "opts": [
+      "Volcanic eruptions on land",
+      "Undersea earthquakes and seafloor displacement",
+      "Heavy rainfall",
+      "Industrial accidents"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Humanitarian logistics' in disaster response involves:",
+    "opts": [
+      "Recruiting and screening volunteers for disaster relief activities",
+      "Planning and managing the flow of people, supplies, and resources in disaster response operations",
+      "Media management and communications in active disaster zones",
+      "Financial auditing of humanitarian relief organizations"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Caste-based vulnerability in Indian disaster contexts means:",
+    "opts": [
+      "Upper castes face more risk",
+      "Marginalized castes often have less access to relief and recovery",
+      "Caste has no impact on disaster outcomes",
+      "All communities are equally served"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The Bhopal Gas Tragedy of 1984 is an example of:",
+    "opts": [
+      "Natural disaster",
+      "Industrial/technological disaster",
+      "Pandemic",
+      "Biological hazard"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Wildfires are increasing globally due to:",
+    "opts": [
+      "Reduced human activity",
+      "Climate change, drought, and land-use changes",
+      "Better firefighting alone",
+      "Increase in humidity"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which is a long-term environmental impact of a major disaster?",
+    "opts": [
+      "Temporary road closure",
+      "Permanent loss of biodiversity and ecosystem degradation",
+      "Reduced media coverage",
+      "Increased political stability"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Droughts are classified as which type of disaster onset?",
+    "opts": [
+      "Rapid-onset disaster",
+      "Slow-onset disaster",
+      "Complex emergency",
+      "Technological disaster"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Chronic poverty' increases disaster vulnerability by:",
+    "opts": [
+      "Providing stable income regardless of hazard impacts",
+      "Limiting access to safe housing, risk information, and social protection mechanisms",
+      "Reducing exposure to climate-related hazards",
+      "Enabling better disaster recovery through accumulated savings"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Socio-economic status affects disaster outcomes because:",
+    "opts": [
+      "Wealthier individuals have better access to safe housing, information, and recovery resources",
+      "Poverty always reduces exposure",
+      "Higher income areas are always in safe zones",
+      "Economic status is irrelevant to disaster recovery"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Seismic vulnerability' of a building primarily depends on:",
+    "opts": [
+      "Its colour, aesthetic design, and age only",
+      "Its structural design, construction materials, and adherence to building codes",
+      "Its distance from commercial shopping areas",
+      "The total floor area of the building only"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Economic impact of disasters is measured by:",
+    "opts": [
+      "Number of aftershocks",
+      "Direct losses (property, crops) and indirect losses (business disruption)",
+      "Rainfall levels",
+      "Temperature variation"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which is a major cause of landslides?",
+    "opts": [
+      "Strong sunshine",
+      "Heavy rainfall, deforestation, and seismic activity",
+      "Cold temperatures",
+      "Air pollution"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following represents a psychosocial impact of disaster?",
+    "opts": [
+      "Bridge collapse",
+      "PTSD and community trauma",
+      "Loss of agricultural land",
+      "Road damage"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Political impact of disasters can include:",
+    "opts": [
+      "Strengthening of all government systems",
+      "Loss of public trust, governance gaps, and political instability",
+      "Automatic improvement in policy",
+      "Reduction in corruption"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Inclusive disaster risk reduction' ensures that:",
+    "opts": [
+      "Only technically skilled community members participate in DRR activities",
+      "Marginalized groups including women, disabled persons, children, and elderly are involved in and benefit from DRR",
+      "DRR focuses exclusively on economic resilience and infrastructure protection",
+      "International organizations lead all DRR planning and implementation activities"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Panchayati Raj Institutions (PRIs) play which role in DRR?",
+    "opts": [
+      "Only financial auditing",
+      "Local-level planning, community mobilization, and implementing DRR activities",
+      "International coordination",
+      "Military deployment"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is a role of the Central Government in DRR?",
+    "opts": [
+      "Only providing financial assistance",
+      "Policy formulation, legislation, national plans, and coordination",
+      "Conducting local mock drills",
+      "Managing individual community projects"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Risk-informed development' means:",
+    "opts": [
+      "Ignoring disaster risk in the pursuit of rapid economic growth",
+      "Integrating disaster risk considerations into all development policies, plans, and investments",
+      "Developing only in areas with zero hazard exposure",
+      "Relying solely on post-disaster relief rather than pre-disaster planning"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Community participation in DRR is important because:",
+    "opts": [
+      "Communities always delay disaster response",
+      "Local communities have contextual knowledge and are first responders",
+      "Government agencies can manage all aspects alone",
+      "NGOs alone are sufficient for DRR"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Participatory vulnerability assessment' involves:",
+    "opts": [
+      "Only technical experts conducting closed risk assessments",
+      "Communities actively participating in identifying their own vulnerabilities and capacities",
+      "Government-led confidential risk assessment processes",
+      "International agencies independently assessing local risk without community input"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is a role of NGOs in disaster management?",
+    "opts": [
+      "Replacing government functions entirely",
+      "Complementing government efforts in relief, rehabilitation, and DRR advocacy",
+      "Only providing financial aid",
+      "Conducting military operations"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Vulnerability and Capacity Assessment' (VCA) is a tool used to:",
+    "opts": [
+      "Assess government financial capacity for DRR investment",
+      "Understand community vulnerabilities, capacities, and resources for disaster risk reduction",
+      "Evaluate military readiness for domestic disaster response",
+      "Measure infrastructure investment needs of national governments"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is an example of ecosystem-based disaster risk reduction?",
+    "opts": [
+      "Construction of concrete sea walls",
+      "Restoration of mangroves and wetlands to buffer coastal communities from storms",
+      "Building of underground bunkers",
+      "Installation of satellite tracking systems only"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The Hyogo Framework for Action 2005–2015 was succeeded by:",
+    "opts": [
+      "The Kyoto Protocol",
+      "The Paris Agreement",
+      "The Sendai Framework for Disaster Risk Reduction 2015–2030",
+      "The Yokohama Strategy 2015–2030"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Rapid damage assessment' after a disaster is conducted primarily to:",
+    "opts": [
+      "Assign legal liability for all disaster damages to responsible parties",
+      "Quickly estimate the extent of damage to guide immediate response and resource allocation decisions",
+      "Document disaster impacts exclusively for academic research purposes",
+      "Prepare media communications and public relations reports on disaster damage"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Sendai Framework Priority 3' focuses on:",
+    "opts": [
+      "Understanding disaster risk across its dimensions",
+      "Strengthening disaster risk governance to manage disaster risk",
+      "Investing in disaster risk reduction for resilience",
+      "Enhancing disaster preparedness for effective response"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The 'Sphere Handbook' in humanitarian response provides:",
+    "opts": [
+      "Construction guidelines for permanent government buildings",
+      "Minimum standards for humanitarian response including water, food, shelter, and health",
+      "Financial management guidelines for international NGOs",
+      "Legal protocols governing international disaster declarations"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Community Emergency Response Teams (CERTs) are trained to:",
+    "opts": [
+      "Conduct national policy reviews",
+      "Provide immediate local-level disaster response and first aid",
+      "Build structural mitigation works",
+      "Manage international aid"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The role of the private sector in DRR includes:",
+    "opts": [
+      "Replacing all government functions in disaster risk management",
+      "Business continuity planning, investing in resilient infrastructure, and supporting community DRR initiatives",
+      "Only providing financial donations after disaster events occur",
+      "Conducting military-style relief operations in disaster zones"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Prevention' in disaster management means:",
+    "opts": [
+      "Acting after a disaster occurs",
+      "Outright avoidance of adverse impacts through action before a disaster",
+      "Relief distribution",
+      "Insurance claims"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The State Disaster Management Authority (SDMA) is headed by:",
+    "opts": [
+      "District Collector",
+      "Chief Minister",
+      "Prime Minister",
+      "Home Minister of the state"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is an example of a non-structural DRR measure for schools?",
+    "opts": [
+      "Building earthquake-resistant school structures",
+      "Conducting school safety drills and integrating DRR into school curricula",
+      "Installing storm shutters on school building windows",
+      "Constructing school buildings on elevated reinforced platforms"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The principle of 'leaving no one behind' in DRR is aligned with:",
+    "opts": [
+      "Focusing DRR resources exclusively on high-value economic assets",
+      "The Sustainable Development Goals (SDGs) and inclusive DRR frameworks",
+      "Prioritizing infrastructure protection over human safety",
+      "Military-led disaster response protocols"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Livelihood recovery' in post-disaster reconstruction involves:",
+    "opts": [
+      "Only providing emergency food aid to affected populations",
+      "Restoring income-generating activities, assets, and market access to help communities regain economic stability",
+      "Replacing all previous government employment programs with new schemes",
+      "Building entirely new industries unrelated to existing community skills and knowledge"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The 'Incident Command System' (ICS) is used in disaster management to:",
+    "opts": [
+      "Formulate long-term national DRR policies",
+      "Provide a standardized on-scene management structure for emergency response",
+      "Distribute financial compensation after disasters",
+      "Train community volunteers in first aid"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Floodplain management as a DRR strategy involves:",
+    "opts": [
+      "Encouraging dense residential development in river floodplains",
+      "Regulating land use, protecting natural buffers, and managing water flows to reduce flood risk",
+      "Constructing housing for displaced persons inside floodplains",
+      "Removing all vegetation from riverbanks to increase water flow"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Climate change adaptation and disaster risk reduction are linked because:",
+    "opts": [
+      "They are entirely separate disciplines with no practical overlap",
+      "Both address increasing risks from climate-related hazards and require complementary strategies and investments",
+      "Adaptation focuses only on long-term changes while DRR deals only with sudden events",
+      "Only developing countries need to integrate the two approaches"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The disaster cycle consists of which main phases?",
+    "opts": [
+      "Detection, Analysis, Response, Recovery",
+      "Mitigation, Preparedness, Response, Recovery",
+      "Planning, Funding, Execution, Review",
+      "Warning, Impact, Relief, Reconstruction"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The 'build-back-better' principle in post-disaster recovery means:",
+    "opts": [
+      "Restoring infrastructure to exactly its pre-disaster state as quickly as possible",
+      "Reconstructing with improved design, materials, and location to reduce future disaster risk",
+      "Rebuilding in the same hazard-prone location using identical methods",
+      "Prioritizing speed of reconstruction over safety and quality"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Mutual aid agreements' between jurisdictions in disaster management ensure:",
+    "opts": [
+      "Competing legal claims over shared disaster resources between jurisdictions",
+      "Pre-agreed sharing of resources, personnel, and expertise across jurisdictions during disasters",
+      "International trade in specialized disaster management equipment",
+      "Government subsidies for private sector DRR investment programs"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The 'recovery' phase of the disaster cycle includes:",
+    "opts": [
+      "Immediate search and rescue",
+      "Reconstruction, rehabilitation, and restoration of livelihoods",
+      "Evacuation of vulnerable populations",
+      "Damage assessment done before the disaster"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Forecast-based action' differs from traditional disaster response in that:",
+    "opts": [
+      "It responds only after disasters have caused maximum damage",
+      "Actions are pre-approved and triggered automatically by weather forecasts before impact to reduce losses",
+      "It relies exclusively on post-event damage reports for decision-making",
+      "Only international organizations can implement forecast-based actions"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Retrospective risk management' in DRR involves:",
+    "opts": [
+      "Managing new risks that may arise from future development investment decisions",
+      "Addressing existing risks that have accumulated due to past unsafe development decisions",
+      "Reviewing government disaster management policies retrospectively after events",
+      "Post-disaster media and public relations review processes"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is a key function of a 'National Emergency Operation Centre' (NEOC)?",
+    "opts": [
+      "Formulating long-term DRR policies and legislation",
+      "Coordinating information and response activities during disaster events in real time",
+      "Managing international DRR research programs and publications",
+      "Auditing all post-disaster relief expenditure and financial flows"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Risk-sensitive budgeting' in government means:",
+    "opts": [
+      "Significantly cutting all government budgets during disaster emergencies",
+      "Allocating resources in a way that accounts for disaster risk and invests in risk reduction across sectors",
+      "Only funding disaster emergency relief operations and recovery",
+      "Seeking international financial support for national disaster management budgets"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Mitigation' in disaster management refers to:",
+    "opts": [
+      "Actions taken during an emergency",
+      "Efforts to reduce or prevent disaster losses before they occur",
+      "Post-disaster rehabilitation only",
+      "Evacuation of affected populations"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Standard Operating Procedures' (SOPs) in disaster management are important because:",
+    "opts": [
+      "They entirely replace the need for trained and experienced personnel",
+      "They ensure consistent, coordinated, and effective actions by all stakeholders during disaster response",
+      "They are only applicable at the national government level of response",
+      "They are prepared only after a disaster has occurred and gaps have been identified"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which international body developed the Sendai Framework?",
+    "opts": [
+      "World Bank",
+      "UNDRR",
+      "IMF",
+      "NATO"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which is an example of a preparedness measure?",
+    "opts": [
+      "Construction of flood embankments",
+      "Mock drills and evacuation exercises",
+      "Compensation to disaster victims",
+      "Reconstruction of damaged roads"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Structural measures in DRR include:",
+    "opts": [
+      "Public awareness campaigns",
+      "Building codes, dams, embankments, and earthquake-resistant construction",
+      "Community training programs",
+      "Policy formulation"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Pre-positioned stocks' in disaster preparedness refer to:",
+    "opts": [
+      "Military positions taken before humanitarian operations",
+      "Emergency supplies stored in advance near disaster-prone areas for rapid deployment when needed",
+      "Government financial reserves held exclusively for post-disaster reconstruction",
+      "Equipment stored only at centralized national warehouses far from affected areas"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The 'Sendai Framework Monitor' tracks progress on global targets through:",
+    "opts": [
+      "Annual military assessments of disaster impacts in member states",
+      "National reporting of disaster loss data and DRR progress indicators by member countries",
+      "World Bank quarterly financial performance assessments",
+      "UN Security Council review of humanitarian emergency declarations"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Catastrophe bonds' (cat bonds) are a financial instrument used in DRR to:",
+    "opts": [
+      "Fund government salaries after disasters",
+      "Transfer disaster risk to capital market investors providing funding when losses exceed a threshold",
+      "Provide direct loans to disaster-affected households",
+      "Insure individual homeowners against small property losses"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Community hazard mapping' is a participatory tool that helps communities to:",
+    "opts": [
+      "Produce artistic maps of their localities for tourism purposes",
+      "Identify and visualize local hazard risks, vulnerable areas, and existing community resources and capacities",
+      "Demarcate individual property and land ownership boundaries",
+      "Plan agricultural zones and cropping patterns in their local area"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Disaster risk reduction investment' is considered cost-effective because:",
+    "opts": [
+      "It completely eliminates the need for all post-disaster emergency funding",
+      "Every dollar invested in DRR is estimated to save multiple dollars in potential disaster losses and recovery costs",
+      "It generates immediate measurable economic profit for governments",
+      "It is funded entirely by international donors without national contribution"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Land-use zoning as a DRR measure aims to:",
+    "opts": [
+      "Increase construction in hazard-prone areas",
+      "Restrict development in high-risk areas",
+      "Reduce agricultural output",
+      "Fund relief operations"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Deforestation increases disaster risk by:",
+    "opts": [
+      "Reducing landslide probability",
+      "Increasing flood risk and soil erosion",
+      "Cooling urban areas",
+      "Reducing earthquake frequency"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which principle guides inclusive DRR?",
+    "opts": [
+      "Focusing only on the strongest community members",
+      "Leaving no one behind — ensuring vulnerable groups are prioritized",
+      "Economic efficiency over equity",
+      "Centralized decision-making"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Urban flood risk management' requires:",
+    "opts": [
+      "Only the construction of more drainage channels and culverts",
+      "An integrated approach combining land-use planning, drainage infrastructure, early warning, and community engagement",
+      "Relocating all urban populations to higher elevation ground",
+      "Eliminating all impervious surfaces and converting them to permeable materials in cities"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "School safety programs contribute to DRR by:",
+    "opts": [
+      "Replacing government emergency services in communities",
+      "Building disaster awareness, preparedness culture, and skills among children and school communities",
+      "Functioning solely as fundraising events for disaster relief",
+      "Diverting academic time without delivering measurable preparedness benefits"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Damage, Loss and Needs Assessment' (DLNA) comprehensively covers:",
+    "opts": [
+      "Military and defense infrastructure needs only",
+      "Physical damage, economic losses, and recovery needs across all affected sectors and communities",
+      "Only assessments of the agricultural sector losses",
+      "Requirements specified by international aid donor organizations"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The concept of 'build back better' in post-disaster recovery was prominently included in:",
+    "opts": [
+      "The Hyogo Framework for Action 2005–2015",
+      "The Sendai Framework for Disaster Risk Reduction 2015–2030",
+      "The Kyoto Protocol on climate change",
+      "The Yokohama Strategy of 1994"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which body in India is primarily responsible for issuing cyclone warnings?",
+    "opts": [
+      "National Disaster Management Authority (NDMA)",
+      "India Meteorological Department (IMD)",
+      "National Disaster Response Force (NDRF)",
+      "Central Water Commission"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is an example of 'structural' cyclone mitigation?",
+    "opts": [
+      "Cyclone preparedness public awareness campaigns in coastal communities",
+      "Construction of cyclone shelters and strengthening of coastal building codes",
+      "Community training on designated evacuation routes and assembly points",
+      "Insurance schemes providing financial coverage for cyclone-affected households"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Early warning systems are an example of which type of measure?",
+    "opts": [
+      "Structural",
+      "Non-structural",
+      "Recovery",
+      "Response"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Volunteer management' in disaster response involves:",
+    "opts": [
+      "Excluding untrained local volunteers from all organized disaster response activities",
+      "Recruiting, training, and coordinating volunteers to supplement professional emergency services",
+      "Paying all disaster response volunteers standard professional salaries",
+      "Restricting volunteerism exclusively to trained military reservists"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Disaster risk reduction governance' requires accountability mechanisms that include:",
+    "opts": [
+      "Centralized authority with no public transparency",
+      "Clear responsibilities, transparent decision-making, public participation, and monitoring of DRR commitments",
+      "Exclusive decision-making authority by technical disaster experts",
+      "Only post-disaster judicial review of government actions"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Green infrastructure' as a DRR measure includes:",
+    "opts": [
+      "Concrete flood barriers and steel embankments only",
+      "Urban forests, rain gardens, wetlands, and permeable pavements that manage water and reduce risk",
+      "Fossil fuel energy systems for emergency power generation",
+      "Industrial pollution control facilities"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which act governs disaster management in India?",
+    "opts": [
+      "National Disaster Act 2000",
+      "Disaster Management Act 2005",
+      "Emergency Management Act 1990",
+      "Civil Protection Act 2010"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Insurance as a DRR tool helps communities by:",
+    "opts": [
+      "Preventing disasters from occurring",
+      "Providing financial protection and enabling faster recovery",
+      "Replacing structural mitigation measures",
+      "Eliminating vulnerability"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Forecast-based financing' is a mechanism where:",
+    "opts": [
+      "Funds are released only after a disaster",
+      "Pre-agreed funds are released based on weather forecasts before a disaster strikes",
+      "International banks fund post-disaster reconstruction",
+      "Government taxes are increased after disasters"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Wetland conservation' as a DRR measure helps to:",
+    "opts": [
+      "Increase surface water runoff velocity during storms",
+      "Absorb excess water, reduce flood peaks, filter pollutants, and protect biodiversity",
+      "Maximize urban residential development potential",
+      "Reduce agricultural productivity in adjacent areas"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The 'mitigation' phase focuses on:",
+    "opts": [
+      "Rescuing victims",
+      "Distributing relief materials",
+      "Reducing the severity of disaster impacts before they occur",
+      "Building post-disaster houses"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The Sendai Framework's global targets for 2030 include a goal to substantially reduce:",
+    "opts": [
+      "International humanitarian aid budgets",
+      "Global disaster mortality, economic losses, and damage to critical infrastructure and services",
+      "The number of national early warning systems",
+      "Dependency on technology in disaster response operations"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Mock drills are important because they:",
+    "opts": [
+      "Replace actual disaster response",
+      "Identify gaps in preparedness and train communities",
+      "Are only for the military",
+      "Are conducted only after disasters"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The National Disaster Management Authority (NDMA) in India was established under:",
+    "opts": [
+      "Environmental Protection Act 1986",
+      "Disaster Management Act 2005",
+      "Civil Defence Act 1968",
+      "Indian Penal Code"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which phase of the disaster cycle occurs immediately after a disaster?",
+    "opts": [
+      "Mitigation",
+      "Preparedness",
+      "Response",
+      "Prevention"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "A 'culture of safety' promotes:",
+    "opts": [
+      "Accepting disasters as inevitable without preparation",
+      "Embedding risk awareness and preparedness into everyday life and institutions",
+      "Focusing only on post-disaster recovery",
+      "Restricting DRR to government agencies"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The National Disaster Response Force (NDRF) in India is specialized for:",
+    "opts": [
+      "Policy formulation only",
+      "Search, rescue, and relief during disasters",
+      "Financial compensation to victims",
+      "Construction of mitigation structures"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Awareness campaigns in schools contribute to DRR by:",
+    "opts": [
+      "Creating unnecessary fear",
+      "Building a culture of safety from a young age",
+      "Being costly without benefit",
+      "Delaying academic learning"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Humanitarian access' in disaster response refers to:",
+    "opts": [
+      "Internet and telecommunications access for humanitarian relief workers",
+      "The ability of humanitarian organizations to reach and assist disaster-affected populations safely",
+      "Access to government financial databases by auditing organizations",
+      "Military access protocols established for operations in disaster zones"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Post-disaster 'damage and loss assessment' is conducted to:",
+    "opts": [
+      "Assign blame for the disaster",
+      "Estimate recovery needs and guide resource allocation",
+      "Only for media reporting",
+      "Punish local governments"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Non-structural measures in DRR include:",
+    "opts": [
+      "Construction of sea walls",
+      "Flood embankments",
+      "Land-use planning, early warning systems, and education",
+      "Building of shelters"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The role of media in disaster management includes:",
+    "opts": [
+      "Withholding disaster information from the public to prevent panic",
+      "Disseminating early warnings, raising awareness, and supporting accountability during and after disasters",
+      "Only reporting on disaster losses for fundraising purposes",
+      "Replacing official government communications entirely"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Disaster response coordination' at the national level in India is managed by:",
+    "opts": [
+      "Home Ministry acting in complete isolation",
+      "National Crisis Management Committee and NDMA working with relevant ministries and agencies",
+      "Prime Minister's Office alone without inter-ministerial coordination",
+      "State governments acting independently without central government coordination"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which body coordinates national-level disaster response in India?",
+    "opts": [
+      "District Magistrate",
+      "National Disaster Response Force (NDRF)",
+      "Local police",
+      "State Fire Department"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The 'response' phase focuses on:",
+    "opts": [
+      "Long-term rehabilitation",
+      "Immediate life-saving actions and humanitarian assistance",
+      "Pre-disaster awareness campaigns",
+      "Post-disaster policy revision"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Sendai Framework Priority 2' focuses on:",
+    "opts": [
+      "Enhancing disaster preparedness for effective response and build back better",
+      "Strengthening disaster risk governance to manage disaster risk",
+      "Understanding disaster risk across all its dimensions",
+      "Investing in DRR for resilience at all scales"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Disaster Management Plans (DMPs) are prepared at:",
+    "opts": [
+      "Only the national level",
+      "National, state, district, and local levels",
+      "Only the district level",
+      "International level only"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Disaster resilience' at the community level is built through:",
+    "opts": [
+      "External expert-driven top-down interventions implemented without community input",
+      "Sustained engagement in local risk governance, social networks, livelihood diversification, and preparedness",
+      "Financial transfers from central governments alone without local participation",
+      "Building physical infrastructure in isolation without meaningful community involvement"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is a 'non-structural' flood management measure?",
+    "opts": [
+      "Construction of flood retention embankments",
+      "Flood early warning systems combined with flood insurance schemes",
+      "Building of upstream retention dams",
+      "River channelization and straightening works"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "A 'first responder' in disaster management refers to:",
+    "opts": [
+      "The first international agency to provide financial aid",
+      "Police, fire, and medical personnel who are the first to arrive at a disaster scene",
+      "The national government's first official press statement after a disaster",
+      "The first community member to report a hazard on social media"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The District Disaster Management Authority (DDMA) is chaired by:",
+    "opts": [
+      "State Chief Minister",
+      "District Collector/District Magistrate",
+      "NDMA Chairman",
+      "Block Development Officer"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Mangrove restoration as a DRR measure helps in:",
+    "opts": [
+      "Increasing tsunami wave height",
+      "Protecting coastal areas from storm surges and erosion",
+      "Reducing freshwater availability",
+      "Causing urban flooding"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Building earthquake-resistant structures is an example of:",
+    "opts": [
+      "Non-structural mitigation",
+      "Structural mitigation",
+      "Recovery measure",
+      "Response measure"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following best describes 'disaster preparedness'?",
+    "opts": [
+      "Actions taken only during a disaster",
+      "Actions before a disaster to ensure effective response",
+      "Reconstruction after a disaster",
+      "Insurance policy for assets"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Cash-based interventions' (CBIs) in disaster response are preferred because:",
+    "opts": [
+      "They are always cheaper than in-kind relief distribution",
+      "They restore dignity, support local markets, and allow affected people to prioritize their own needs",
+      "They eliminate the need for any other form of humanitarian relief",
+      "They are only suitable for urban disaster response contexts"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Resilient infrastructure' means:",
+    "opts": [
+      "Cheapest possible construction",
+      "Infrastructure designed to withstand and recover from hazards",
+      "Buildings in flood plains",
+      "Infrastructure for luxury housing"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Technology tools used in modern DRR include:",
+    "opts": [
+      "Only traditional communication methods such as radio",
+      "Geographic Information Systems (GIS), remote sensing, mobile alerts, and social media monitoring",
+      "Military surveillance technology exclusively",
+      "Tools only available to national-level governments"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Post-disaster needs assessment' (PDNA) is conducted to:",
+    "opts": [
+      "Assign legal and moral blame for the disaster to specific actors",
+      "Systematically estimate the impact of disasters and recovery needs across all sectors",
+      "Evaluate the individual performance of emergency responders only",
+      "Prepare media and public relations reports on disaster impacts"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Community-based early warning systems' are effective because:",
+    "opts": [
+      "They rely entirely on national meteorological agencies for all information",
+      "They incorporate local knowledge, community involvement, and effective last-mile communication of warnings",
+      "They depend exclusively on mobile phone SMS alert technologies",
+      "They rely on satellite-based technologies requiring no community participation"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is a key component of a National Disaster Management Plan (NDMP)?",
+    "opts": [
+      "Tourism development strategy",
+      "Hazard risk assessment, institutional arrangements, response protocols, and recovery frameworks",
+      "National GDP growth projections",
+      "Cultural heritage preservation guidelines only"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Environmental impact assessment' (EIA) contributes to DRR by:",
+    "opts": [
+      "Only documenting environmental damage after disasters have occurred",
+      "Identifying potential disaster risks of development projects before they are approved and implemented",
+      "Assessing only the economic productivity of natural ecosystems",
+      "Evaluating the environmental impact of military operations"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Contingency planning' in disaster management involves:",
+    "opts": [
+      "Planning only for post-disaster economic recovery activities",
+      "Pre-disaster planning for specific hazard scenarios to ensure organized and effective response",
+      "Planning for political contingencies during national elections",
+      "Creating financial contingency funds for routine government operations"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Urban Local Bodies (ULBs) are responsible for DRR at which level?",
+    "opts": [
+      "National",
+      "State",
+      "City/urban area",
+      "International"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Capacity building' in DRR primarily refers to:",
+    "opts": [
+      "Physical construction of emergency shelters",
+      "Developing skills, knowledge, and institutional systems that enable effective disaster risk management",
+      "Providing financial grants to affected communities",
+      "Expanding military deployment capabilities"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The four priorities of the Sendai Framework include:",
+    "opts": [
+      "Relief, Response, Recovery, Reconstruction",
+      "Understanding risk, governance, investment in DRR, and build-back-better",
+      "Hazard mapping, insurance, evacuation, and reconstruction",
+      "Prevention, mitigation, preparedness, response"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Post-disaster psychosocial support' aims to:",
+    "opts": [
+      "Provide legal compensation to all affected community members",
+      "Help survivors process trauma, rebuild social connections, and restore mental well-being",
+      "Document psychological disorders for insurance claims processing",
+      "Administer pharmaceutical treatments to all persons in disaster-affected areas"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Community-based DRR (CBDRR) emphasizes:",
+    "opts": [
+      "Top-down government-only approach",
+      "Participation of local communities in planning and implementing DRR",
+      "Exclusive reliance on external aid",
+      "Military-led disaster management"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Measures to reduce drought risk include:",
+    "opts": [
+      "Increasing water-intensive crop cultivation",
+      "Water harvesting, drought-resistant crops, irrigation efficiency, and early warning systems",
+      "Draining natural water bodies to reduce evaporation",
+      "Expanding deforestation to reduce rainfall demands"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Social protection systems such as cash transfers contribute to DRR by:",
+    "opts": [
+      "Replacing the need for structural mitigation measures",
+      "Building financial resilience of vulnerable households so they can better withstand and recover from disaster shocks",
+      "Increasing dependence on external international aid",
+      "Eliminating government responsibility for disaster management"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "The 'National Cyclone Risk Mitigation Project' (NCRMP) in India aims to:",
+    "opts": [
+      "Completely eliminate all cyclone risk in Indian coastal areas",
+      "Reduce the vulnerability of coastal populations through early warning systems, evacuation infrastructure, and community preparedness",
+      "Compensate farmers for all cyclone-related crop losses only",
+      "Relocate all vulnerable coastal populations permanently to inland areas"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "Which of the following is a role of 'civil society organizations' in DRR?",
+    "opts": [
+      "Replacing all government disaster management functions entirely",
+      "Advocating for vulnerable communities, building local capacity, and complementing government DRR efforts",
+      "Only distributing food aid after disaster events",
+      "Conducting military search and rescue operations"
+    ],
+    "ans": 0
+  },
+  {
+    "q": "'Risk-informed development' planning requires:",
+    "opts": [
+      "Ignoring disaster risk in the pursuit of rapid economic growth at all costs",
+      "Integrating disaster risk considerations into all development policies, plans, investments, and programmes",
+      "Developing only in geographic areas with absolutely zero hazard exposure",
+      "Relying solely on post-disaster relief and recovery rather than pre-disaster planning"
+    ],
+    "ans": 0
+  }
+],
+  "evs_questions": [
   {
     "q": "What is the primary goal of environmental studies?",
     "opts": ["Economic development", "Understanding human-environment interaction", "Political governance", "Social welfare"],
