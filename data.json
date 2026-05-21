@@ -1,5 +1,41 @@
 {
   "students": {
+    "24070003": {
+      "name": "HARSH KHATANA",
+      "course": "Diploma",
+      "branch": "Mechanical Engineering",
+      "section": "A",
+      "year": "2nd Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "31/01/2026"
+    },
+    "24070014": {
+      "name": "HARDIK SAINI",
+      "course": "Diploma",
+      "branch": "Mechanical Engineering",
+      "section": "A",
+      "year": "2nd Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "03/02/2026"
+    },
+    "24070027": {
+      "name": "GOLDEN KUSHWAHA",
+      "course": "Diploma",
+      "branch": "Mechanical Engineering",
+      "section": "A",
+      "year": "2nd Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "19/02/2026"
+    },
+    "24070029": {
+      "name": "VARIS",
+      "course": "Diploma",
+      "branch": "Mechanical Engineering",
+      "section": "A",
+      "year": "2nd Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "Not Registered"
+    },
     "25030001": {
       "name": "VISHAL KUMAR",
       "course": "B.Tech",
@@ -2488,6 +2524,24 @@
       "year": "1st Year",
       "pass": "EVSQUIZ"
     },
+    "25070010": {
+      "name": "KARTIK",
+      "course": "Diploma",
+      "branch": "Mechanical Engineering",
+      "section": "A",
+      "year": "2nd Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "23/02/2026"
+    },
+    "25070015": {
+      "name": "SHILONI",
+      "course": "Diploma",
+      "branch": "Mechanical Engineering",
+      "section": "A",
+      "year": "2nd Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "05/02/2026"
+    },
     "25120158": {
       "name": "MANISH KUMAR PASWAN",
       "course": "B.Tech",
@@ -3146,6 +3200,1008 @@
       "mustChangePass": false
     }
   },
+  "bcelab_questions": [
+    {
+      "q": "What is the standard size of a modular building brick as per IS codes?",
+      "opts": [
+        "19 cm x 9 cm x 9 cm",
+        "20 cm x 10 cm x 10 cm",
+        "22 cm x 10 cm x 8 cm",
+        "15 cm x 15 cm x 15 cm"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "During the soundness test of bricks, a good quality brick should produce a:",
+      "opts": [
+        "Dull thud sound",
+        "Clear metallic ringing sound",
+        "Heavy cracking sound",
+        "No sound at all"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "For a first-class brick, the water absorption after 24 hours of immersion should not exceed:",
+      "opts": [
+        "10% of its dry weight",
+        "15% of its dry weight",
+        "20% of its dry weight",
+        "30% of its dry weight"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "The minimum crushing (compressive) strength required for a first-class building brick is:",
+      "opts": [
+        "3.5 N/mm²",
+        "10.5 N/mm²",
+        "7.0 N/mm²",
+        "15.0 N/mm²"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "The depression or indentation provided on the top face of a standard brick is known as the:",
+      "opts": [
+        "Frog",
+        "Joint",
+        "Groove",
+        "Flute"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "Bricks are uniformly burnt in a laboratory or industrial scale using a:",
+      "opts": [
+        "Oven",
+        "Kiln",
+        "Furnace",
+        "Hot plate"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "What is the primary purpose of conducting a soundness test on two structural bricks?",
+      "opts": [
+        "To check for internal cracks and flaws",
+        "To find the exact weight",
+        "To measure the dimensions",
+        "To identify the color profile"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "If a brick surface cannot be easily scratched using a fingernail, it successfully passes the:",
+      "opts": [
+        "Soundness test",
+        "Water absorption test",
+        "Hardness test",
+        "Crushing test"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "What is the standard geometric shape of a common structural building brick?",
+      "opts": [
+        "Rectangular cuboid",
+        "Perfect spherical",
+        "Triangular prism",
+        "Cylindrical column"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "The slump test of fresh concrete is primarily conducted in the laboratory to determine its:",
+      "opts": [
+        "Compressive strength",
+        "Workability",
+        "Durability",
+        "Tensile strength"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "What is the standard vertical height of a standard slump cone apparatus?",
+      "opts": [
+        "100 mm",
+        "200 mm",
+        "300 mm",
+        "400 mm"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "What is the standard side length of a concrete cube specimen used for compressive strength testing?",
+      "opts": [
+        "100 mm",
+        "150 mm",
+        "200 mm",
+        "50 mm"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "Concrete cube specimens are most commonly tested to find their final characteristic compressive strength after:",
+      "opts": [
+        "1 day",
+        "3 days",
+        "7 days",
+        "28 days"
+      ],
+      "ans": 3
+    },
+    {
+      "q": "Which laboratory machine is used to apply load during the testing of concrete cube specimens?",
+      "opts": [
+        "Universal Testing Machine (UTM)",
+        "Compression Testing Machine (CTM)",
+        "Los Angeles Machine",
+        "Impact Testing Apparatus"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "While conducting a slump test, the fresh concrete mix is placed into the cone in how many equal layers?",
+      "opts": [
+        "2 layers",
+        "3 layers",
+        "4 layers",
+        "5 layers"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "Each layer of concrete filled inside a slump cone must be tamped with a standard rod for:",
+      "opts": [
+        "10 times",
+        "25 times",
+        "50 times",
+        "15 times"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "A very wet concrete mix that completely drops and loses its shape when the cone is lifted shows a:",
+      "opts": [
+        "Collapse slump",
+        "Shear slump",
+        "True slump",
+        "Zero slump"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "To ensure proper hydration, concrete cubes cast in the laboratory must be cured by placing them in:",
+      "opts": [
+        "Clean water",
+        "Open sunlight",
+        "High-temperature ovens",
+        "Air-tight plastic bags"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "The Aggregate Impact Test is performed in the laboratory to determine which property?",
+      "opts": [
+        "Hardness",
+        "Toughness",
+        "Soundness",
+        "Elasticity"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "The Aggregate Abrasion Test is conducted to check which property of coarse aggregates?",
+      "opts": [
+        "Hardness (resistance to wear)",
+        "Toughness (resistance to shock)",
+        "Shape profile",
+        "Water absorption capacity"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "Which testing machine is most widely used for conducting the aggregate abrasion test?",
+      "opts": [
+        "Vicat Apparatus",
+        "Los Angeles Machine",
+        "Universal Testing Machine",
+        "Compression Testing Machine"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "In a standard laboratory Aggregate Impact Test, the hammer is allowed to fall from a free height of:",
+      "opts": [
+        "10 cm",
+        "25 cm",
+        "38 cm",
+        "50 cm"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "The property of a stone or aggregate to resist breaking under a sudden heavy dynamic shock is called:",
+      "opts": [
+        "Toughness",
+        "Hardness",
+        "Crushing value",
+        "Soundness"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "The property of an aggregate to resist surface scraping, rubbing, and wear from traffic is called:",
+      "opts": [
+        "Ductility",
+        "Hardness",
+        "Toughness",
+        "Permeability"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "After executing an aggregate impact test, the broken sample is sieved through which IS sieve size?",
+      "opts": [
+        "4.75 mm",
+        "2.36 mm",
+        "1.18 mm",
+        "75 microns"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "What type of abrasive charge is placed inside a Los Angeles drum to create wear on aggregate specimens?",
+      "opts": [
+        "Spherical steel balls",
+        "Coarse river sand",
+        "Sharp granite chips",
+        "Crushed brick powders"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "When comparing aggregate testing values, a lower numerical percentage output in an impact test signifies:",
+      "opts": [
+        "Poor quality material",
+        "Better toughness properties",
+        "High moisture retention",
+        "Very soft stone formation"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "The baseline field testing of construction sand is primarily done to find the percentage of:",
+      "opts": [
+        "Silt content and impurities",
+        "Moisture percentage",
+        "Calcium carbonate",
+        "Heavy metal content"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "Why is the presence of an excessive amount of silt and clay impurities harmful in sand used for concrete?",
+      "opts": [
+        "It darkens the color of concrete",
+        "It drastically reduces the bond between cement and sand",
+        "It causes the sand to dissolve completely",
+        "It makes concrete set instantly"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "Based on aggregate categorization, standard river sand falls cleanly into the category of:",
+      "opts": [
+        "Fine aggregate",
+        "Coarse aggregate",
+        "Cyclopean aggregate",
+        "Alluvial gravel"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "The visible expansion in the bulk volume of dry sand due to the presence of surface moisture films is called:",
+      "opts": [
+        "Bulk density",
+        "Bulking of sand",
+        "Porosity drift",
+        "Grading shift"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "What is the primary physical cause behind the unique phenomenon known as bulking of sand?",
+      "opts": [
+        "Surface moisture forming moisture films around grains",
+        "Thermal expansion of silica materials",
+        "Chemical reaction with concrete mixing elements",
+        "Rapid air entrapment during manual handling"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "Fine aggregate particles (sand) are defined as those which can easily pass through which standard IS sieve size?",
+      "opts": [
+        "10 mm",
+        "4.75 mm",
+        "2.36 mm",
+        "75 microns"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "The Tensile Strength Test of reinforcement steel bars is conducted in the laboratory using a:",
+      "opts": [
+        "Universal Testing Machine (UTM)",
+        "Compression Testing Machine (CTM)",
+        "Los Angeles machine",
+        "Slump cone assembly"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "What physical mechanical property of structural steel allows it to stretch significantly under tension before breaking?",
+      "opts": [
+        "Brittleness",
+        "Hardness",
+        "Ductility",
+        "Elasticity"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "The visible localized narrowing or reduction of cross-sectional area in a ductile steel bar under tension is called:",
+      "opts": [
+        "Necking",
+        "Bending",
+        "Shearing",
+        "Twisting"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "In standard engineering lab stress calculations, tensile stress is calculated by dividing load by the bar's:",
+      "opts": [
+        "Perimeter dimension",
+        "Cross-sectional area",
+        "Volumetric property",
+        "Standard length parameter"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "Hooke's Law states that within the material's elastic limit, the acting stress is directly proportional to:",
+      "opts": [
+        "Strain",
+        "Initial length",
+        "Bar diameter",
+        "Applied load time"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "The final ultimate stage point where a steel bar snaps into pieces during a standard tension layout is called the:",
+      "opts": [
+        "Elastic limit point",
+        "Yield stress point",
+        "Breaking point",
+        "Proportional limit point"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "Which metal format is widely utilized as ductile structural reinforcement bars inside concrete frameworks?",
+      "opts": [
+        "High carbon cast iron",
+        "Mild steel bars",
+        "Structural brass rods",
+        "Aluminum alloys"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "What is the standard diameter dimension of the metal tamping rod utilized across standard laboratory fresh concrete tests?",
+      "opts": [
+        "10 mm",
+        "12 mm",
+        "16 mm",
+        "20 mm"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "What is the standard weight of the hammer used in a laboratory Aggregate Impact Test?",
+      "opts": [
+        "5.5 kg to 6.0 kg",
+        "10.0 kg to 11.5 kg",
+        "13.5 kg to 14.0 kg",
+        "18.0 kg to 20.0 kg"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "Which type of concrete slump is characterized by a complete tearing and dropping away of the concrete side?",
+      "opts": [
+        "True slump",
+        "Shear slump",
+        "Collapse slump",
+        "Zero slump"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "What is the standard internal top diameter of a concrete slump cone mold?",
+      "opts": [
+        "50 mm",
+        "100 mm",
+        "200 mm",
+        "300 mm"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "What is the maximum percentage of water absorption allowed for a second-class brick?",
+      "opts": [
+        "15%",
+        "22%",
+        "25%",
+        "12%"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "The presence of greyish-white deposits observed on a brick's surface when soaked and dried indicates:",
+      "opts": [
+        "High crushing strength",
+        "Efflorescence due to alkaline salts",
+        "Proper systematic burning",
+        "High organic content"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "If the white salt deposits cover more than 50% area of a brick surface with no powdering, the efflorescence is rated as:",
+      "opts": [
+        "Slight",
+        "Moderate",
+        "Heavy",
+        "Serious"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "Which tool is used to cut or divide bricks neatly in field validation setups?",
+      "opts": [
+        "Trowel",
+        "Brick hammer (Bolster)",
+        "Spirit level",
+        "Plumb bob"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "A brick that is over-burnt, twisted in shape, dark in color, and used for rugged foundations is called a:",
+      "opts": [
+        "First-class brick",
+        "Second-class brick",
+        "Jhama brick",
+        "Under-burnt brick"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "Before testing for compressive strength, the frog of the brick must be completely filled with:",
+      "opts": [
+        "Clean river sand",
+        "Cement-mortar mix (1:3 ratio)",
+        "Molten wax",
+        "Gypsum powder paste"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "What is the thickness of a standard modular building brick without mortar?",
+      "opts": [
+        "10 cm",
+        "9 cm",
+        "7 cm",
+        "6 cm"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "Bricks that are completely under-burnt, yellowish, soft, and crumble quickly are categorized as:",
+      "opts": [
+        "Fourth-class (Pila) bricks",
+        "First-class bricks",
+        "Structural pavers",
+        "Refractory blocks"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "What is the internal bottom diameter of a standard concrete slump cone apparatus?",
+      "opts": [
+        "100 mm",
+        "200 mm",
+        "300 mm",
+        "150 mm"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "While casting concrete cubes, each layer of concrete inside the steel mold must be tamped at least:",
+      "opts": [
+        "15 times",
+        "25 times",
+        "35 times",
+        "50 times"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "What is the standard cross-sectional size of the concrete cube mold if the aggregate size does not exceed 20 mm?",
+      "opts": [
+        "50 mm x 50 mm",
+        "100 mm x 100 mm",
+        "150 mm x 150 mm",
+        "200 mm x 200 mm"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "What type of concrete slump is observed when the concrete retains almost its full shape after the mold is lifted?",
+      "opts": [
+        "True slump",
+        "Shear slump",
+        "Collapse slump",
+        "Zero slump"
+      ],
+      "ans": 3
+    },
+    {
+      "q": "Concrete compressive strength achieved at 7 days of proper curing is approximately what percentage of its 28-day strength?",
+      "opts": [
+        "40%",
+        "65%",
+        "90%",
+        "20%"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "The process of separating coarse aggregates from the cement paste matrix during improper concrete handling is called:",
+      "opts": [
+        "Bleeding",
+        "Segregation",
+        "Laitance",
+        "Shrinkage"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "The appearance of free water spinning up to the top surface of freshly mixed concrete during compaction is known as:",
+      "opts": [
+        "Honeycombing",
+        "Curing",
+        "Bleeding",
+        "Slumping"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "For testing the strength of concrete cubes, the faces of the cube that receive the load in the CTM should be:",
+      "opts": [
+        "The rough top cast layer",
+        "The smooth side faces molded by the steel plates",
+        "The bottom face only",
+        "It makes no difference"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "Aggregates are classified as 'coarse aggregates' if they are completely retained on an IS sieve of size:",
+      "opts": [
+        "4.75 mm",
+        "2.36 mm",
+        "75 microns",
+        "10 mm"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "What is the standard internal diameter of the cylindrical cup used to hold samples in an Aggregate Impact testing machine?",
+      "opts": [
+        "50 mm",
+        "75 mm",
+        "102 mm",
+        "150 mm"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "In the Los Angeles Abrasion test, what is the maximum recommended rotation speed of the structural steel drum?",
+      "opts": [
+        "10 to 12 rpm",
+        "30 to 33 rpm",
+        "50 to 60 rpm",
+        "100 rpm"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "If an aggregate has an impact value of 12%, the material is classified structurally as:",
+      "opts": [
+        "Exceptionally strong and tough",
+        "Weak for road pavements",
+        "Soft and brittle",
+        "Completely disintegrated"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "An aggregate value of more than ______ in an impact test makes it completely unfit for top-wearing road pavement surfaces:",
+      "opts": [
+        "10%",
+        "15%",
+        "30%",
+        "5%"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "Elongated aggregates are those whose longest dimension is greater than _____ times their mean dimension:",
+      "opts": [
+        "0.6",
+        "1.0",
+        "1.8",
+        "2.5"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "Which geometric shape of coarse aggregate provides the best structural interlocking property inside a concrete mix?",
+      "opts": [
+        "Rounded stones",
+        "Flaky flakes",
+        "Angular fragments",
+        "Elongated gravels"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "Which aggregate shape exhibits the maximum workability due to a lower surface-to-volume ratio but lesser bond strength?",
+      "opts": [
+        "Angular aggregate",
+        "Rounded aggregate",
+        "Flaky aggregate",
+        "Irregular aggregate"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "What is the standard allowable limit of silt content in natural river sand measured volumetrically in a field test?",
+      "opts": [
+        "8%",
+        "15%",
+        "20%",
+        "25%"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "Sand particles are produced by the natural weathering and disintegration of which rock format?",
+      "opts": [
+        "Limestone",
+        "Granite (Quartz)",
+        "Shale",
+        "Gypsum"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "Bulking of sand completely drops back to zero volume when the sand becomes:",
+      "opts": [
+        "Semi-dry",
+        "Totally saturated/flooded with water",
+        "Heated to 50°C",
+        "Frozen"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "Clay and silt particles inside a sand sample are categorized as:",
+      "opts": [
+        "Structural coarse aggregates",
+        "Fineness modifiers",
+        "Deleterious physical impurities",
+        "Setting time accelerators"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "Which zone of sand represents the finest grading of sand as per Indian Standards (IS 383)?",
+      "opts": [
+        "Zone I",
+        "Zone II",
+        "Zone III",
+        "Zone IV"
+      ],
+      "ans": 3
+    },
+    {
+      "q": "In a standard sand field test, after shaking sand with a salt solution, the jar must settle undisturbed for at least:",
+      "opts": [
+        "10 seconds",
+        "3 hours",
+        "1 hour",
+        "24 hours"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "High Yield Strength Deformed (HYSD) steel bars are superior to mild steel bars because they have:",
+      "opts": [
+        "Higher ductility",
+        "Higher yield strength and surface ribs for better concrete bonding",
+        "Lower carbon content",
+        "Perfect glassy smooth finish"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "In a standard tension test, the maximum stress computed using the original cross-sectional area of a steel bar is called:",
+      "opts": [
+        "Yield stress",
+        "Elastic limit stress",
+        "Ultimate tensile stress",
+        "Breaking stress"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "The unit of stress and strength parameters computed during steel bar testing under Indian Standards is:",
+      "opts": [
+        "N/mm² (or MPa)",
+        "kg/cm",
+        "Joules",
+        "mm/m"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "What is the nominal mass density of structural steel bars validated in civil construction labs?",
+      "opts": [
+        "1000 kg/m³",
+        "2400 kg/m³",
+        "7850 kg/m³",
+        "9800 kg/m³"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "Which grade of steel reinforcement bar does NOT present a sharply defined prominent yield point on a UTM dial?",
+      "opts": [
+        "Fe 250 (Mild Steel)",
+        "Fe 415 (HYSD)",
+        "Pure iron wires",
+        "Structural brass plates"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "The elastic modulus (Young's Modulus) of structural mild steel bars is approximately equal to:",
+      "opts": [
+        "2 x 10⁵ N/mm²",
+        "2 x 10³ N/mm²",
+        "5 x 10⁶ N/mm²",
+        "1 x 10⁴ N/mm²"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "The process of setting up a Dumpy Level exactly above a fixed ground station point is known as:",
+      "opts": [
+        "Leveling",
+        "Centering",
+        "Ranging",
+        "Sighting"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "Which simple instrument is used alongside a plumb bob or spirit level to align intermediate points on a straight line?",
+      "opts": [
+        "Leveling staff",
+        "Ranging rod",
+        "Prismatic compass",
+        "Cross staff"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "Reduced Level (R.L.) of a point on the ground surface indicates its vertical height relative to:",
+      "opts": [
+        "The local building roof",
+        "The Mean Sea Level (MSL) benchmark",
+        "The nearest dynamic river bed",
+        "The total height of the instrument axis"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "The method of leveling in which the height of the instrument line of sight is calculated first is called:",
+      "opts": [
+        "Rise and Fall method",
+        "Height of Instrument (H.I.) method",
+        "Longitudinal sectioning",
+        "Fly leveling"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "What is the least count of a standard metric leveling staff used alongside a Dumpy level?",
+      "opts": [
+        "1 mm",
+        "5 mm",
+        "10 mm",
+        "0.5 mm"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "In whole circle bearing (WCB) layout, the angle of a line path is always measured clockwise starting directly from:",
+      "opts": [
+        "Magnetic West",
+        "Geographic East",
+        "Magnetic or True North",
+        "Local South station"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "If the whole circle bearing (WCB) of a survey line path is 90 degrees, its bearing matches precisely with:",
+      "opts": [
+        "Due North",
+        "Due East",
+        "Due South",
+        "Due West"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "The standard mathematical relationship between the Foresight (F.S.), Backsight (B.S.), and line leveling is:",
+      "opts": [
+        "Height of Instrument (H.I.) = R.L. of Bench Mark + Backsight",
+        "Height of Instrument (H.I.) = R.L. of Bench Mark - Foresight",
+        "Rise = Foresight - Backsight",
+        "None of the above"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "A closed circuit loop of survey lines returning back safely to its originating benchmark layout is defined as a:",
+      "opts": [
+        "Open traverse",
+        "Closed traverse",
+        "Radial path grid",
+        "Baseline axis"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "When leveling across uneven ground, the final reading recorded before shifting the Dumpy Level to a new setup location is called a:",
+      "opts": [
+        "Back sight (B.S.)",
+        "Intermediate sight (I.S.)",
+        "Fore sight (F.S.)",
+        "Change point line"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "When a survey line passes close to a large structural obstruction like a high building, the obstacle blocks:",
+      "opts": [
+        "Both chaining and ranging",
+        "Only chaining",
+        "Only ranging",
+        "Neither chaining nor ranging"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "An imaginary line passing through the intersection of the crosshairs of the telescope eyepiece and the optical center of the objective lens is called the:",
+      "opts": [
+        "Axis of the bubble tube",
+        "Line of collimation (Line of sight)",
+        "Vertical axis",
+        "Axis of the telescope"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "The algebraic difference between the forward bearing and the backward bearing of a survey line should ideally be exactly:",
+      "opts": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "If the forward bearing of a survey line is recorded as 45° 30', its corresponding back bearing is calculated as:",
+      "opts": [
+        "135° 30'",
+        "225° 30'",
+        "315° 30'",
+        "45° 30'"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "While using a Dumpy Level, the error caused by the instrument telescope not being perfectly focused on the leveling staff is called:",
+      "opts": [
+        "Parallax error",
+        "Curvature error",
+        "Refraction error",
+        "Personal error"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "The process of establishing a fixed reference line pointing toward the magnetic North pole prior to running a traverse is called:",
+      "opts": [
+        "Orienting the compass",
+        "Leveling the circle",
+        "Local attraction adjustment",
+        "Centering the dial"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "In a leveling field book, the Height of Instrument (H.I.) is updated immediately after taking a reading on a point with a known R.L. using which formula?",
+      "opts": [
+        "H.I. = R.L. + B.S.",
+        "H.I. = R.L. - F.S.",
+        "H.I. = R.L. + F.S.",
+        "H.I. = B.S. - F.S."
+      ],
+      "ans": 0
+    },
+    {
+      "q": "While recording data in a closed traverse survey, if the final closing point fails to meet the starting station point, the error is termed as:",
+      "opts": [
+        "Angular deviation",
+        "Closing error",
+        "Local attraction error",
+        "Mistake in chaining"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following survey staff readings represents the highest ground elevation value if the line of sight stays horizontal?",
+      "opts": [
+        "0.550 m",
+        "1.200 m",
+        "2.450 m",
+        "3.850 m"
+      ],
+      "ans": 0
+    },
+    {
+      "q": "The principal structural adjustment made using the three foot-screws at the base of a Dumpy Level is to ensure that:",
+      "opts": [
+        "The vertical axis of the instrument is perfectly vertical and the bubble stays centered",
+        "The crosshairs become completely visible",
+        "The telescope can tilt vertically at 45°",
+        "The tripod legs can be locked in position"
+      ],
+      "ans": 0
+    }
+  ],
   "dpm_questions": [
     {
       "q": "Which of the following best describes 'exposure' in the disaster risk framework?",
