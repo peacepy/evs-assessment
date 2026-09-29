@@ -1098,6 +1098,7 @@ async function attemptLogin() {
     renderDashboard();
     spin.style.display = 'none'; txt.innerText = 'Enter Practice Portal'; btn.disabled = false;
     syncStudentHistory({silent:true});
+    flushCloudOutbox();
 }
 
 // ════════════════════════════════════════════════
@@ -2016,20 +2017,80 @@ function setCloudSyncStatus(label,mode='ready'){
 function toSheetRecord(quiz,attempt,attemptNo){
   return {eventId:attempt.eventId||makeEventId(state.id,quiz.id||`quiz_${state.activeQuizIndex}`,attempt),timestamp:new Date(attempt.ts||Date.now()).toISOString(),studentId:state.id,name:state.name,course:state.course,branch:state.branch,section:state.section,year:state.year,quizId:quiz.id||`quiz_${state.activeQuizIndex}`,quizTitle:quiz.title,attemptNo,score:attempt.score,total:attempt.total,percentage:attempt.pct,correct:attempt.correct,wrong:attempt.wrong,skipped:attempt.skipped,durationMin:quiz.duration,timeUsedMin:attempt.timeUsedMin??null};
 }
-async function sendProgressBatch(records,{silent=false}={}){
-  if(!records?.length)return false;
-  if(!googleSyncConfigured()){setCloudSyncStatus('Google Sheet not configured','error');if(!silent)showToast('info','☁','Add the Apps Script Web App URL in data.json to enable cloud progress.');return false;}
-  const body=JSON.stringify({apiKey:GOOGLE_SHEET_API_KEY,records});
+const CLOUD_OUTBOX_KEY = 'qu_mock_cloud_outbox_v3';
+
+function readCloudOutbox(){
+  try{const raw=localStorage.getItem(CLOUD_OUTBOX_KEY);return raw?JSON.parse(raw):[]}catch(e){return []}
+}
+function writeCloudOutbox(items){
+  try{localStorage.setItem(CLOUD_OUTBOX_KEY,JSON.stringify(items.slice(-500)))}catch(e){}
+}
+function queueCloudRecords(records){
+  const existing=readCloudOutbox();
+  const map=new Map(existing.filter(x=>x&&x.eventId).map(x=>[String(x.eventId),x]));
+  records.forEach(r=>{if(r&&r.eventId)map.set(String(r.eventId),r)});
+  writeCloudOutbox([...map.values()]);
+}
+
+function encodeSheetPayload(records){
+  return JSON.stringify({apiKey:GOOGLE_SHEET_API_KEY,records});
+}
+
+function submitViaBeacon(records){
+  if(!navigator.sendBeacon)return false;
   try{
-    setCloudSyncStatus(`Syncing ${records.length} record${records.length>1?'s':''}…`,'busy');
-    await fetch(GOOGLE_SHEET_WEB_APP_URL,{method:'POST',mode:'no-cors',cache:'no-store',headers:{'Content-Type':'text/plain;charset=utf-8'},body,keepalive:true});
-    setCloudSyncStatus('Google Sheet sync sent','ok');
-    return true;
-  }catch(err){
-    console.error('Google Sheets sync error:',err);setCloudSyncStatus('Sheet sync failed','error');
-    if(!silent)showToast('error','☁','Could not send progress to Google Sheets. Local history is still saved.');
+    const blob=new Blob([encodeSheetPayload(records)],{type:'text/plain;charset=UTF-8'});
+    return navigator.sendBeacon(GOOGLE_SHEET_WEB_APP_URL,blob);
+  }catch(e){
+    console.warn('sendBeacon unavailable:',e);
     return false;
   }
+}
+
+function submitViaHiddenForm(records){
+  try{
+    let iframe=document.getElementById('qu-sheet-transport-frame');
+    if(!iframe){
+      iframe=document.createElement('iframe');iframe.id='qu-sheet-transport-frame';iframe.name='qu-sheet-transport-frame';iframe.style.display='none';
+      document.body.appendChild(iframe);
+    }
+    const form=document.createElement('form');
+    form.method='POST';form.action=GOOGLE_SHEET_WEB_APP_URL;form.target='qu-sheet-transport-frame';form.style.display='none';
+    const input=document.createElement('textarea');input.name='payload';input.value=encodeSheetPayload(records);form.appendChild(input);
+    document.body.appendChild(form);form.submit();
+    setTimeout(()=>form.remove(),1500);
+    return true;
+  }catch(e){
+    console.error('Hidden form transport failed:',e);
+    return false;
+  }
+}
+
+async function sendProgressBatch(records,{silent=false}={}){
+  if(!records?.length)return false;
+  if(!googleSyncConfigured()){setCloudSyncStatus('Google Sheet not configured','error');if(!silent)showToast('info','☁','Google Sheets is not configured in data.json.');return false;}
+  queueCloudRecords(records);
+  setCloudSyncStatus(`Uploading ${records.length} record${records.length>1?'s':''}…`,'busy');
+  const beaconOK=submitViaBeacon(records);
+  const formOK=!beaconOK && submitViaHiddenForm(records);
+  if(beaconOK||formOK){
+    setCloudSyncStatus('Google Sheet upload queued','ok');
+    if(!silent)showToast('success','☁',`Progress sent to Google Sheets · ${records.length} record${records.length>1?'s':''}`,2500);
+    return true;
+  }
+  setCloudSyncStatus('Sheet upload failed','error');
+  if(!silent)showToast('error','☁','Google Sheets upload could not be started. Local progress is still safe.');
+  return false;
+}
+
+async function flushCloudOutbox(){
+  if(!googleSyncConfigured())return false;
+  const pending=readCloudOutbox();
+  if(!pending.length)return false;
+  const beaconOK=submitViaBeacon(pending);
+  if(beaconOK){setCloudSyncStatus(`Retrying ${pending.length} saved record${pending.length>1?'s':''}…`,'busy');}
+  else submitViaHiddenForm(pending);
+  return true;
 }
 async function syncStudentHistory({silent=true}={}){
   if(!state.id||!googleSyncConfigured())return false;
@@ -2056,7 +2117,7 @@ function calculateScoreAndSubmit(){
   document.getElementById('final-details').innerHTML=`<div class="cand-row"><span class="cand-key">Candidate</span><span class="cand-val">${state.name}</span></div><div class="cand-row"><span class="cand-key">Student ID</span><span class="cand-val" style="font-family:var(--font-mono);font-size:.68rem">${state.id}</span></div><div class="cand-row"><span class="cand-key">Assessment</span><span class="cand-val">${quiz.title}</span></div><div class="cand-row"><span class="cand-key">Score</span><span class="cand-val">${correct} / ${total} (${pct}%)</span></div>`;
   const history=loadHistory(state.id,qid),note=document.getElementById('attempt-improvement-note');
   if(history.length>1){const prev=history[history.length-2],diff=pct-prev.pct,n=diff>0?'↑':diff<0?'↓':'→';note.innerHTML=`${n} Attempt #${history.length} · ${diff>0?'+':''}${diff}% vs last (${prev.pct}%) · Best ${Math.max(...history.map(h=>h.pct))}%`}else note.innerHTML='✦ First attempt complete. Retake to build your improvement curve.';
-  const syncNote=document.getElementById('sheet-sync-note');if(syncNote)syncNote.innerHTML=googleSyncConfigured()?`☁ Cloud progress queued for Google Sheets · Student ${state.id}`:'☁ Google Sheets sync is not configured yet · Local history is still saved.';
+  const syncNote=document.getElementById('sheet-sync-note');if(syncNote)syncNote.innerHTML=googleSyncConfigured()?`☁ Cloud progress queued for Google Sheets · Student ${state.id} · <a href="${GOOGLE_SHEET_WEB_APP_URL}?health=1" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">Test connection</a>`:'☁ Google Sheets sync is not configured yet · Local history is still saved.';
   if(pct>=70)launchConfetti();
   window.scrollTo({top:0,behavior:'smooth'});
 }
