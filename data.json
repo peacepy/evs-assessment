@@ -4,7 +4,7 @@
     "githubRawUrl": "https://raw.githubusercontent.com/peacepy/evs-assessment/refs/heads/main/data.json",
     "storageKeyPrefix": "qu_mock_history_",
     "googleSheets": {
-      "webAppUrl": "https://script.google.com/macros/s/AKfycby_ZgbsnzkehJNz6KNpaX7WYFzOvbm0_MzGzsIJDQWgK4j3QDuQ-cvPgDI93BkVhNHbzg/exec",
+      "webAppUrl": "https://script.google.com/macros/s/AKfycbzIyrlX4CHH6IfdG905z4hUY4PW70ttZHmm6tsV3FCt6Um-CSTeLLbVQdSLwdnk_vow4A/exec",
       "apiKey": "QUANTUM_2026_9fK7xP2mL8qR4tN6vB3s"
     }
   },
