@@ -1,4 +1,13 @@
 {
+  "config": {
+    "localDataUrl": "./data.json",
+    "githubRawUrl": "https://raw.githubusercontent.com/peacepy/evs-assessment/refs/heads/main/data.json",
+    "storageKeyPrefix": "qu_mock_history_",
+    "googleSheets": {
+      "webAppUrl": "https://script.google.com/macros/s/AKfycbyueKKcu9PnDpLMo8F4P6njvNuUUSvCYbfDKgE6g3Q-o_6LAD47gIltzDTooOnw_rkv/exec",
+      "apiKey": "QUANTUM_2026_9fK7xP2mL8qR4tN6vB3s"
+    }
+  },
   "students": {
     "26010001": {
       "name": "DIVYA PRAKASH PANDEY",
