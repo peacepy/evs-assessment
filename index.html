@@ -152,6 +152,9 @@ body.interactive .cursor-glow{opacity:1}
 .status-dot{width:7px;height:7px;border-radius:50%;background:var(--success);box-shadow:0 0 0 5px rgba(22,199,132,.09);animation:dotPulse 2s infinite}
 .status-dot.loading{background:var(--warning);box-shadow:none}
 .status-dot.offline{background:var(--error);box-shadow:none}
+.status-chip.sync-busy .status-dot{background:var(--warning)}
+.status-chip.sync-ok .status-dot{background:var(--success)}
+.status-chip.sync-error .status-dot{background:var(--error)}
 @keyframes dotPulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(.8);opacity:.55}}
 
 .login-shell{
@@ -796,7 +799,7 @@ input::placeholder{color:#4f5c70}
           <div class="brand-copy"><strong>Practice Hub</strong><span id="hub-context">Quantum University</span></div>
         </div>
         <div class="topbar-actions">
-          <div class="status-chip"><span class="status-dot"></span><span>Online data</span></div>
+          <div class="status-chip" id="cloud-sync-chip"><span class="status-dot"></span><span id="cloud-sync-text">Cloud sync ready</span></div>
           <button class="icon-btn" onclick="openCommandPalette()" aria-label="Open command palette" title="Command palette (Ctrl+K)">⌘</button>
           <button class="btn-sm btn-sm-outline" onclick="signOut()" style="padding:0 12px">Sign out</button>
         </div>
@@ -804,7 +807,7 @@ input::placeholder{color:#4f5c70}
 
       <div class="profile-banner glass-card" id="dash-profile"></div>
       <div class="dashboard-summary" id="dashboard-summary"></div>
-      <div class="mock-banner dashboard-banner">✦ <span><strong>Practice workspace:</strong> quizzes can be retaken anytime. Attempt history stays in this browser for this student.</span></div>
+      <div class="mock-banner dashboard-banner">✦ <span><strong>Practice workspace:</strong> quizzes can be retaken anytime. Local history is kept in this browser and submitted progress is also sent to your Google Sheet.</span></div>
 
       <div class="dash-section-title">Available assessments</div>
       <div class="quiz-list" id="quiz-list-container"></div>
@@ -903,7 +906,8 @@ input::placeholder{color:#4f5c70}
         </div>
         <div class="detail-grid" id="detail-grid"></div>
         <div class="candidate-detail" id="final-details"></div>
-        <div id="attempt-improvement-note" class="glass-card" style="padding:12px 15px;border-radius:14px;margin-bottom:13px;font-size:.68rem;color:var(--muted);text-align:center"></div>
+        <div id="attempt-improvement-note" class="glass-card" style="padding:12px 15px;border-radius:14px;margin-bottom:8px;font-size:.68rem;color:var(--muted);text-align:center"></div>
+        <div id="sheet-sync-note" class="glass-card" style="padding:11px 15px;border-radius:14px;margin-bottom:13px;font-size:.66rem;color:var(--muted);text-align:center">☁ Cloud progress: waiting…</div>
         <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">
           <button class="btn btn-ghost" onclick="backToDashboardFromResult()">← Dashboard</button>
           <button class="btn" onclick="retakeQuiz()">↻ Retake</button>
@@ -969,12 +973,19 @@ input::placeholder{color:#4f5c70}
 
 <script>
 // ════════════════════════════════════════════════
-//  CONFIG
+//  CONFIGURATION
 // ════════════════════════════════════════════════
-const LOCAL_DATA_URL = './data.json';
-const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/peacepy/evs-assessment/refs/heads/main/data.json';
-const DATA_URLS = [LOCAL_DATA_URL, GITHUB_RAW_URL];
-const STORAGE_KEY_PREFIX = 'qu_mock_history_';
+// All editable configuration lives inside ./data.json.
+// index.html only knows the fixed bootstrap filename.
+const BOOTSTRAP_DATA_URL = './data.json';
+let LOCAL_DATA_URL = BOOTSTRAP_DATA_URL;
+let GITHUB_RAW_URL = '';
+let DATA_URLS = [];
+let STORAGE_KEY_PREFIX = 'qu_mock_history_';
+let GOOGLE_SHEET_WEB_APP_URL = '';
+let GOOGLE_SHEET_API_KEY = '';
+let APP_CONFIG = null;
+let BOOTSTRAP_DB = null;
 
 // ════════════════════════════════════════════════
 //  STATE
@@ -1029,7 +1040,7 @@ async function init() {
             db.quizzes = rawDb.quizzes;
         } else if (rawDb.evs_questions && rawDb.dpm_questions) {
             db.quizzes = [
-                { id:"evs_02", title:"Environmental Studies I",       duration:60, questions:rawDb.evs_questions },
+                { id:"evs_02", title:"Environmental Studies II",       duration:60, questions:rawDb.evs_questions },
                 { id:"dpm_01", title:"Disaster Planning & Management", duration:60, questions:rawDb.dpm_questions }
             ];
         }
@@ -1086,6 +1097,7 @@ async function attemptLogin() {
     document.getElementById('login-screen').style.display = 'none';
     renderDashboard();
     spin.style.display = 'none'; txt.innerText = 'Enter Practice Portal'; btn.disabled = false;
+    syncStudentHistory({silent:true});
 }
 
 // ════════════════════════════════════════════════
@@ -1988,13 +2000,55 @@ function saveAttempt(studentId,quizId,attemptData){
   try{localStorage.setItem(getHistoryKey(studentId,quizId),JSON.stringify(history))}catch(e){showToast('error','⚠','Could not save score locally.')}
 }
 
+// ════════════════════════════════════════════════
+//  GOOGLE SHEETS PROGRESS SYNC
+// ════════════════════════════════════════════════
+function googleSyncConfigured(){
+  return GOOGLE_SHEET_WEB_APP_URL && !GOOGLE_SHEET_WEB_APP_URL.includes('PASTE_YOUR_') &&
+         GOOGLE_SHEET_API_KEY && !GOOGLE_SHEET_API_KEY.includes('CHANGE_THIS');
+}
+function makeEventId(studentId,quizId,attempt){return `${studentId}__${quizId}__${attempt.ts||Date.now()}`}
+function setCloudSyncStatus(label,mode='ready'){
+  const chip=document.getElementById('cloud-sync-chip'),text=document.getElementById('cloud-sync-text');
+  if(text)text.innerText=label;
+  if(chip){chip.classList.remove('sync-ready','sync-busy','sync-ok','sync-error');chip.classList.add(`sync-${mode}`)}
+}
+function toSheetRecord(quiz,attempt,attemptNo){
+  return {eventId:attempt.eventId||makeEventId(state.id,quiz.id||`quiz_${state.activeQuizIndex}`,attempt),timestamp:new Date(attempt.ts||Date.now()).toISOString(),studentId:state.id,name:state.name,course:state.course,branch:state.branch,section:state.section,year:state.year,quizId:quiz.id||`quiz_${state.activeQuizIndex}`,quizTitle:quiz.title,attemptNo,score:attempt.score,total:attempt.total,percentage:attempt.pct,correct:attempt.correct,wrong:attempt.wrong,skipped:attempt.skipped,durationMin:quiz.duration,timeUsedMin:attempt.timeUsedMin??null};
+}
+async function sendProgressBatch(records,{silent=false}={}){
+  if(!records?.length)return false;
+  if(!googleSyncConfigured()){setCloudSyncStatus('Google Sheet not configured','error');if(!silent)showToast('info','☁','Add the Apps Script Web App URL in data.json to enable cloud progress.');return false;}
+  const body=JSON.stringify({apiKey:GOOGLE_SHEET_API_KEY,records});
+  try{
+    setCloudSyncStatus(`Syncing ${records.length} record${records.length>1?'s':''}…`,'busy');
+    await fetch(GOOGLE_SHEET_WEB_APP_URL,{method:'POST',mode:'no-cors',cache:'no-store',headers:{'Content-Type':'text/plain;charset=utf-8'},body,keepalive:true});
+    setCloudSyncStatus('Google Sheet sync sent','ok');
+    return true;
+  }catch(err){
+    console.error('Google Sheets sync error:',err);setCloudSyncStatus('Sheet sync failed','error');
+    if(!silent)showToast('error','☁','Could not send progress to Google Sheets. Local history is still saved.');
+    return false;
+  }
+}
+async function syncStudentHistory({silent=true}={}){
+  if(!state.id||!googleSyncConfigured())return false;
+  const records=[];
+  db.quizzes.forEach((quiz,index)=>{const qid=quiz.id||`quiz_${index}`;loadHistory(state.id,qid).forEach((attempt,i)=>records.push(toSheetRecord(quiz,attempt,i+1)));});
+  return records.length?sendProgressBatch(records,{silent}):false;
+}
+
 function calculateScoreAndSubmit(){
   clearInterval(timerInterval);clearDraft();
   let correct=0,wrong=0,skipped=0;
   for(let i=0;i<state.activeQuestions.length;i++){if(userAnswers[i]===null){skipped++;continue}if(userAnswers[i]===state.activeQuestions[i].ans)correct++;else wrong++}
   const total=state.activeQuestions.length,pct=total?Math.round((correct/total)*100):0,quiz=db.quizzes[state.activeQuizIndex],qid=quiz.id||`quiz_${state.activeQuizIndex}`;
   examResult={questions:[...state.activeQuestions],userAnswers:[...userAnswers],quizTitle:quiz.title,quizId:qid,score:correct,total,correct,wrong,skipped};
-  saveAttempt(state.id,qid,{date:new Date().toLocaleString(),score:correct,total,pct,correct,wrong,skipped,ts:Date.now()});
+  const existingHistory=loadHistory(state.id,qid);
+  const attemptData={date:new Date().toLocaleString(),score:correct,total,pct,correct,wrong,skipped,timeUsedMin:Math.max(0,Math.round(((quiz.duration*60-Math.max(timeRemaining,0))/60)*10)/10),ts:Date.now()};
+  attemptData.eventId=makeEventId(state.id,qid,attemptData);
+  saveAttempt(state.id,qid,attemptData);
+  sendProgressBatch([toSheetRecord(quiz,attemptData,existingHistory.length+1)],{silent:false});
   document.getElementById('quiz-screen').style.display='none';document.getElementById('main-container').classList.remove('exam-mode','focus-mode');focusMode=false;document.getElementById('result-screen').style.display='block';
   document.getElementById('score-ring').style.setProperty('--pct',`${pct}%`);document.getElementById('score-value').innerText=correct;document.getElementById('score-denom').innerText=`/ ${total}`;document.getElementById('result-pct').innerText=`${pct}% Score`;
   const passed=pct>=40,badge=document.getElementById('result-badge');badge.style.cssText=passed?'background:rgba(22,199,132,.1);border:1px solid rgba(22,199,132,.2);color:var(--success)':'background:rgba(251,84,115,.1);border:1px solid rgba(251,84,115,.2);color:var(--error)';badge.innerText=passed?'✓ Passed':'Submitted';
@@ -2002,6 +2056,7 @@ function calculateScoreAndSubmit(){
   document.getElementById('final-details').innerHTML=`<div class="cand-row"><span class="cand-key">Candidate</span><span class="cand-val">${state.name}</span></div><div class="cand-row"><span class="cand-key">Student ID</span><span class="cand-val" style="font-family:var(--font-mono);font-size:.68rem">${state.id}</span></div><div class="cand-row"><span class="cand-key">Assessment</span><span class="cand-val">${quiz.title}</span></div><div class="cand-row"><span class="cand-key">Score</span><span class="cand-val">${correct} / ${total} (${pct}%)</span></div>`;
   const history=loadHistory(state.id,qid),note=document.getElementById('attempt-improvement-note');
   if(history.length>1){const prev=history[history.length-2],diff=pct-prev.pct,n=diff>0?'↑':diff<0?'↓':'→';note.innerHTML=`${n} Attempt #${history.length} · ${diff>0?'+':''}${diff}% vs last (${prev.pct}%) · Best ${Math.max(...history.map(h=>h.pct))}%`}else note.innerHTML='✦ First attempt complete. Retake to build your improvement curve.';
+  const syncNote=document.getElementById('sheet-sync-note');if(syncNote)syncNote.innerHTML=googleSyncConfigured()?`☁ Cloud progress queued for Google Sheets · Student ${state.id}`:'☁ Google Sheets sync is not configured yet · Local history is still saved.';
   if(pct>=70)launchConfetti();
   window.scrollTo({top:0,behavior:'smooth'});
 }
@@ -2024,51 +2079,135 @@ function launchConfetti(){
 
 async function loadDatabase(){
   const errors=[];
-  for(const url of DATA_URLS){
-    try{
-      // file:// pages cannot fetch local JSON; GitHub Pages can.
-      const res=await fetch(url,{cache:'no-store'});
-      if(!res.ok) throw new Error(`${res.status} ${res.statusText}`);
-      const rawDb=await res.json();
-      if(!rawDb || typeof rawDb!=='object') throw new Error('Invalid JSON object');
-      db.students=rawDb.students||{};
-      if(Array.isArray(rawDb.quizzes)){
-        db.quizzes=rawDb.quizzes;
-      }else if(Array.isArray(rawDb.evs_questions)||Array.isArray(rawDb.dpm_questions)){
-        db.quizzes=[];
-        if(Array.isArray(rawDb.evs_questions)) db.quizzes.push({id:'evs_02',title:'Environmental Studies I',duration:60,questions:rawDb.evs_questions});
-        if(Array.isArray(rawDb.dpm_questions)) db.quizzes.push({id:'dpm_01',title:'Disaster Planning & Management',duration:60,questions:rawDb.dpm_questions});
+
+  const applyDb = (rawDb, sourceUrl, preferLocalStudents=true) => {
+    if(!rawDb || typeof rawDb!=='object') throw new Error('Invalid JSON object');
+
+    const incomingStudents = rawDb.students || {};
+    if(preferLocalStudents && Object.keys(db.students).length){
+      // Keep the student registry from the local data.json.
+      // Remote data is used primarily as a question-bank source.
+    }else if(Object.keys(incomingStudents).length){
+      db.students = incomingStudents;
+    }
+
+    let quizzes=[];
+    if(Array.isArray(rawDb.quizzes)){
+      quizzes=rawDb.quizzes;
+    }else{
+      if(Array.isArray(rawDb.evs_questions)){
+        quizzes.push({id:'evs_02',title:'Environmental Studies II',duration:60,questions:rawDb.evs_questions});
       }
-      if(!Object.keys(db.students).length) throw new Error('No students found');
-      if(!db.quizzes.length) throw new Error('No assessments found');
-      return {url, rawDb};
+      if(Array.isArray(rawDb.dpm_questions)){
+        quizzes.push({id:'dpm_01',title:'Disaster Planning & Management',duration:60,questions:rawDb.dpm_questions});
+      }
+    }
+    if(quizzes.length){ db.quizzes=quizzes; }
+
+    if(!Object.keys(db.students).length) throw new Error('No students found');
+    if(!db.quizzes.length) throw new Error('No assessments found');
+    return {url:sourceUrl, rawDb};
+  };
+
+  // 1) The bootstrap file is both the configuration file and the local data source.
+  if(BOOTSTRAP_DB){
+    try{
+      const result=applyDb(BOOTSTRAP_DB,BOOTSTRAP_DATA_URL,true);
+      return result;
     }catch(err){
-      errors.push(`${url}: ${err.message}`);
+      errors.push(`${BOOTSTRAP_DATA_URL}: ${err.message}`);
     }
   }
-  throw new Error(errors.join(' | '));
+
+  // 2) Optional separate local database URL configured inside data.json.
+  if(LOCAL_DATA_URL && LOCAL_DATA_URL!==BOOTSTRAP_DATA_URL){
+    try{
+      const res=await fetch(LOCAL_DATA_URL,{cache:'no-store'});
+      if(!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+      const rawDb=await res.json();
+      const result=applyDb(rawDb,LOCAL_DATA_URL,true);
+      return result;
+    }catch(err){
+      errors.push(`${LOCAL_DATA_URL}: ${err.message}`);
+    }
+  }
+
+  // 3) Remote question-bank / database fallback configured inside data.json.
+  if(GITHUB_RAW_URL){
+    try{
+      const res=await fetch(GITHUB_RAW_URL,{cache:'no-store'});
+      if(!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+      const rawDb=await res.json();
+      const result=applyDb(rawDb,GITHUB_RAW_URL,true);
+      return result;
+    }catch(err){
+      errors.push(`${GITHUB_RAW_URL}: ${err.message}`);
+    }
+  }
+
+  throw new Error(errors.join(' | ') || 'No database source configured');
 }
 
-function init(){
+async function loadConfig(){
+  const res=await fetch(BOOTSTRAP_DATA_URL,{cache:'no-store'});
+  if(!res.ok) throw new Error(`data.json: ${res.status} ${res.statusText}`);
+
+  const rawDb=await res.json();
+  if(!rawDb || typeof rawDb!=='object') throw new Error('data.json is not a valid JSON object');
+  BOOTSTRAP_DB=rawDb;
+
+  // Configuration lives at the top-level `config` object in data.json.
+  // `_config` is also accepted for backward compatibility.
+  const cfg=rawDb.config || rawDb._config || {};
+  if(!cfg || typeof cfg!=='object') throw new Error('data.json config is invalid');
+
+  LOCAL_DATA_URL=cfg.localDataUrl || BOOTSTRAP_DATA_URL;
+  GITHUB_RAW_URL=cfg.githubRawUrl || cfg.questionBankUrl || '';
+  DATA_URLS=[BOOTSTRAP_DATA_URL, ...(LOCAL_DATA_URL!==BOOTSTRAP_DATA_URL ? [LOCAL_DATA_URL] : []), ...(GITHUB_RAW_URL ? [GITHUB_RAW_URL] : [])];
+  STORAGE_KEY_PREFIX=cfg.storageKeyPrefix || 'qu_mock_history_';
+  GOOGLE_SHEET_WEB_APP_URL=cfg.googleSheets?.webAppUrl || '';
+  GOOGLE_SHEET_API_KEY=cfg.googleSheets?.apiKey || '';
+  APP_CONFIG=cfg;
+
+  // Load local students immediately so login remains available even when the
+  // remote question bank is temporarily unavailable.
+  if(rawDb.students && Object.keys(rawDb.students).length){
+    db.students=rawDb.students;
+  }
+
+  // If quizzes are already present in data.json, use them directly.
+  if(Array.isArray(rawDb.quizzes)){
+    db.quizzes=rawDb.quizzes;
+  }else{
+    if(Array.isArray(rawDb.evs_questions)) db.quizzes.push({id:'evs_02',title:'Environmental Studies II',duration:60,questions:rawDb.evs_questions});
+    if(Array.isArray(rawDb.dpm_questions)) db.quizzes.push({id:'dpm_01',title:'Disaster Planning & Management',duration:60,questions:rawDb.dpm_questions});
+  }
+
+  return cfg;
+}
+
+async function init(){
   enhancedInit();
   const btn=document.getElementById('login-btn'),txt=document.getElementById('login-btn-text'),spin=document.getElementById('login-spinner');
   if(spin)spin.style.display='none';
-  setConnectionStatus('loading','Connecting to database');
-  txt.innerText='Connecting to database…';
-  loadDatabase()
-    .then(({url})=>{
-      const source=url===LOCAL_DATA_URL?'Local data.json':'GitHub database';
-      setConnectionStatus('online','Database connected');
-      btn.disabled=false;txt.innerText='Enter practice portal';
-      showToast('success','✓',`${db.quizzes.length} assessment${db.quizzes.length!==1?'s':''} loaded • ${source}`,2200);
-    })
-    .catch(err=>{
-      console.error('Database connection failed:',err);
-      setConnectionStatus('offline','Database unavailable');
-      txt.innerText='Database unavailable';
-      if(spin)spin.style.display='none';
-      showToast('error','⚠','Unable to load the assessment database. Check your GitHub Pages deployment and data.json.',6500);
-    });
+  setConnectionStatus('loading','Loading configuration');
+  txt.innerText='Loading configuration…';
+  try{
+    await loadConfig();
+    setConnectionStatus('loading','Connecting to database');
+    txt.innerText='Connecting to database…';
+    const {url}=await loadDatabase();
+    const source=url===LOCAL_DATA_URL?'Local data.json':'GitHub database';
+    setConnectionStatus('online','Database connected');
+    btn.disabled=false;txt.innerText='Enter practice portal';
+    showToast('success','✓',`${db.quizzes.length} assessment${db.quizzes.length!==1?'s':''} loaded • ${source}`,2200);
+  }catch(err){
+    console.error('Portal startup failed:',err);
+    setConnectionStatus('offline','Configuration / database unavailable');
+    txt.innerText='Portal unavailable';
+    if(spin)spin.style.display='none';
+    showToast('error','⚠',`Unable to start portal: ${err.message}`,7000);
+  }
   addEventListener('scroll',()=>document.getElementById('jump-top-btn').classList.toggle('visible',scrollY>420),{passive:true});
 }
 
