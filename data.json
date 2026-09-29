@@ -1,3203 +1,589 @@
 {
   "students": {
-    "24070003": {
-      "name": "HARSH KHATANA",
-      "course": "Diploma",
-      "branch": "Mechanical Engineering",
-      "section": "A",
-      "year": "2nd Year",
+    "26010001": {
+      "name": "DIVYA PRAKASH PANDEY",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
       "pass": "EVSQUIZ",
-      "reg_date": "31/01/2026"
+      "reg_date": "29/09/2026"
     },
-    "24070014": {
-      "name": "HARDIK SAINI",
-      "course": "Diploma",
-      "branch": "Mechanical Engineering",
-      "section": "A",
-      "year": "2nd Year",
+    "26010005": {
+      "name": "Ansh Sharma",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
       "pass": "EVSQUIZ",
-      "reg_date": "03/02/2026"
+      "reg_date": "29/09/2026"
     },
-    "24070027": {
-      "name": "GOLDEN KUSHWAHA",
-      "course": "Diploma",
-      "branch": "Mechanical Engineering",
-      "section": "A",
-      "year": "2nd Year",
+    "26010011": {
+      "name": "Yash Kumar",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
       "pass": "EVSQUIZ",
-      "reg_date": "19/02/2026"
+      "reg_date": "29/09/2026"
     },
-    "24070029": {
-      "name": "VARIS",
-      "course": "Diploma",
-      "branch": "Mechanical Engineering",
-      "section": "A",
-      "year": "2nd Year",
+    "26010019": {
+      "name": "ANIRUDH SIDHA",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
       "pass": "EVSQUIZ",
-      "reg_date": "Not Registered"
+      "reg_date": "29/09/2026"
     },
-    "25030001": {
-      "name": "VISHAL KUMAR",
+    "26010022": {
+      "name": "Manas Jitendra Patidar",
       "course": "B.Tech",
       "branch": "CSE",
-      "section": "I",
+      "section": "B",
       "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030003": {
-      "name": "SHREYA SINHA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030005": {
-      "name": "ADITYA SINGH TOMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030009": {
-      "name": "YOGESH SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030010": {
-      "name": "YASH BISHT",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030014": {
-      "name": "SHEETAL MAURYA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030015": {
-      "name": "VAIBHAVI SHARMA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030020": {
-      "name": "PRAKHAR BEHAL",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030021": {
-      "name": "MOHD KAIF",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030022": {
-      "name": "DIKSHANT SAINI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030025": {
-      "name": "AMRENDRA VIJAY",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030029": {
-      "name": "ANIKET DAS",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030031": {
-      "name": "ASHMIT KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030034": {
-      "name": "NANDANI KUMARI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030035": {
-      "name": "MNAAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030040": {
-      "name": "SATEESH PAL",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030044": {
-      "name": "SUBODH KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030046": {
-      "name": "MAHI GUPTA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030048": {
-      "name": "SUMIT KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030051": {
-      "name": "ANANYA PATEL",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030054": {
-      "name": "AHELI SARKAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030061": {
-      "name": "ADITYA SHARMA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030064": {
-      "name": "SANDEEP GUPTA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030069": {
-      "name": "JIYA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030071": {
-      "name": "NARAYAN CHHETRI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030072": {
-      "name": "ADITYA RAJ ROHIT",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030073": {
-      "name": "ABHIRAJ PRATAP SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030076": {
-      "name": "YATIKA RAJPUT",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030083": {
-      "name": "SHIVANI PAL",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030086": {
-      "name": "SAGAR SHARMA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030089": {
-      "name": "ADITI SINHA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030091": {
-      "name": "KRISHNA MAHESHWARI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030096": {
-      "name": "TEJAL KUMARI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030100": {
-      "name": "BARUN KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030101": {
-      "name": "RAUSHAN RAJ",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030104": {
-      "name": "AMAN KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030109": {
-      "name": "VIDUR KAUSHIK",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030110": {
-      "name": "RITIK RAJ",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030114": {
-      "name": "RAJDIVAS",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030119": {
-      "name": "HARI OM PANDEY",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030121": {
-      "name": "VASU KAMBOJ",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030127": {
-      "name": "ADITYA MISHRA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030132": {
-      "name": "SHIVAM SHARMA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030137": {
-      "name": "VARUN SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030139": {
-      "name": "SACHIN SHARMA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030148": {
-      "name": "ABHIYANSHU KAMBOJ",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030149": {
-      "name": "UTKARSH KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030150": {
-      "name": "BHOLESHVAR KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030151": {
-      "name": "SAHIL KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030156": {
-      "name": "AMAN KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030157": {
-      "name": "SUMIT KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030161": {
-      "name": "HARISH RANA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030162": {
-      "name": "DEWANSH TRIPATHI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030163": {
-      "name": "HIMANSHU KUMAR RAWANI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030164": {
-      "name": "ASHWANI RAJ",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030166": {
-      "name": "GAURAV KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030167": {
-      "name": "SHASHWATT JHA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030168": {
-      "name": "RICHA MISHRA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030169": {
-      "name": "KOMAL KUMARI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030172": {
-      "name": "ANUBHAV KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030175": {
-      "name": "KRISHIV KARN",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030180": {
-      "name": "SACHIN LAIK",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030182": {
-      "name": "ANUJ KUMAR RANA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030183": {
-      "name": "RASHIKA GUPTA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030184": {
-      "name": "KHUSHI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030195": {
-      "name": "SHESHDEV CHAUDHARY",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030196": {
-      "name": "PRINCE ANANT RAJ",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030197": {
-      "name": "AZMAT ALI KHAN",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030200": {
-      "name": "SHIVAM RAJ",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030202": {
-      "name": "VEDANSH KUMAR SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030205": {
-      "name": "AMIT KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030213": {
-      "name": "MANISH KUMAR VERMA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030214": {
-      "name": "YASH RAJ MOURYA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030220": {
-      "name": "KUMARESH ALU",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030224": {
-      "name": "AANIYA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030225": {
-      "name": "DIPALI SWAPNIL",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030226": {
-      "name": "ANNU SAINI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030229": {
-      "name": "RISHAB PAL",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030232": {
-      "name": "SHIVAM KUMAR RAI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030234": {
-      "name": "ANKIT BEHERA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030236": {
-      "name": "DIYA KUMARI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030239": {
-      "name": "YASH KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030240": {
-      "name": "AMAN SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030243": {
-      "name": "SACHIN KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030244": {
-      "name": "SAGAR KUMAR CHOUDHARY",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030246": {
-      "name": "RAJ KAMAL",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030247": {
-      "name": "SATYAM TIWARI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030248": {
-      "name": "SAKET KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030249": {
-      "name": "ALEX VERMA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030250": {
-      "name": "ROHIT YADAV",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030251": {
-      "name": "NIKHIL KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030252": {
-      "name": "SIDDHI GUPTA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030253": {
-      "name": "SAURABH KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030259": {
-      "name": "SAKET PRANAV",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030260": {
-      "name": "AKASH P SURESH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030262": {
-      "name": "HIMANSHU KUMAR DEY",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030265": {
-      "name": "PRIYA SAINI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030268": {
-      "name": "RASHMIT KASHYAP",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030270": {
-      "name": "SUJAL KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030272": {
-      "name": "ANSH SINGH RATHORE",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030273": {
-      "name": "RAHUL RAJ",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030275": {
-      "name": "ALOK KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030284": {
-      "name": "AASHISH KUMAR RAY",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030290": {
-      "name": "KULDIP KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030295": {
-      "name": "LUCKY",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030296": {
-      "name": "GAGAN SAINI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030297": {
-      "name": "ANSHU KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030306": {
-      "name": "RANA SATYA JEET",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030307": {
-      "name": "KUMAR AKSHAY",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030311": {
-      "name": "SANDHYA RANI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030318": {
-      "name": "PRASHANT KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030320": {
-      "name": "SONU GORAI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030321": {
-      "name": "ANAND RAJ KUSHWAHA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030324": {
-      "name": "AKSHAT PUNDIR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030327": {
-      "name": "SAANCH SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030328": {
-      "name": "MD SAQUIB ALAM",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030334": {
-      "name": "RAJNISH KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030338": {
-      "name": "BUBAI MONDAL",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030339": {
-      "name": "SHIVAM KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030341": {
-      "name": "FIZA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030344": {
-      "name": "ABHISHEK KUMAR SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030348": {
-      "name": "PRAVEEN SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030353": {
-      "name": "ALOK SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030354": {
-      "name": "AKANKSHA KUMARI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030355": {
-      "name": "PIYUSH SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030356": {
-      "name": "AKSHAT SHARMA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030357": {
-      "name": "ANNU SHARMA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030361": {
-      "name": "RAHUL KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030362": {
-      "name": "SAKSHI KASHYAP",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030364": {
-      "name": "RIDDHI GUPTA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030366": {
-      "name": "PARAS TOMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030371": {
-      "name": "AHAN MUKHERJEE",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030373": {
-      "name": "SATYAM KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030375": {
-      "name": "PUSHKAR RAJ",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030376": {
-      "name": "SAGNIK DUTTA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030377": {
-      "name": "HARSH RAJ",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030380": {
-      "name": "ABHINAV YADAV",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030386": {
-      "name": "RISHU RAJ",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030389": {
-      "name": "KUSHAGRA KUMAR BHATNAGAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030390": {
-      "name": "NIKHIL PRAJAPATI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030391": {
-      "name": "SOMYA RANJAN MAHAPATRA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030393": {
-      "name": "NATASHA NEPRAM",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030396": {
-      "name": "AKSHAT PRATEEK",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030397": {
-      "name": "SANSKAR KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030398": {
-      "name": "DIVYANSHU CHOUBEY",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030400": {
-      "name": "RONIT RAINA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030402": {
-      "name": "MD SAMEER",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030404": {
-      "name": "MD HARISH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030407": {
-      "name": "PRAKHAR MISHRA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030409": {
-      "name": "MANMOHAN",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030410": {
-      "name": "MAHABIR KUMAR MANDAL",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030415": {
-      "name": "DIKSHANT",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030428": {
-      "name": "AMIT KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030429": {
-      "name": "HARSH KUMAR SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030432": {
-      "name": "ABHAY TIWARI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030434": {
-      "name": "SAURABH RAJ",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030438": {
-      "name": "SANYAM",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030439": {
-      "name": "SHIVAM RAWAT",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030445": {
-      "name": "ARCHI SHARMA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030447": {
-      "name": "SATYAM RAUNIYAR (Not Registered)",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030457": {
-      "name": "SHREYANSH VERMA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030467": {
-      "name": "ADITYA NIDHI (Not Registered)",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030469": {
-      "name": "SAURABH KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030472": {
-      "name": "ANMOL KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030481": {
-      "name": "ALOK KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030482": {
-      "name": "ANUSHKA VERMA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030483": {
-      "name": "PRINCE",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030485": {
-      "name": "BHAVIK SAINI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030490": {
-      "name": "RISHVIK KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030493": {
-      "name": "SAKET BHARTI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030494": {
-      "name": "VISHAL KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030503": {
-      "name": "SAKSHAM KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030507": {
-      "name": "VANSH KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030510": {
-      "name": "RAKSHAK DUBEY",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030511": {
-      "name": "PIYUSH KUMAR SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030514": {
-      "name": "RAMENDRA NATH UPADHYAY",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030515": {
-      "name": "NIKHIL KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030516": {
-      "name": "RISHI KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030518": {
-      "name": "ANMOL SHARMA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030519": {
-      "name": "UJJWAL KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030522": {
-      "name": "KUNAL KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030524": {
-      "name": "RITESH CHAUDHARY",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030525": {
-      "name": "AYUSH KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030528": {
-      "name": "AANCHAL PANDEY",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030530": {
-      "name": "AYUSH KUMAR DEV",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030533": {
-      "name": "ARPIT PANDEY",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030535": {
-      "name": "SHIVAM YADAV",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030536": {
-      "name": "SAKSHAM DHIMAN",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030539": {
-      "name": "SUJEET KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030540": {
-      "name": "KULDEEP MISHRA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030541": {
-      "name": "ANAMIKA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030545": {
-      "name": "ADITYA GUPTA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030551": {
-      "name": "ANAS",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030558": {
-      "name": "AVULA RAM CHARAN TEJA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030560": {
-      "name": "BORIGORLA VENKATA KRISHNA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030561": {
-      "name": "VEMULA PREM CHANDU",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030562": {
-      "name": "DAGGUPATI NITHIN",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030565": {
-      "name": "BACHIREDDY SIDDARTHA REDDY",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030567": {
-      "name": "BOLLA SUDHARSAN JYOTHI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030568": {
-      "name": "NIKHIL SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030569": {
-      "name": "DUGGIRALA KOMAL SAI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030570": {
-      "name": "ANMOL SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030575": {
-      "name": "NASANA NANDA KISHORE",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030582": {
-      "name": "RITIK SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030584": {
-      "name": "SAMIR KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030587": {
-      "name": "SUSHANT SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030589": {
-      "name": "PRATISHTHA MISHRA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030590": {
-      "name": "SOURAV KUMAR MAHTO",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030593": {
-      "name": "DIPANSHU KUMAR (Not Registered)",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030595": {
-      "name": "ATUL KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030596": {
-      "name": "LAABH BARANWAL",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030600": {
-      "name": "SUNIDHI RANI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030601": {
-      "name": "SHASHANK YADAV",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030603": {
-      "name": "SHIV SHAKTI DUBEY",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030604": {
-      "name": "GAURAV RAI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030605": {
-      "name": "RITU KUMARI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030615": {
-      "name": "MAHESH KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030617": {
-      "name": "MOHAMMAD ZAID ANSARI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030618": {
-      "name": "MAHESH KR RAWANI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030625": {
-      "name": "ADITYA SAINI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030626": {
-      "name": "SATYAM KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030628": {
-      "name": "DIWAKAR KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030630": {
-      "name": "SANDEEP MISHRA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030641": {
-      "name": "SATYANCHAL KUMAR SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030643": {
-      "name": "RITESH PRAJAPATI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030647": {
-      "name": "MANSHI CHAUHAN",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030648": {
-      "name": "SUDESH KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030651": {
-      "name": "SUHAIL",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030655": {
-      "name": "ANUBHAV SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030661": {
-      "name": "BODDU NAGA CHAITANYA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030663": {
-      "name": "SONAM KUMARI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030665": {
-      "name": "ANAND KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030668": {
-      "name": "SAQUIB TARIQ",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030669": {
-      "name": "AYUSHI TYAGI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030674": {
-      "name": "SHIVAM KUMAR SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030677": {
-      "name": "AMITABH RAJ",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030680": {
-      "name": "KAJAL SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030689": {
-      "name": "ANIVESH SHUKLA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030690": {
-      "name": "VEMULA SAMBHA SIVA RAO",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030692": {
-      "name": "DIPAK KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030695": {
-      "name": "ARYAN SAINI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030696": {
-      "name": "ARSLAN",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030700": {
-      "name": "PULKIT GUPTA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030702": {
-      "name": "HARDIK PUNDIR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030703": {
-      "name": "PRERNA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030704": {
-      "name": "VIVEK KUMAR PASWAN",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030709": {
-      "name": "SATYAM SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030710": {
-      "name": "DIBAKAR ROY",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030712": {
-      "name": "SHIVAM KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030715": {
-      "name": "ABHAY CHOUDHARY",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030716": {
-      "name": "CHANDAN KUMAR MAHTO",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030717": {
-      "name": "ASHLOK KUMAR MISHRA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030719": {
-      "name": "NAKKA YAMINI KRISHNA MANOHAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030723": {
-      "name": "DUMPA PRANAV NARAYANA REDDY",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030724": {
-      "name": "PARI SHARMA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030726": {
-      "name": "ARPIT SHANKAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030731": {
-      "name": "SHARIK HUSAIN",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030737": {
-      "name": "RUPESH KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030739": {
-      "name": "SATISH KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030747": {
-      "name": "MANISHANKAR KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030749": {
-      "name": "AADITYA KUMAR YADAV",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030751": {
-      "name": "SUMIT KUMAR YADAV",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030752": {
-      "name": "SANJAY KUMAR DAS TATMA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030756": {
-      "name": "PRATHAM SINGH RAGHUWANSHI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030758": {
-      "name": "PARTH RATHI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030759": {
-      "name": "AYUSH KUMAR YADAV",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030766": {
-      "name": "SONU YADAV",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030770": {
-      "name": "T CHETHAN KRISHNA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030782": {
-      "name": "SHUBH VATS",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030791": {
-      "name": "DEVENDR REDDY BOMMU",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030792": {
-      "name": "DEVANSHU PRIYADARSHAN",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030795": {
-      "name": "SAHAMAD ANSARI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030797": {
-      "name": "GALLA ALEKHYA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030798": {
-      "name": "PYDI SURYA SHIVA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030799": {
-      "name": "TARUN PRAKASH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030802": {
-      "name": "ANMOL KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030805": {
-      "name": "ABHISHEK KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "J",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030808": {
-      "name": "AVIJIT MONDAL",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030810": {
-      "name": "AMAN KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030813": {
-      "name": "SWASTIK KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030814": {
-      "name": "CHEBROLU CHARAN TEJA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030816": {
-      "name": "JAHANVI SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030819": {
-      "name": "HARSH SINGH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030825": {
-      "name": "SHIVANSHU VASHIST",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "H",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030828": {
-      "name": "GAURAV KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030830": {
-      "name": "SHALINI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030831": {
-      "name": "SHIVAM KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030832": {
-      "name": "OM ANKIT RAJ",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030835": {
-      "name": "PRIYANSHU PRIYAM (Not Registered)",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030836": {
-      "name": "PRINCE KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030841": {
-      "name": "KARAN KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030842": {
-      "name": "KOMATIGUNTA VENKATA NARASIMHA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030850": {
-      "name": "DANISH AHAMAD",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030852": {
-      "name": "CHANDRA BHUSHAN YADAV",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030853": {
-      "name": "PRAVIN KUMAR KUSHWAHA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030855": {
-      "name": "PRINCE PRASAD",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030856": {
-      "name": "DEVESH SHUKLA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030857": {
-      "name": "AYAN",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "F",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030860": {
-      "name": "ANKIT ROY",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030863": {
-      "name": "ABHINAV KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030866": {
-      "name": "SALONI KUMARI",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030867": {
-      "name": "TANISHK RANA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030869": {
-      "name": "SURAJ KUMAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030870": {
-      "name": "YADAV ABHISHEK SIDHESHWAR",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030871": {
-      "name": "SUMIT KUMAR SHAH (Not Registered)",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030873": {
-      "name": "AADITYA KAMALIYA",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030876": {
-      "name": "HARSHIT AGARWAL",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030885": {
-      "name": "ABDUL NASIM KHAN (Not Registered)",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030887": {
-      "name": "ANKIT KUMAR YADAV (Not Registered)",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "I",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030888": {
-      "name": "DIRGHARAJ YADAV",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25030893": {
-      "name": "RISHAV RAJ SHAH",
-      "course": "B.Tech",
-      "branch": "CSE",
-      "section": "G",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25070010": {
-      "name": "KARTIK",
-      "course": "Diploma",
-      "branch": "Mechanical Engineering",
-      "section": "A",
-      "year": "2nd Year",
       "pass": "EVSQUIZ",
-      "reg_date": "23/02/2026"
+      "reg_date": "29/09/2026"
     },
-    "25070015": {
-      "name": "SHILONI",
-      "course": "Diploma",
-      "branch": "Mechanical Engineering",
-      "section": "A",
-      "year": "2nd Year",
-      "pass": "EVSQUIZ",
-      "reg_date": "05/02/2026"
-    },
-    "25120158": {
-      "name": "MANISH KUMAR PASWAN",
+    "26010026": {
+      "name": "Anurag Kumar",
       "course": "B.Tech",
       "branch": "CSE",
-      "section": "G",
+      "section": "B",
       "year": "1st Year",
-      "pass": "EVSQUIZ"
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
     },
-    "25170001": {
-      "name": "MANYA SHARMA D/O VIPENDAR SHARMA",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170002": {
-      "name": "BHAVYA BHARDWAJ D/O MOHIT BHARDWAJ",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170003": {
-      "name": "ARMAAN KHAN S/O MOHSIN KHAN",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170004": {
-      "name": "PRIYANSHI SAKSENA D/O MOHIT CHOUDHARY",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170005": {
-      "name": "PRERNA SAKSENA D/O MOHIT CHOUDHARY",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170006": {
-      "name": "NANDINI ATHWAL D/O RAJ KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170007": {
-      "name": "MAHI VASHISHTH D/O ARUN SHARMA",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170008": {
-      "name": "BINIT ORAON S/O BIMAL ORAON",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170009": {
-      "name": "BHOOMI VARSHNEY D/O CHETAN PRAKASH VARS",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170010": {
-      "name": "VANSH SAINI S/O VISHESH PAL",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170011": {
-      "name": "JATIN MANSAR S/O SURENDRA LAL",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170012": {
-      "name": "NAMAN BANSAL S/O AJAY BANSAL",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170014": {
-      "name": "ABHAY SINGH PARMAR S/O SUBODH KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170015": {
-      "name": "NAMAN RAJ SINGH S/O SUDESH KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170016": {
-      "name": "RITIKA GUPTA D/O SANAT KUMAR GUPTA",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170017": {
-      "name": "SRISHTI SHARMA D/O DEEPAK KUMAR SHARMA",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170018": {
-      "name": "SIDDHARTHA DUBEY S/O SANJAY DUBEY",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170019": {
-      "name": "RISHIKA PUNDIR D/O ASHOK KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170024": {
-      "name": "VRANDA CHOUDHARY D/O ADARSH CHOUDHARY",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170025": {
-      "name": "MAANVI TYAGI D/O ADESH KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170027": {
-      "name": "RAM TIWARI S/O PANKAJ TIWARI",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170028": {
-      "name": "MANAV TYAGI S/O JITENDRA TYAGI",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170029": {
-      "name": "PRIYANKA SAINI D/O AMIT SAINI",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170034": {
-      "name": "HARSHIT KUMAR S/O NIRAJ KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170035": {
-      "name": "PUSHPENDRA KUMAR S/O PREM CHANDRA BHA",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170038": {
-      "name": "MOHD FARHAN S/O MOHD WASEEM",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170040": {
-      "name": "NIDHAN KUMAR SINGH S/O UPENDRA KUMAR SI",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170041": {
-      "name": "SHRISTI CHAUHAN D/O SUBHASH CHANDRA",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170043": {
-      "name": "PRIYANKA KANNOJIA D/O SARVESH KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170044": {
-      "name": "DEVKUMAR KANNOJIA S/O SARVESH KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170045": {
-      "name": "CHAHAL S/O ANIL KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170046": {
-      "name": "KARAMJEET KAUR D/O HEERA SINGH",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170047": {
-      "name": "PRIYANSHI D/O ARVIND KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170048": {
-      "name": "AMAN ANAND S/O MUNNA PRASAD GUPTA",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170050": {
-      "name": "SURAJ TIWARI S/O SURENDRA TIWARI",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170051": {
-      "name": "KHUSHBU KUMARI D/O NANDU PRASAD",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170052": {
-      "name": "VISHAL SIROHI S/O NARENDER SINGH",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170053": {
-      "name": "HARSHIT DHIMAN S/O MUKESH DHIMAN",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170054": {
-      "name": "AARUSHA D/O AABAD",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170055": {
-      "name": "MAHAK GAUR D/O TASVVUAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170056": {
-      "name": "KASHISH SEN D/O NEERAJ KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170057": {
-      "name": "ABU TALHA S/O NAIM AHMAD",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170059": {
-      "name": "ADITYA SHARMA S/O RAJEEV KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170060": {
-      "name": "NISHI SINGH D/O DILIP KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170062": {
-      "name": "DANISH S/O IRFAN",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170063": {
-      "name": "RIYA D/O RAVI KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170064": {
-      "name": "ISHAAN CHATTERJEE S/O SUBHRAJYOTI CHATTER",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170065": {
-      "name": "ISHIKA PAL D/O DEEPAK KUMAR PAL",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170066": {
-      "name": "SAMIKSHA D/O RAJVEER SINGH",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170067": {
-      "name": "PRINCE CHAUDHARY S/O AMIT KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170068": {
-      "name": "KISNA CHAWLA S/O ASHOK",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170070": {
-      "name": "YASH PUNDIR S/O DURGESH KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170071": {
-      "name": "RASHMI PUNDIR D/O SHAKTI SINGH",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170072": {
-      "name": "UJJWAL YADAV S/O RAJ KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170073": {
-      "name": "RACHIT SHARMA S/O AMIT SHARMA",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170074": {
-      "name": "RAO ALI S/O SALIM",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170075": {
-      "name": "YASH PANDEY S/O YOGENDRA KUMAR PANDEY",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170076": {
-      "name": "AMULYA MISHRA D/O ASHISH MISHRA",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170077": {
-      "name": "KUNAL BISHT S/O NARAYAN SINGH BISHT",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170078": {
-      "name": "ANSHIKA RANA D/O VINAY KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170079": {
-      "name": "DISHA KAPKOTI D/O RAMESH SINGH KAPKOTI",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170080": {
-      "name": "TEJ PRATAP S/O DHARMENDRA KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170081": {
-      "name": "ZUHAIB RAO S/O MOHD HANEEF",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170082": {
-      "name": "AYUSH YADAV S/O SUKHPAL SINGH",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170084": {
-      "name": "ZIKRIYA KHAN S/O SAJID KHAN",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170085": {
-      "name": "SYED MOHAMMAD HUSSAIN S/O SYED MOHAMM",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170086": {
-      "name": "HARMANPREET KAUR D/O PARMJEET CHAWLA",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170087": {
-      "name": "ANSHIKA D/O SATYAPAL SINGH",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170088": {
-      "name": "MOHD UMAR S/O ANIS AHMAD",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170089": {
-      "name": "PRASHANT KUMAR S/O VINOD KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170090": {
-      "name": "HUMAIRA MALIK D/O ASIF MALIK",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170091": {
-      "name": "KRISHNA ANAND S/O MILIND KUMAR SAHA",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170092": {
-      "name": "YASHIKA GUPTA D/O SATISH GUPTA",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170093": {
-      "name": "PRIYA D/O ARVIND KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170094": {
-      "name": "AMANDEEP SINGH S/O RANJEET SINGH",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170095": {
-      "name": "HUSAIN S/O KAMYAB",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170096": {
-      "name": "ABHISHEK KUMAR S/O DILIP KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25170097": {
-      "name": "SANDESH SAINI S/O SURENDRA SAINI",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25390025": {
-      "name": "TULSI CHOUDHARY D/O SUDHIR KUMAR",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "25640012": {
-      "name": "PAYAL SEHGAL D/O RAMESH CHAND",
-      "course": "B.Com",
-      "branch": "N/A",
-      "section": "N/A",
-      "year": "1st Year",
-      "pass": "EVSQUIZ"
-    },
-    "QU2024002": {
-      "pass": "password456",
-      "name": "Rahul Kumar",
+    "26010035": {
+      "name": "Prantik Das",
       "course": "B.Tech",
-      "branch": "Civil",
-      "section": "A",
-      "year": "4th",
-      "mustChangePass": false
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010038": {
+      "name": "Aman Ansari",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010039": {
+      "name": "Yash Tripathi",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010040": {
+      "name": "Divyanshu Choudhary",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010056": {
+      "name": "Ritu Raj",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010068": {
+      "name": "Krishna .",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010090": {
+      "name": "Adarsh Yadav",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010116": {
+      "name": "ARCHIKA KAMBOJ",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010122": {
+      "name": "Deepak Yadav",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010128": {
+      "name": "Ayush Kumar Barnwal",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010132": {
+      "name": "Vaishnavi .",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010144": {
+      "name": "Shivam Saini",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010148": {
+      "name": "Simran pal",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010161": {
+      "name": "Lokesh",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010162": {
+      "name": "Anurudh yadav",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010178": {
+      "name": "Anmol",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010195": {
+      "name": "Anand Mohan",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010211": {
+      "name": "Krishna Kant",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010214": {
+      "name": "Suvam Roy",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010216": {
+      "name": "Gaurav Saini",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010219": {
+      "name": "Aditi Kumari",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010222": {
+      "name": "Reyhan Ahmad",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010248": {
+      "name": "Saksham Jaiswal",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010282": {
+      "name": "Ansh Kumar",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010292": {
+      "name": "Kashish Devi",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010295": {
+      "name": "Ayushi Swaraj",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010297": {
+      "name": "Riya Singh",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010319": {
+      "name": "Aarav",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010325": {
+      "name": "Alvira Rao",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010327": {
+      "name": "Baibhav Kumar",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010361": {
+      "name": "Gauri Rani",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010368": {
+      "name": "Harsh Raj",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010369": {
+      "name": "Amrit Kumar",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010379": {
+      "name": "Dev Singh",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010380": {
+      "name": "Aditya Gupta",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010385": {
+      "name": "Navneet Yadav",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010410": {
+      "name": "Sameer Kumar",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010417": {
+      "name": "Ankit Kumar",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010433": {
+      "name": "Pritam Kumar",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010448": {
+      "name": "Ansh Pratap Singh",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010451": {
+      "name": "Shlok Singh",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010472": {
+      "name": "Rahul Ray",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010484": {
+      "name": "Shashwat Kesarwani",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010499": {
+      "name": "Chirag Ranjan",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010512": {
+      "name": "Devansh Malik",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010536": {
+      "name": "Shivam Kumar Sahu",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010579": {
+      "name": "Vinit Kumar",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010598": {
+      "name": "Ritu Raj Kumar",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010610": {
+      "name": "Utkarsh Raj",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010621": {
+      "name": "Krishna Tyagi",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010638": {
+      "name": "Krishna Tyagi",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010658": {
+      "name": "Anand Kumar",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010659": {
+      "name": "Aryan mishra",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010662": {
+      "name": "Amogh Siddharth",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010663": {
+      "name": "Priyanshi Saini",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010683": {
+      "name": "Parshant Kumar",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010690": {
+      "name": "Tanmay Sharma",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010699": {
+      "name": "Raunak Kumar",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
+    },
+    "26010760": {
+      "name": "Prakriti Verma",
+      "course": "B.Tech",
+      "branch": "CSE",
+      "section": "B",
+      "year": "1st Year",
+      "pass": "EVSQUIZ",
+      "reg_date": "29/09/2026"
     }
   },
   "bcelab_questions": [
