@@ -1029,7 +1029,7 @@ async function init() {
             db.quizzes = rawDb.quizzes;
         } else if (rawDb.evs_questions && rawDb.dpm_questions) {
             db.quizzes = [
-                { id:"evs_02", title:"Environmental Studies II",       duration:60, questions:rawDb.evs_questions },
+                { id:"evs_02", title:"Environmental Studies I",       duration:60, questions:rawDb.evs_questions },
                 { id:"dpm_01", title:"Disaster Planning & Management", duration:60, questions:rawDb.dpm_questions }
             ];
         }
@@ -2036,7 +2036,7 @@ async function loadDatabase(){
         db.quizzes=rawDb.quizzes;
       }else if(Array.isArray(rawDb.evs_questions)||Array.isArray(rawDb.dpm_questions)){
         db.quizzes=[];
-        if(Array.isArray(rawDb.evs_questions)) db.quizzes.push({id:'evs_02',title:'Environmental Studies II',duration:60,questions:rawDb.evs_questions});
+        if(Array.isArray(rawDb.evs_questions)) db.quizzes.push({id:'evs_02',title:'Environmental Studies I',duration:60,questions:rawDb.evs_questions});
         if(Array.isArray(rawDb.dpm_questions)) db.quizzes.push({id:'dpm_01',title:'Disaster Planning & Management',duration:60,questions:rawDb.dpm_questions});
       }
       if(!Object.keys(db.students).length) throw new Error('No students found');
